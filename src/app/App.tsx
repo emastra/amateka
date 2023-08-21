@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Topbar from '../components/Topbar';
 import Menu from '../components/Menu';
 import Home from '../pages/Home';
+import StoryIntro from '../pages/StoryIntro';
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
             {/* aggiungere un div.page-container? */}
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/story/:id/intro' element={<Home />} />
+                <Route path='/story/:id/intro' element={<StoryIntro />} />
             </Routes>
         </div>
     );
