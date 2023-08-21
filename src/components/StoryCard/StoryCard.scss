@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+article.story-card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+article.story-card {
+    border-radius: 12px;
+    height: 70%;
+    background-color: $background-color-light;
+    box-shadow: 4px 4px 2px rgb(35, 45, 46, 25%);
+
+    img.card-top-image {
+        height: 279px;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card-info-wrapper {
+        padding: 16px 12px;
+
+        .card-title-wrapper {
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .intro-text-wrapper {
+            margin: 16px 0;
+            height: 4.4rem;
+            // text-overflow: ellipsis;
+
+            p {
+                color: #3f4d4d;
+                font-size: 1rem;
+                line-height: 1.1;
+            }
+        }
+
+        .tag-box {
+            display: inline-block;
+            background-color: #e3e3e3;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin-right: 8px;
+        }
+    }
+}

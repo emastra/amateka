@@ -1,0 +1,43 @@
+/* _typography.scss */
+// https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals#web_safe_fonts
+
+$font-family-heading: 'Germania One', serif;
+$font-family-body: 'Montserrat', sans-serif;
+
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+
+$line-height-small: 1.4;
+$line-height-medium: 1.6;
+$line-height-large: 1.8;
+
+$text-color-primary: #121717;
+$text-color-secondary: #666666;
+$text-color-accent: #f45c49;
+
+h1,
+h2,
+h3 {
+    font-family: $font-family-body; // $font-family-heading
+    color: $text-color-primary;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: $font-family-body;
+    font-size: $font-size-medium; //!!!!!!!!!!!!!!
+    // line-height: $line-height-medium;
+    color: $text-color-primary;
+}
+
+a {
+    color: $text-color-accent;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: #f45843;
+    }
+}
+
+/* Additional heading and text styles */

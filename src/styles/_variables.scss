@@ -1,0 +1,46 @@
+/* _variables.scss */
+
+// Colors
+$background-color-primary: #FCD05D;
+$background-color-light: #FFFCF5;
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Spacing
+$spacing-unit: 8px;
+$spacing-small: $spacing-unit;
+$spacing-medium: $spacing-unit * 1.5;
+$spacing-large: $spacing-unit * 2;
+
+// Breakpoints
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$xlarge-screen: 1200px;
+
+// Z-index
+$z-index-modal: 1000;
+$z-index-dropdown: 900;
+$z-index-header: 100;
+$z-index-footer: 50;
+
+// // Form input
+// $input-border: 1px solid #ccc;
+// $input-border-radius: 4px;
+// $input-padding: 0.5rem;
+
+// // Button
+// $button-padding: 0.5rem 1rem;
+// $button-border-radius: 4px;
+// $button-font-size: 16px;
+
+// // Box shadows
+// $box-shadow-light: 0px 2px 4px rgba(0, 0, 0, 0.1);
+// $box-shadow-medium: 0px 4px 8px rgba(0, 0, 0, 0.2);
+// $box-shadow-dark: 0px 6px 12px rgba(0, 0, 0, 0.3);
+
+// // Typography-related variables
+// $heading-font-weight: bold;
+// $paragraph-margin-bottom: 1rem;
+
+// // Other variables...

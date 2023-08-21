@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+main {
+    padding: 24px 16px;
+    margin-top: 120px;
+}
+
+button.create-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+
+    background-color: $background-color-light;
+    padding: 12px 22px;
+    border-radius: 32px;
+    font-size: 1.1rem;
+    font-weight: 500; // !! importa pure medium!!
+    border: none;
+    box-shadow: 0 2px 8px 4px rgb(35, 45, 46, 25%);
+
+    .plus-icon {
+        margin-right: 12px;
+        position: relative;
+        top: -1px;
+        height: 20px;
+        width: auto;
+    }
+}
