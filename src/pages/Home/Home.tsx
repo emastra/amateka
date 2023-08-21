@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <HomeBar />
-            <main>
+            <main id='home'>
                 <StoryCard></StoryCard>
                 <StoryCard></StoryCard>
                 <StoryCard></StoryCard>
