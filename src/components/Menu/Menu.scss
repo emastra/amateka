@@ -1,0 +1,53 @@
+div.menu-screen {
+    display: none;
+    height: 100%;
+    // background-color: rgb(35, 16, 7, 96%);
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
+    background: radial-gradient(#e66465, #9198e5);
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    div.close-icon-wrapper {
+        margin: 12px 0;
+
+        .close-icon {
+            height: 40px;
+            width: 40px;
+            float: right;
+            margin-right: 14px;
+            cursor: pointer;
+        }
+    }
+
+    nav.menu {
+        text-align: center;
+        margin: 128px 16px;
+
+        li.menu-item {
+            margin-bottom: 18px;
+            color: #fff;
+        }
+
+        li.menu-item a {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        ol.menu-1,
+        ol.menu-2 {
+            margin-bottom: 64px;
+        }
+    }
+}
+
+// to apply to body if i dont want the page to scroll
+// https://blog.logrocket.com/how-to-prevent-overflow-scrolling-css/
+// touch-action: none;
+// // -webkit-overflow-scrolling: none;
+// overflow: hidden;
+// overscroll-behavior: none;
