@@ -1,8 +1,8 @@
 @import './styles/sanitize.css';
 
-@import './styles/_variables.scss';
-@import './styles/_typography.scss';
-@import './styles/_globals.scss';
+@import './styles/variables.scss';
+@import './styles/typography.scss';
+@import './styles/globals.scss';
 
 // Perchè devo re-importarli anche in altri file se voglio le variabili?
 // Invece mi sembra che le rules rimangono, come per esempio le rules di anchor
