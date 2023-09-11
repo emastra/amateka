@@ -4,6 +4,7 @@ import Topbar from '../components/Topbar';
 import Menu from '../components/Menu';
 import Home from '../pages/Home';
 import StoryIntro from '../pages/StoryIntro';
+import StoryEvents from '../pages/StoryEvents';
 import NotFound from '../pages/NotFound';
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/story/:id/intro' element={<StoryIntro />} />
+                <Route element={<div>layout</div>}>
+                    <Route path='/story/:id/events' element={<StoryEvents />}></Route>
+                    <Route path='/story/:id/years'></Route>
+                </Route>
 
                 <Route path='*' element={<NotFound />} />
             </Routes>
