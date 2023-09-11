@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 // https://blog.webdevsimplified.com/2022-07/react-router/  --> c'è anche differenti layout per routes. cosa che mi serve
+// improve SEO --> https://synodus.com/blog/web-development/single-page-application-seo/
 
 import Topbar from '../components/Topbar';
 import Menu from '../components/Menu';

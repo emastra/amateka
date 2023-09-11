@@ -21,7 +21,12 @@ div#storybottombar {
     max-width: 90px;
     text-align: center;
 
+    color: $text-color-primary;
     cursor: pointer;
+}
+.storybottombar-icon-button:hover {
+    background-color: lightgray;
+    border-radius: 20%;
 }
 
 .storybottombar-label {
