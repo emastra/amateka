@@ -1,4 +1,4 @@
-@use '../../styles/variables' as v;
+@use '../../styles/variables' as *;
 
 main#home {
     padding: 24px 16px;
@@ -10,7 +10,7 @@ button.create-btn {
     bottom: 40px;
     right: 20px;
 
-    background-color: v.$background-color-light;
+    background-color: $background-color-light;
     padding: 12px 22px;
     border-radius: 32px;
     font-size: 1.1rem;
