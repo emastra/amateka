@@ -4,6 +4,7 @@ import Topbar from '../components/Topbar';
 import Menu from '../components/Menu';
 import Home from '../pages/Home';
 import StoryIntro from '../pages/StoryIntro';
+import NotFound from '../pages/NotFound';
 
 function App() {
     return (
@@ -15,6 +16,8 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/story/:id/intro' element={<StoryIntro />} />
+
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
     );
