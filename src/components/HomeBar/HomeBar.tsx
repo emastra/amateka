@@ -2,7 +2,7 @@ import './HomeBar.scss';
 
 const HomeBar = () => {
     return (
-        <div className='homebar'>
+        <div id='homebar'>
             <div className='search-input-wrapper'>
                 <input type='text' className='search-input' placeholder='Search...' />
             </div>

@@ -1,10 +1,12 @@
 import './StoryLayout.scss';
 import { Outlet } from 'react-router-dom';
 
+import StoryBar from '../StoryBar/StoryBar';
+
 const StoryLayout = () => {
     return (
         <>
-            <div>test 1</div>
+            <StoryBar />
             <Outlet />
             <div>test 2</div>
         </>

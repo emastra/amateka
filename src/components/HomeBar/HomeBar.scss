@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-div.homebar {
+div#homebar {
     display: flex;
     justify-content: space-between;
     align-items: center;
