@@ -7,6 +7,9 @@ import Home from '../pages/Home';
 import StoryIntro from '../pages/StoryIntro';
 import StoryLayout from '../components/StoryLayout/StoryLayout';
 import StoryEvents from '../pages/StoryEvents';
+import StoryYears from '../pages/StoryYears/StoryYears';
+import StoryDecades from '../pages/StoryDecades/StoryDecades';
+import StoryConcepts from '../pages/StoryConcepts/StoryConcepts';
 import NotFound from '../pages/NotFound';
 
 function App() {
@@ -20,9 +23,9 @@ function App() {
                 <Route path='/story/:id/intro' element={<StoryIntro />} />
                 <Route element={<StoryLayout />}>
                     <Route path='/story/:id/events' element={<StoryEvents />}></Route>
-                    <Route path='/story/:id/years'></Route>
-                    {/* <Route path='/story/:id/decades'></Route>
-                    <Route path='/story/:id/concepts'></Route> */}
+                    <Route path='/story/:id/years' element={<StoryYears />}></Route>
+                    <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
+                    <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
                 </Route>
 
                 <Route path='*' element={<NotFound />} />
