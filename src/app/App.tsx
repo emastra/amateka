@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+// https://blog.webdevsimplified.com/2022-07/react-router/  --> c'è anche differenti layout per routes. cosa che mi serve
 
 import Topbar from '../components/Topbar';
 import Menu from '../components/Menu';
@@ -13,7 +14,6 @@ function App() {
         <div className='app-container'>
             <Topbar />
             <Menu />
-            {/* https://blog.webdevsimplified.com/2022-07/react-router/  --> c'è anche differenti layout per routes. cosa che mi serve */}
             {/* aggiungere un div.page-container? */}
             <Routes>
                 <Route path='/' element={<Home />} />
@@ -21,6 +21,8 @@ function App() {
                 <Route element={<StoryLayout />}>
                     <Route path='/story/:id/events' element={<StoryEvents />}></Route>
                     <Route path='/story/:id/years'></Route>
+                    {/* <Route path='/story/:id/decades'></Route>
+                    <Route path='/story/:id/concepts'></Route> */}
                 </Route>
 
                 <Route path='*' element={<NotFound />} />
