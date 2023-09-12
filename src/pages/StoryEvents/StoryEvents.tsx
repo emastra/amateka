@@ -11,6 +11,12 @@ const StoryEvents = () => {
         <main id='story-events'>
             <TimelineCard variant='small' />
             <TimelineCard variant='small' />
+            <TimelineCard variant='small' />
+            <TimelineCard variant='small' />
+            <TimelineCard variant='small' />
+            <TimelineCard variant='small' />
+            <TimelineCard variant='small' />
+            <TimelineCard variant='small' />
         </main>
     );
 };
