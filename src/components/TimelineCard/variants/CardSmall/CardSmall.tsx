@@ -8,7 +8,7 @@ const CardSmall = () => {
                 <img className='card-image' src='/src/assets/images/placeholder_image.jpg' alt='placeholder_image' />
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
-                        <h2>Storia Contemporanea Storia Contranea Stia Coranea Stoia Contoranea</h2>
+                        <h2>Storia Contemporanea Storia Contranea Stia Coranea Storia</h2>
                     </div>
 
                     <div className='tags-wrapper'>
