@@ -12,11 +12,23 @@ article#card-small {
     background-color: $background-color-light;
     box-shadow: 4px 4px 2px rgb(35, 45, 46, 25%);
     height: 108px;
+    position: relative; // just to contain card-date-wrapper which is position absolute
 
     a.anchor-wrapper {
         height: 100%;
         width: 100%;
         display: flex;
+
+        div.card-date-wrapper {
+            font-size: 16px;
+            color: $text-color-primary;
+            font-weight: $font-weight-bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 8px;
+            text-shadow: #fff 1px 0 8px;
+        }
 
         img.card-image {
             border-radius: 12px 0 0 12px;

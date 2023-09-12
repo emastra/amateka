@@ -4,7 +4,10 @@ import './CardMedium.scss';
 const CardMedium = () => {
     return (
         <article id='card-medium'>
-            <Link to={`/story/${'1'}`}>
+            <Link to={`/story/${'1'}`} className='anchor-wrapper'>
+                <div className='card-date-wrapper'>
+                    <div className='card-date'>1978</div>
+                </div>
                 <img
                     className='card-top-image'
                     src='/src/assets/images/placeholder_image.jpg'
