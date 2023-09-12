@@ -2,6 +2,7 @@ import './TimelineCard.scss';
 
 import CardSmall from './variants/CardSmall/CardSmall';
 import CardMedium from './variants/CardMedium/CardMedium';
+import CardLarge from './variants/CardLarge/CardLarge';
 
 interface TimelineCardProps {
     variant: 'small' | 'medium' | 'large';
@@ -18,7 +19,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ variant }) => {
             CurrentComponent = CardMedium;
             break;
         case 'large':
-            CurrentComponent = null;
+            CurrentComponent = CardLarge;
             break;
         default:
             CurrentComponent = null;
