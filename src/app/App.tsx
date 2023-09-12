@@ -18,7 +18,7 @@ function App() {
         <div className='app-container'>
             <Topbar />
             <Menu />
-            {/* aggiungere un div.page-container? */}
+            {/* aggiungere un div.page-container? main?? */}
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/story/:id/intro' element={<StoryIntro />} />
