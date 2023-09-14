@@ -1,29 +1,22 @@
 import { Link } from 'react-router-dom';
 import './CardMedium.scss';
 
-const CardMedium = () => {
+const CardMedium = ({ data: { date, image, title, description, tags } }) => {
     return (
         <article id='card-medium'>
             <Link to={`/story/${'1'}`} className='anchor-wrapper'>
                 <div className='card-date-wrapper'>
-                    <div className='card-date'>1978</div>
+                    <div className='card-date'>{date}</div>
                 </div>
-                <img
-                    className='card-top-image'
-                    src='/src/assets/images/placeholder_image.jpg'
-                    alt='placeholder_image'
-                />
+                <img className='card-top-image' src={image} alt='placeholder_image' />
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
-                        <h2>Un anno tenebroso</h2>
+                        <h2>{title}</h2>
                     </div>
 
-                    {/* <div className='intro-text-wrapper'>
-                        <p className='intro-text'>
-                            Wikipedia remix. Wikipedia remix. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Wikipedia remix.
-                        </p>
-                    </div> */}
+                    <div className='intro-text-wrapper'>
+                        <p className='intro-text'>{description}</p>
+                    </div>
 
                     {/* <div className='tags-wrapper'>
                         <div className='tag-box'>A tag 1</div>

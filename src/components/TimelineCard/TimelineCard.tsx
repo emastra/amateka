@@ -10,27 +10,12 @@ interface TimelineCardProps {
 }
 
 const TimelineCard: React.FC<TimelineCardProps> = ({ variant, data }) => {
-    // const TimelineCard = ({ variant, data }) => {
-
-    // let CurrentComponent: any = null;
-
-    // switch (variant) {
-    //     case 'small':
-    //         CurrentComponent = CardSmall;
-    //         break;
-    //     case 'medium':
-    //         CurrentComponent = CardMedium;
-    //         break;
-    //     case 'large':
-    //         CurrentComponent = CardLarge;
-    //         break;
-    //     default:
-    //         CurrentComponent = null;
-    //         break;
-    // }
-
     if (variant === 'small') {
         return <CardSmall data={data} />;
+    }
+
+    if (variant === 'medium') {
+        return <CardMedium data={data} />;
     }
 
     // // return CurrentComponent ? <CurrentComponent /> : null;

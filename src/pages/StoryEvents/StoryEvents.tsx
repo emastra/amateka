@@ -9,18 +9,17 @@ const StoryEvents = () => {
 
     const date = '5 Jan 1978';
     const image = '/src/assets/images/placeholder_image.jpg';
-    const noimage = null;
     const title = 'Annuncio di Augusto Pinochet sul ritorno alle urne.';
     const tags = ['Santiago'];
 
     return (
         <main id='story-events'>
             <TimelineCard variant='small' data={{ date, image, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: noimage, title, tags }} />
+            <TimelineCard variant='small' data={{ date, image: null, title, tags }} />
             <TimelineCard variant='small' data={{ date, image, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: noimage, title, tags }} />
+            <TimelineCard variant='small' data={{ date, image: null, title, tags }} />
             <TimelineCard variant='small' data={{ date, image, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: noimage, title, tags }} />
+            <TimelineCard variant='small' data={{ date, image: null, title, tags }} />
             <TimelineCard variant='small' data={{ date, image, title, tags }} />
         </main>
     );
