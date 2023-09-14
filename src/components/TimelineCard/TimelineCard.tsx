@@ -9,7 +9,7 @@ interface TimelineCardProps {
 }
 
 const TimelineCard: React.FC<TimelineCardProps> = ({ variant }) => {
-    let CurrentComponent: React.FC<{ test?: string }> | null = null;
+    let CurrentComponent: React.FC<any> | null = null;
 
     switch (variant) {
         case 'small':

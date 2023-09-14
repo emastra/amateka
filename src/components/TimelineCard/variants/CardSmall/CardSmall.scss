@@ -11,7 +11,7 @@ article#card-small {
     border-radius: 12px;
     background-color: $background-color-light;
     box-shadow: 4px 4px 2px rgb(35, 45, 46, 25%);
-    height: 108px;
+    height: 128px; // piu piccola??
     position: relative; // just to contain card-date-wrapper which is position absolute
     z-index: -1; // -999 ? anche in CardMedium
 
@@ -20,25 +20,36 @@ article#card-small {
         width: 100%;
         display: flex;
 
-        div.card-date-wrapper {
-            font-size: 16px;
-            color: $text-color-primary;
-            font-weight: $font-weight-bold;
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 8px;
-            text-shadow: #fff 1px 0 8px;
-        }
-
-        img.card-image {
-            border-radius: 12px 0 0 12px;
+        div.card-left-wrap {
             flex-basis: auto;
-            height: 100%; /* Takes 100% of the height */
+            height: 100%;
             width: 40%;
+
+            div.card-date {
+                font-size: 14px;
+                color: $text-color-primary;
+                font-weight: $font-weight-bold;
+                position: absolute;
+                top: 8px;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.5);
+                padding: 4px 8px;
+            }
+
+            img.card-image {
+                border-radius: 12px 0 0 12px;
+                height: 100%;
+            }
+
+            div.colored-rectangle {
+                height: 100%;
+                width: 100%;
+                border-radius: 12px 0 0 12px;
+                background-color: #ee8888;
+            }
         }
 
-        div.card-info-wrapper {
+        div.card-right-wrap {
             flex-basis: auto;
             width: 60%;
             padding: 8px;
@@ -46,7 +57,7 @@ article#card-small {
             display: flex;
             flex-direction: column;
 
-            .card-title-wrapper {
+            .card-title-wrap {
                 flex-basis: auto;
                 height: 75%;
                 margin-bottom: 0.5rem;
@@ -54,19 +65,19 @@ article#card-small {
                 h2 {
                     font-size: 16px;
                     font-weight: 500;
+                    line-height: 1.2;
                 }
             }
 
-            .tags-wrapper {
+            .tags-wrap {
                 flex-basis: auto;
                 height: 25%;
-                // align-items: center;
 
                 .tag-box {
                     display: inline-block;
                     background-color: #e3e3e3;
                     font-size: 14px;
-                    padding: 0.25rem 0.5rem;
+                    padding: 0.4rem 0.8rem;
                     border-radius: 2rem;
                     margin-right: 8px;
                     color: $text-color-primary;
