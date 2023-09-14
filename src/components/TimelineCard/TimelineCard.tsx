@@ -6,27 +6,35 @@ import CardLarge from './variants/CardLarge/CardLarge';
 
 interface TimelineCardProps {
     variant: 'small' | 'medium' | 'large';
+    data: any;
 }
 
-const TimelineCard: React.FC<TimelineCardProps> = ({ variant }) => {
-    let CurrentComponent: React.FC<any> | null = null;
+const TimelineCard: React.FC<TimelineCardProps> = ({ variant, data }) => {
+    // const TimelineCard = ({ variant, data }) => {
 
-    switch (variant) {
-        case 'small':
-            CurrentComponent = CardSmall;
-            break;
-        case 'medium':
-            CurrentComponent = CardMedium;
-            break;
-        case 'large':
-            CurrentComponent = CardLarge;
-            break;
-        default:
-            CurrentComponent = null;
-            break;
+    // let CurrentComponent: any = null;
+
+    // switch (variant) {
+    //     case 'small':
+    //         CurrentComponent = CardSmall;
+    //         break;
+    //     case 'medium':
+    //         CurrentComponent = CardMedium;
+    //         break;
+    //     case 'large':
+    //         CurrentComponent = CardLarge;
+    //         break;
+    //     default:
+    //         CurrentComponent = null;
+    //         break;
+    // }
+
+    if (variant === 'small') {
+        return <CardSmall data={data} />;
     }
 
-    return CurrentComponent ? <CurrentComponent /> : null;
+    // // return CurrentComponent ? <CurrentComponent /> : null;
+    // return <CurrentComponent />;
 };
 
 export default TimelineCard;
