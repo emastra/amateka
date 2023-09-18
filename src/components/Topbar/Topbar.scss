@@ -14,7 +14,7 @@ header.topbar {
     background-color: $background-color-light;
     padding: 16px;
 
-    transition: top 0.3s;
+    transition: top 0.1s; // ease-in-out // https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
 }
 
 .logo-title {
