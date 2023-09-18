@@ -13,6 +13,8 @@ header.topbar {
     height: 64px;
     background-color: $background-color-light;
     padding: 16px;
+
+    transition: top 0.3s;
 }
 
 .logo-title {
