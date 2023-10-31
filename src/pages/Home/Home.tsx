@@ -6,7 +6,6 @@ import './Home.scss';
 const Home = () => {
     return (
         <>
-            <HomeBar />
             <main id='home'>
                 <StoryCard></StoryCard>
                 <StoryCard></StoryCard>

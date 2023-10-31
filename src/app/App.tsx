@@ -17,7 +17,6 @@ import NotFound from '../pages/NotFound';
 function App() {
     return (
         <div className='app-container'>
-            {/* aggiungere un div.page-container? main?? */}
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path='/' element={<Home />} />
