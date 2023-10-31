@@ -1,4 +1,3 @@
-import HomeBar from '../../components/HomeBar';
 import StoryCard from '../../components/StoryCard';
 
 import './Home.scss';

@@ -2,7 +2,7 @@ import './MainLayout.scss';
 import { Outlet } from 'react-router-dom';
 
 import Topbar from '../Topbar/Topbar';
-import SearchBar from '../HomeBar/SearchBar';
+import SearchBar from '../SearchBar/SearchBar';
 
 const MainLayout = () => {
     return (
