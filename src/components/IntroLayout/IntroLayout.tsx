@@ -1,12 +1,11 @@
 import './IntroLayout.scss';
+import BackBar from '../BackBar';
 import { Outlet } from 'react-router-dom';
-
-// create BackBar
 
 const IntroLayout = () => {
     return (
         <>
-            {/* <BackBar /> */}
+            <BackBar />
             <Outlet />
         </>
     );
