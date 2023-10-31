@@ -1,3 +1,11 @@
+// Per modificare le variabili on the fly, devo usare le css variables.
+// :root {
+//     --test-color: black;
+// }
+// $background-color-primary: var(--test-color);
+// così posso modificare programmaticamente da js la css variable
+// check risposta AI "CSS project structure" del 31/10/23 (verso la fine della conversazione)
+
 // Colors
 $background-color-primary: #fcd05d;
 $background-color-light: #fffcf5;
