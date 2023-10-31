@@ -1,0 +1,46 @@
+{
+    "id": "story-01",
+    "image": "",
+    "title": "",
+    "text": "",
+    "tags": [""],
+    "content": {
+        "intro": {
+            "info": [""],
+            "text": ""
+        },
+        "events": [
+            {
+                "id": "ev-01",
+                "image": "",
+                "date": "",
+                "title": "",
+                "tags": [{}],
+                "content": {
+                    "image": "",
+                    "title": "",
+                    "subtitle": "",
+                    "structure": [
+                        {
+                            "text": ""
+                        },
+                        {
+                            "accordion": {
+                                "title": "",
+                                "content": ""
+                            }
+                        },
+                        { "text": "" },
+                        { "title-2": "" },
+                        { "text": "" },
+                        { "image": { "url": "", "caption": "" } },
+                        { "text": "" }
+                    ]
+                }
+            }
+        ],
+        "years": [],
+        "decades": [],
+        "concepts": []
+    }
+}
