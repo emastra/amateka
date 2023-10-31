@@ -5,3 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 })
+
+// path aliases:
+// https://dev.to/tilly/aliasing-in-vite-w-typescript-1lfo
