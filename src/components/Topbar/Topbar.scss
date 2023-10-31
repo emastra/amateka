@@ -1,5 +1,4 @@
-@import '../../styles/variables.scss';
-@import '../../styles/typography.scss';
+@use '../../styles/variables' as *;
 
 header.topbar {
     display: flex;

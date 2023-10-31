@@ -1,5 +1,4 @@
-@import './styles/sanitize.css';
+@use './styles/sanitize.css';
 
-@import './styles/variables';
-@import './styles/typography';
-@import './styles/globals';
+@use './styles/typography';
+@use './styles/globals';
