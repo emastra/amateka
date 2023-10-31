@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
-import './HomeBar.scss';
+import './SearchBar.scss';
 
-const HomeBar = () => {
+const SearchBar = () => {
     // let lastScrollTop;
     const ref = useRef<HTMLInputElement>(null);
     // useEffect(() => {
@@ -20,7 +20,7 @@ const HomeBar = () => {
     // }, []);
 
     return (
-        <div id='homebar' ref={ref}>
+        <div id='searchbar' ref={ref}>
             <div className='search-input-wrapper'>
                 <input type='text' className='search-input' placeholder='Search...' />
             </div>
@@ -39,4 +39,4 @@ const HomeBar = () => {
     );
 };
 
-export default HomeBar;
+export default SearchBar;
