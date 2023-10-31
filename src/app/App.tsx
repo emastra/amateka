@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import MainLayout from '../components/MainLayout/MainLayout';
 import StoryLayout from '../components/StoryLayout/StoryLayout';
+import IntroLayout from '../components/IntroLayout/IntroLayout';
 
 import Home from '../pages/Home';
 import StoryIntro from '../pages/StoryIntro';
@@ -21,7 +22,9 @@ function App() {
                 <Route element={<MainLayout />}>
                     <Route path='/' element={<Home />} />
                 </Route>
-                <Route path='/story/:id/intro' element={<StoryIntro />} />
+                <Route element={<IntroLayout />}>
+                    <Route path='/story/:id/intro' element={<StoryIntro />} />
+                </Route>
                 <Route element={<StoryLayout />}>
                     <Route path='/story/:id/events' element={<StoryEvents />}></Route>
                     <Route path='/story/:id/years' element={<StoryYears />}></Route>
