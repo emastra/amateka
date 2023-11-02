@@ -1,12 +1,12 @@
 @use './variables' as *;
 
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// *,
+// *::before,
+// *::after {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
 
 html {
     // 1rem equals the font size of the html element
