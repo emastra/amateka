@@ -1,73 +1,48 @@
-// Per modificare le variabili on the fly, devo usare le css variables.
-// :root {
-//     --test-color: black;
-// }
-// $background-color-primary: var(--test-color);
-// così posso modificare programmaticamente da js la css variable
-// check risposta AI "CSS project structure" del 31/10/23 (verso la fine della conversazione)
+// https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/
 
 // Colors
-$background-color-primary: #fcd05d;
-$background-color-light: #fffcf5;
-$primary-color: #007bff;
-$secondary-color: #6c757d;
+:root {
+    --color-primary-0: #fffbeb;
+    --color-primary-1: #fce588;
+    --color-primary-2: #f7c94a;
+    --color-primary-3: #ca6d16;
+    --color-primary-4: #8e2c0b;
+
+    --color-neutral-0: #e6e6e6;
+    --color-neutral-1: #b8b8b8;
+    --color-neutral-2: #707070;
+    --color-neutral-3: #424242;
+    --color-neutral-4: #212121;
+
+    --color-white-0: #ffffff;
+
+    --color-support-1: #d53939;
+    --color-support-2: #e1872d;
+    --color-support-3: #d9d926;
+    --color-support-4: #7dc832;
+    --color-support-5: #25ad52;
+    --color-support-6: #33ccb3;
+    --color-support-7: #3380cc;
+    --color-support-8: #8033cc;
+}
 
 // Typography
-$font-family-heading: 'Germania One', serif;
-$font-family-body: 'Montserrat', sans-serif;
+:root {
+    --font-family-paragraph: 'Lato', sans-serif;
+    --font-family-header: 'Vollkorn', serif;
 
-$font-size-small: 14px;
-$font-size-medium: 18px;
-$font-size-large: 24px;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
-$line-height-small: 1.4;
-$line-height-medium: 1.6;
-$line-height-large: 1.8;
+    --font-size-p-main: 18px;
+    --font-size-p-mid: 16px;
+    --font-size-p-sm: 14px;
+    --font-size-h-main: 26px;
+    --font-size-h-small: 20px;
 
-$text-color-primary: #121717;
-$text-color-secondary: #666666;
-$text-color-accent: #f45c49;
+    //!! p-main-reg-wider !! for article paragraphs! larger letter-spacing
 
-$font-weight-bold: 700;
-$font-weight-medium: 500;
-// $font-weight-regular
-
-// Spacing
-$spacing-unit: 8px;
-$spacing-small: $spacing-unit;
-$spacing-medium: $spacing-unit * 1.5;
-$spacing-large: $spacing-unit * 2;
-
-// Breakpoints
-$small-screen: 576px;
-$medium-screen: 768px;
-$large-screen: 992px;
-$xlarge-screen: 1200px;
-
-// Z-index
-$z-index-modal: 1000;
-$z-index-dropdown: 900;
-$z-index-menu: 800;
-$z-index-header: 100;
-$z-index-footer: 50;
-
-// // Form input
-// $input-border: 1px solid #ccc;
-// $input-border-radius: 4px;
-// $input-padding: 0.5rem;
-
-// // Button
-// $button-padding: 0.5rem 1rem;
-// $button-border-radius: 4px;
-// $button-font-size: 16px;
-
-// // Box shadows
-// $box-shadow-light: 0px 2px 4px rgba(0, 0, 0, 0.1);
-// $box-shadow-medium: 0px 4px 8px rgba(0, 0, 0, 0.2);
-// $box-shadow-dark: 0px 6px 12px rgba(0, 0, 0, 0.3);
-
-// // Typography-related variables
-// $heading-font-weight: bold;
-// $paragraph-margin-bottom: 1rem;
-
-// // Other variables...
+    // --font-size-base: 16px;
+    // --line-height: 1.5;
+}

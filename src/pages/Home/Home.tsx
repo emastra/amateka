@@ -6,14 +6,14 @@ const Home = () => {
     return (
         <>
             <main id='home'>
+                {/* <StoryCard></StoryCard>
                 <StoryCard></StoryCard>
-                <StoryCard></StoryCard>
-                <StoryCard></StoryCard>
+                <StoryCard></StoryCard> */}
             </main>
-            <button className='create-btn'>
+            {/* <button className='create-btn'>
                 <img className='plus-icon' src='/src/assets/svg/plus.svg' alt='plus' />
                 Crea
-            </button>
+            </button> */}
         </>
     );
 };
