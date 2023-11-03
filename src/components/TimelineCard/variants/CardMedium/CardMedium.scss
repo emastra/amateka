@@ -10,7 +10,7 @@ article#card-medium:last-child {
 article#card-medium {
     border-radius: 12px;
     height: 240px; // small 112 medium 240 large 580+16
-    background-color: $background-color-light;
+    background-color: var(--color-primary-0);
     box-shadow: 4px 4px 2px rgb(35, 45, 46, 25%);
     position: relative; // just to contain card-date-wrapper which is position absolute
     z-index: -1;
@@ -21,8 +21,8 @@ article#card-medium {
 
         div.card-date-wrapper {
             font-size: 24px;
-            color: $text-color-primary;
-            font-weight: $font-weight-bold;
+            color: var(--color-neutral-4);
+            font-weight: var(--font-weight-bold);
             position: absolute;
             top: 0;
             left: 0;
@@ -64,7 +64,7 @@ article#card-medium {
             //     padding: 0.5rem 1rem;
             //     border-radius: 2rem;
             //     margin-right: 8px;
-            //     color: $text-color-primary;
+            //     color: var(--color-neutral-4);
             // }
         }
     }
