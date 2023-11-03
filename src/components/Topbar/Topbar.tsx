@@ -25,9 +25,9 @@ const Topbar = () => {
     // Pensa di nn usare position absolute. la storybar potrebbe salire da solo se fosse position static. Misurare la diff, rimane spazio bianco qunado topbar che è 64px va su.
 
     return (
-        <header ref={ref} className='topbar'>
+        <header ref={ref} id='topbar'>
             <Link to='/' className='logo-wrapper'>
-                <div className='logo-title'>Amateka</div>
+                <img className='logo-title' src='/src/assets/svg/amateka-logo.svg' alt='logo' />
             </Link>
 
             <div className='hamburger-wrapper'>
