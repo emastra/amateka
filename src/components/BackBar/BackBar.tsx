@@ -3,7 +3,7 @@ import './BackBar.scss';
 const BackBar = () => {
     return (
         <>
-            <div id='backbar'>
+            <div id='backbar' className='transparent-variant'>
                 <div className='back-wrapper'>
                     <img className='back-icon' src='/src/assets/svg/back-arrow.svg' alt='go-back' />
                 </div>
