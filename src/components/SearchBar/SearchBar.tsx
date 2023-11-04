@@ -10,12 +10,12 @@ const SearchBar = () => {
 
             <div className='controls-wrapper'>
                 <div className='sort-icon-wrapper'>
-                    <img className='sort-icon' src='/src/assets/svg/sort2.svg' alt='sort' />
-                    <div className='control-label'>ordina</div>
+                    <img className='sort-icon' src='/src/assets/svg/sort.svg' alt='sort' />
+                    <div className='control-label'>sort</div>
                 </div>
                 <div className='filters-icon-wrapper'>
-                    <img className='filters-icon' src='/src/assets/svg/filters2.svg' alt='filters' />
-                    <div className='control-label'>filtra</div>
+                    <img className='filters-icon' src='/src/assets/svg/filter2.svg' alt='filter' />
+                    <div className='control-label'>filter</div>
                 </div>
             </div>
         </div>
