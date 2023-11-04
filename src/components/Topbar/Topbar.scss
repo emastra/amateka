@@ -26,10 +26,12 @@ header#topbar {
         width: 48px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        left: 9px;
 
-        img.hamburger {
-            cursor: pointer;
-        }
+        // img.hamburger {
+        // }
     }
 }
