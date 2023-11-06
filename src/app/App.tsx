@@ -3,8 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 // improve SEO --> https://synodus.com/blog/web-development/single-page-application-seo/
 
 import MainLayout from '../components/MainLayout/MainLayout';
-import StoryLayout from '../components/StoryLayout/StoryLayout';
 import IntroLayout from '../components/IntroLayout/IntroLayout';
+import StoryLayout from '../components/StoryLayout/StoryLayout';
+import ArticleLayout from '../components/ArticleLayout/ArticleLayout';
 
 import Home from '../pages/Home';
 import StoryIntro from '../pages/StoryIntro';
@@ -12,6 +13,7 @@ import StoryEvents from '../pages/StoryEvents';
 import StoryYears from '../pages/StoryYears/StoryYears';
 import StoryDecades from '../pages/StoryDecades/StoryDecades';
 import StoryConcepts from '../pages/StoryConcepts/StoryConcepts';
+import Article from '../pages/Article/Article';
 import NotFound from '../pages/NotFound';
 
 function App() {
@@ -29,6 +31,9 @@ function App() {
                     <Route path='/story/:id/years' element={<StoryYears />}></Route>
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
                     <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
+                </Route>
+                <Route element={<ArticleLayout />}>
+                    <Route path='/story/:id/article/:articleId' element={<Article />} />
                 </Route>
 
                 <Route path='*' element={<NotFound />} />
