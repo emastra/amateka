@@ -5,12 +5,14 @@ const StoryBar = () => {
     return (
         <>
             <div id='storybar'>
-                <div className='time-menu-wrapper'>
-                    <img className='time-menu-icon' src='/src/assets/svg/time-menu.svg' alt='time-menu' />
+                <div className='back-wrapper'>
+                    <img className='back-icon' src='/src/assets/svg/back-arrow.svg' alt='go-back' />
                 </div>
-                {/* <div className='time-slider'>
-                    <input type='range' id='myRange' className='slider' min='1945' max='2023' value='1981' />
-                </div> */}
+
+                <div className='story-title-wrapper'>
+                    <div className='story-title'>Lorem ipsum title</div>
+                </div>
+
                 <div className='more-wrapper'>
                     <img className='more-icon' src='/src/assets/svg/more-icon.svg' alt='more-options' />
                 </div>

@@ -14,10 +14,12 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1; // 1.6, most browsers default is 1.2
-    background-color: var(--color-primary-2);
+    font-family: var(--font-family-paragraph);
+    font-size: var(--font-size-p-main);
     color: var(--color-neutral-4);
+    line-height: 1; // 1.6, most browsers default is 1.2
+
+    background-color: var(--color-primary-2);
 }
 
 a {
