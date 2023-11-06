@@ -4,11 +4,12 @@ div#backbar {
     align-items: center;
 
     position: fixed;
-    transition: top 0.5s ease;
+    top: 0;
     width: 100%;
     height: 56px;
-    transition: background-color 0.5s ease;
-    transition: padding 0.5s ease;
+    padding: 4px 16px;
+    background-color: var(--color-primary-0);
+    box-shadow: var(--shadow-down);
 
     .back-wrapper {
         height: 48px;
@@ -18,8 +19,7 @@ div#backbar {
         justify-content: center;
         cursor: pointer;
         position: relative;
-        transition: left 0.5s ease;
-        transition: background-color 0.5s ease;
+        left: -15px;
     }
 
     .interaction-wrapper {
@@ -27,7 +27,7 @@ div#backbar {
         align-items: center;
         justify-content: flex-end;
         position: relative;
-        transition: left 0.5s ease;
+        left: 14px;
 
         .share-icon-wrapper {
             display: inline-block;
@@ -54,52 +54,6 @@ div#backbar {
             .favorite-icon {
                 margin-top: 14px;
             }
-        }
-    }
-}
-
-div#backbar.solid-variant {
-    top: 0;
-    background-color: var(--color-primary-0);
-    box-shadow: var(--shadow-down);
-    padding: 4px 16px;
-
-    .back-wrapper {
-        left: -15px;
-    }
-
-    .interaction-wrapper {
-        left: 14px;
-    }
-}
-
-div#backbar.transparent-variant {
-    top: 4px;
-    background-color: transparent;
-    box-shadow: unset;
-    padding: 4px 8px;
-
-    .back-wrapper {
-        left: unset;
-        border-radius: 50%;
-        background-color: var(--color-white-0);
-        filter: var(--shadow-border-filter);
-    }
-
-    .interaction-wrapper {
-        left: unset;
-
-        .share-icon-wrapper {
-            border-radius: 50%;
-            background-color: var(--color-white-0);
-            filter: var(--shadow-border-filter);
-        }
-
-        .favorite-icon-wrapper {
-            border-radius: 50%;
-            background-color: var(--color-white-0);
-            margin-left: 9px;
-            filter: var(--shadow-border-filter);
         }
     }
 }
