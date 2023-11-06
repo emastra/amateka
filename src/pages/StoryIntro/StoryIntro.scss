@@ -1,12 +1,10 @@
 main#story-intro {
-    // margin-top: 64px;
+    margin-top: 56px;
     background-color: var(--color-primary-0);
-    height: calc(100vh - 64px);
 
     img.intro-top-image {
-        height: 279px; // in figma is 222px
+        height: 279px; // in figma is 292px
         width: 100%;
-        // border-radius: 12px 12px 0 0;
     }
 
     div.intro-info-wrapper {
