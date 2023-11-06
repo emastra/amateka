@@ -1,0 +1,15 @@
+// same as storybottombar
+div#articlebottombar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    height: 64px;
+    background-color: var(--color-primary-0);
+    padding: 4px 16px;
+    box-shadow: var(--shadow-up);
+}
