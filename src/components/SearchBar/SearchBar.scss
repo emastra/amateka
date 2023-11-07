@@ -6,6 +6,7 @@ div#searchbar {
     position: fixed;
     top: 64px;
     width: 100%;
+    z-index: 999;
 
     height: 56px;
     background-color: var(--color-primary-0);
