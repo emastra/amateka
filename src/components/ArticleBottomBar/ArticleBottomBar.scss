@@ -31,7 +31,8 @@ div#articlebottombar {
             display: inline-block;
             margin-left: 8px;
             position: relative;
-            top: -2px;
+            top: -1px;
+            font-size: var(--font-size-p-mid);
         }
     }
 
@@ -48,6 +49,7 @@ div#articlebottombar {
             align-items: center;
             justify-content: center;
             margin-left: 4px;
+            cursor: pointer;
 
             .control-icon {
                 height: 28px;
