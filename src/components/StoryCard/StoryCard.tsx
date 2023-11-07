@@ -5,11 +5,14 @@ const StoryCard = () => {
     return (
         <article className='story-card'>
             <Link to={`/story/${'1'}/intro`}>
-                <img
-                    className='card-top-image'
-                    src='/src/assets/images/placeholder_image.jpg'
-                    alt='placeholder_image'
-                />
+                <div className='card-image-wrapper'>
+                    <img
+                        className='card-top-image'
+                        src='/src/assets/images/berlin-wall-fall-people.webp'
+                        alt='placeholder_image'
+                    />
+                </div>
+
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
                         <h2>Storia Contemporanea</h2>
