@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     // 1rem equals the font size of the html element
     font-size: 16px;
@@ -7,7 +14,7 @@ body {
     font-family: var(--font-family-paragraph);
     font-size: var(--font-size-p-main);
     color: var(--color-neutral-4);
-    line-height: 1; // 1.6, most browsers default is 1.2
+    line-height: 1; // AI suggested 1.6, most browsers default is 1.2
     background-color: var(--color-primary-2);
 }
 

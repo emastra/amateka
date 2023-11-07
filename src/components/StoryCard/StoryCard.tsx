@@ -1,21 +1,17 @@
 import { Link } from 'react-router-dom';
 import './StoryCard.scss';
 
-const StoryCard = () => {
+const StoryCard = ({ imgurl }) => {
     return (
         <article className='story-card'>
             <Link to={`/story/${'1'}/intro`}>
                 <div className='card-image-wrapper'>
-                    <img
-                        className='card-top-image'
-                        src='/src/assets/images/berlin-wall-fall-people.webp'
-                        alt='placeholder_image'
-                    />
+                    <img className='card-top-image' src={imgurl} alt='story-image' />
                 </div>
 
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
-                        <h2>Storia Contemporanea</h2>
+                        <h2>Storia Contemporanea aorem ipsum</h2>
                     </div>
 
                     <div className='intro-text-wrapper'>

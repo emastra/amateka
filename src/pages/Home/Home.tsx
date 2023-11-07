@@ -6,9 +6,10 @@ const Home = () => {
     return (
         <>
             <main id='home'>
-                <StoryCard></StoryCard>
-                <StoryCard></StoryCard>
-                <StoryCard></StoryCard>
+                <StoryCard imgurl='/src/assets/images/berlin-wall-fall-people.webp'></StoryCard>
+                <StoryCard imgurl='/src/assets/images/martin-luther-king.jpg'></StoryCard>
+                <StoryCard imgurl='/src/assets/images/ann-ann.jpg'></StoryCard>
+                <StoryCard imgurl='/src/assets/images/placeholder_image.jpg'></StoryCard>
             </main>
             {/* <button className='create-btn'>
                 <img className='plus-icon' src='/src/assets/svg/plus.svg' alt='plus' />

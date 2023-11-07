@@ -5,14 +5,14 @@ h2,
 h3 {
     font-family: var(--font-family-header); // $font-family-heading
     color: var(--color-neutral-4);
-    // margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 p {
     font-family: var(--font-family-paragraph);
-    font-size: var(--font-size-p-main); //!!!!!!!!!!!!!!
-    // line-height: $line-height-medium;
+    font-size: var(--font-size-p-main);
     color: var(--color-neutral-4);
+    line-height: 1.4;
 }
 
 a {
