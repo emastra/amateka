@@ -14,7 +14,7 @@ const StoryBar = () => {
                 </div>
 
                 <div className='more-wrapper'>
-                    <img className='more-icon' src='/src/assets/svg/more-icon.svg' alt='more-options' />
+                    <img className='more-icon' src='/src/assets/svg/more.svg' alt='more-options' />
                 </div>
             </div>
         </>

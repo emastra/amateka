@@ -12,4 +12,46 @@ div#articlebottombar {
     background-color: var(--color-primary-0);
     padding: 4px 16px;
     box-shadow: var(--shadow-up);
+
+    .contents-button-wrapper {
+        height: 48px;
+        width: auto;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        left: -16px;
+
+        .contents-icon {
+            display: inline-block;
+        }
+
+        .contents-label {
+            display: inline-block;
+            margin-left: 8px;
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    .controls-wrapper {
+        height: 48px;
+        width: auto;
+        position: relative;
+        right: -12px;
+
+        .control-wrap {
+            height: 48px;
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 4px;
+
+            .control-icon {
+                height: 28px;
+            }
+        }
+    }
 }

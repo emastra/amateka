@@ -36,8 +36,13 @@ div#storybar {
     }
 
     .more-wrapper {
+        height: 48px;
+        width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
-        left: 14px;
+        left: 16px;
         cursor: pointer;
     }
 }
