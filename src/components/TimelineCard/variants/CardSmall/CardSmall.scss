@@ -1,19 +1,20 @@
-@use '../../../../styles/variables' as *;
-
-article#card-small:not(:last-child) {
-    margin-bottom: 18px;
-}
-article#card-small:last-child {
-    margin-bottom: 64px; // height of storybottombar
-}
-
 article#card-small {
     border-radius: 12px;
     background-color: var(--color-primary-0);
-    box-shadow: 4px 4px 2px rgb(35, 45, 46, 25%);
-    height: 112px; // piu piccola??
+    box-shadow: var(--shadow-border);
+
+    // height: 112px;
+
+    // padding-bottom-trick part1
+    width: 100%;
+    // max-width: 624px;
+    // overflow: hidden; // TODO: serve?
+
     position: relative; // just to contain card-date-wrapper which is position absolute
-    // z-index: -1; // -999 ? anche in CardMedium
+
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
 
     a.anchor-wrapper {
         height: 100%;
@@ -24,6 +25,17 @@ article#card-small {
             flex-basis: auto;
             height: 100%;
             width: 40%;
+
+            // padding-bottom-trick part2
+            height: 0;
+            padding-bottom: 36%; // aspect ratio
+            position: relative;
+            overflow: hidden;
+
+            // give color to padding
+            background-clip: padding-box;
+            background-color: lightgreen;
+            border-radius: 12px 0 0 12px;
 
             div.card-date {
                 font-size: 14px;
@@ -38,8 +50,14 @@ article#card-small {
 
             img.card-image {
                 border-radius: 12px 0 0 12px;
-                height: 100%;
+                // height: 100%;
+                // width: 100%;
+
+                // padding-bottom-trick part3
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
             }
 
             div.colored-rectangle {
@@ -53,20 +71,27 @@ article#card-small {
         div.card-right-wrap {
             flex-basis: auto;
             width: 60%;
-            padding: 8px;
+            padding: 12px 8px;
 
             display: flex;
             flex-direction: column;
 
             .card-title-wrap {
                 flex-basis: auto;
-                height: 75%;
                 margin-bottom: 0.5rem;
+                font-size: var(--font-size-h-small);
+
+                max-height: 4.4em; // 1.1 * 4
+                width: 100%;
+                overflow-y: hidden;
 
                 h2 {
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 1.2;
+                    font-size: var(--font-size-h-small);
+                    font-weight: var(--font-weight-semibold);
+
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
                 }
             }
 

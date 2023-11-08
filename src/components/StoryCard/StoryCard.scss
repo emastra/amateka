@@ -1,41 +1,32 @@
-article.story-card:not(:last-child) {
-    margin-bottom: 24px;
-}
-
 article.story-card {
-    // border: 1px solid #e0e0e0;
     border-radius: 12px;
     background-color: var(--color-primary-0);
     // box-shadow: var(--shadow-border); // filter !!!!
     box-shadow: var(--shadow-border);
 
+    // padding-bottom-trick part1
     width: 100%;
     max-width: 624px;
     overflow: hidden; // TODO: serve?
     // margin: 16px;
 
-    .card-image-wrapper {
-        // width: 100%;
-        // // height: 150px;
-        // // object-fit: cover;
-        // overflow: hidden;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
 
+    .card-image-wrapper {
+        // padding-bottom-trick part2
         height: 0;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio for the image */
+        padding-bottom: 56.25%; // 16:9 aspect ratio for the image
         position: relative;
         overflow: hidden;
 
         img.card-top-image {
             border-radius: 12px 12px 0 0;
-            // // width: 100%;
-            // max-width: 100%;
-            // height: auto;
-            // // max-height: 100px;
 
+            // padding-bottom-trick part3
             width: 100%;
             height: 100%;
-            // max-width: 100%;
-            // height: auto;
             object-fit: cover;
             position: absolute;
         }
