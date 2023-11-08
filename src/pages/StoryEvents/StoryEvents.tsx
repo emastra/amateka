@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
+// TODO: write types for data, different for each timelinecard variant
+
 const StoryEvents = () => {
     const { id } = useParams();
     console.log('useparams: id:', id);
