@@ -15,7 +15,7 @@ const StoryIntro = () => {
 
                 <div className='intro-info-wrapper'>
                     <div className='intro-title-wrapper'>
-                        <h2>Storia Contemporanea</h2>
+                        <h2>Storia Contemporanea lorem lorem ipsum</h2>
                     </div>
                     <div className='i-wrapper'>
                         <ol>
@@ -30,6 +30,7 @@ const StoryIntro = () => {
                         </ol>
                     </div>
                     <div className='text-wrapper'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tellus blandit.</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
                             Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
@@ -40,16 +41,11 @@ const StoryIntro = () => {
                             Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
                             nec, luctus maximus ipsum.
                         </p>
-                        {/* <p>
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
                             Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
                             nec, luctus maximus ipsum.
-                        </p> */}
-                        {/* <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p> */}
+                        </p>
                         {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
                             Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
@@ -66,8 +62,8 @@ const StoryIntro = () => {
                             nec, luctus maximus ipsum.
                         </p> */}
                     </div>
+                    {/* controlla la 2a var dal default scelto */}
                     <div className='enter-btn-wrapper'>
-                        {/* controlla la 2a var dal default scelto */}
                         <Link to={`/story/${'1'}/${'years'}`} className='enter-btn'>
                             Entra
                         </Link>

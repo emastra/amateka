@@ -6,8 +6,8 @@ article.story-card {
     // border: 1px solid #e0e0e0;
     border-radius: 12px;
     background-color: var(--color-primary-0);
-    // box-shadow: var(--shadow-border);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    // box-shadow: var(--shadow-border); // filter !!!!
+    box-shadow: var(--shadow-border);
 
     width: 100%;
     max-width: 624px;
@@ -46,7 +46,8 @@ article.story-card {
 
         .card-title-wrapper {
             h2 {
-                font-size: 24px;
+                // font-size: 24px;
+                font-size: var(--font-size-h-main);
             }
         }
 
