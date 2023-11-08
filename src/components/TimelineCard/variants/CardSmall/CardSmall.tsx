@@ -25,7 +25,7 @@ const CardSmall = ({ data: { date, image, title, tags } }) => {
                         <h2>{title}</h2>
                     </div>
 
-                    <div className='tags-wrap'>
+                    <div className='tags-wrapper'>
                         {tags.map((tag) => (
                             <div key={tag} className='tag-box'>
                                 {tag}

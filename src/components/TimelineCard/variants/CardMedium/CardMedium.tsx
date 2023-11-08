@@ -5,10 +5,15 @@ const CardMedium = ({ data: { date, image, title, description, tags } }) => {
     return (
         <article id='card-medium'>
             <Link to={`/story/${'1'}`} className='anchor-wrapper'>
-                <div className='card-date-wrapper'>
+                {/* <div className='card-date-wrapper'>
                     <div className='card-date'>{date}</div>
+                </div> */}
+                <div className='card-image-wrapper'>
+                    <div className='card-date'>{date}</div>
+                    {/* <img className='card-top-image' src={image} alt='placeholder_image' /> */}
+                    {!!image ? <img className='card-top-image' src={image} alt='placeholder_image' /> : null}
                 </div>
-                <img className='card-top-image' src={image} alt='placeholder_image' />
+
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
                         <h2>{title}</h2>

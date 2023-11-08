@@ -10,7 +10,7 @@ article#card-small {
     // max-width: 624px;
     // overflow: hidden; // TODO: serve?
 
-    position: relative; // just to contain card-date-wrapper which is position absolute
+    // position: relative; // just to contain card-date-wrapper which is position absolute // no need we have it at part2 down
 
     &:not(:last-child) {
         margin-bottom: 18px;
@@ -98,18 +98,22 @@ article#card-small {
                 }
             }
 
-            .tags-wrap {
+            .tags-wrapper {
                 flex-basis: auto;
-                // height: 25%;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
 
                 .tag-box {
                     display: inline-block;
-                    background-color: #e3e3e3;
-                    font-size: 14px;
-                    padding: 0.4rem 0.8rem;
-                    border-radius: 2rem;
+                    padding: 6px 8px;
+                    color: var(--color-neutral-3);
+                    // background-color: var(--color-neutral-0);
+                    border: 1px solid var(--color-neutral-1);
+                    border-radius: 16px;
                     margin-right: 8px;
-                    color: var(--color-neutral-4);
+                    font-size: var(--font-size-p-sm);
+                    line-height: 0.8;
                 }
             }
         }
