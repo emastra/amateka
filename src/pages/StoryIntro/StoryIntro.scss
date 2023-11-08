@@ -2,9 +2,18 @@ main#story-intro {
     margin-top: 56px;
     background-color: var(--color-primary-0);
 
-    img.intro-top-image {
-        height: 279px; // in figma is 292px
-        width: 100%;
+    .intro-image-wrapper {
+        height: 0;
+        padding-bottom: 75%; /* 4:3 aspect ratio for the image */
+        position: relative;
+        overflow: hidden;
+
+        img.intro-top-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
     }
 
     div.intro-info-wrapper {
