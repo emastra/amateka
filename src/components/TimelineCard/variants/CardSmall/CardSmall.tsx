@@ -17,25 +17,21 @@ const CardSmall = ({ data: { date, image, title, tags } }) => {
             <Link to={`/test/${'1'}`} className='anchor-wrapper'>
                 <div className='card-left-wrap'>
                     <div className='card-date'>{date}</div>
-                    {!!image ? (
-                        <img className='card-image' src={image} alt='placeholder_image' />
-                    ) : (
-                        <div className='colored-rectangle'></div>
-                    )}
+                    {!!image ? <img className='card-image' src={image} alt='placeholder_image' /> : null}
                 </div>
 
                 <div className='card-right-wrap'>
                     <div className='card-title-wrap'>
-                        <h2>{title} test test test test</h2>
+                        <h2>{title}</h2>
                     </div>
 
-                    {/* <div className='tags-wrap'>
+                    <div className='tags-wrap'>
                         {tags.map((tag) => (
                             <div key={tag} className='tag-box'>
                                 {tag}
                             </div>
                         ))}
-                    </div> */}
+                    </div>
                 </div>
             </Link>
         </article>

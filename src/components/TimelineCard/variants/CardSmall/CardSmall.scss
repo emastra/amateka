@@ -38,14 +38,16 @@ article#card-small {
             border-radius: 12px 0 0 12px;
 
             div.card-date {
-                font-size: 14px;
+                font-size: var(--font-size-p-mid);
                 color: var(--color-neutral-4);
                 font-weight: var(--font-weight-bold);
                 position: absolute;
-                top: 8px;
-                left: 0;
-                background-color: rgba(255, 255, 255, 0.5);
-                padding: 4px 8px;
+                top: 10px;
+                left: 0px;
+                background-color: rgba(255, 255, 255, 1);
+                padding: 6px 8px;
+                border-radius: 0 0 4px 0;
+                z-index: 1;
             }
 
             img.card-image {
@@ -60,28 +62,29 @@ article#card-small {
                 position: absolute;
             }
 
-            div.colored-rectangle {
-                height: 100%;
-                width: 100%;
-                border-radius: 12px 0 0 12px;
-                background-color: #ee8888;
-            }
+            // div.colored-rectangle {
+            //     height: 100%;
+            //     width: 100%;
+            //     border-radius: 12px 0 0 12px;
+            //     background-color: #ee8888;
+            // }
         }
 
         div.card-right-wrap {
             flex-basis: auto;
             width: 60%;
-            padding: 12px 8px;
+            padding: 12px 8px 8px;
 
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
 
             .card-title-wrap {
                 flex-basis: auto;
                 margin-bottom: 0.5rem;
-                font-size: var(--font-size-h-small);
+                font-size: var(--font-size-h-small); // per usare em qui sotto
 
-                max-height: 4.4em; // 1.1 * 4
+                max-height: 3.3em; // 1.1 * 3
                 width: 100%;
                 overflow-y: hidden;
 
@@ -90,14 +93,14 @@ article#card-small {
                     font-weight: var(--font-weight-semibold);
 
                     display: -webkit-box;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                 }
             }
 
             .tags-wrap {
                 flex-basis: auto;
-                height: 25%;
+                // height: 25%;
 
                 .tag-box {
                     display: inline-block;
