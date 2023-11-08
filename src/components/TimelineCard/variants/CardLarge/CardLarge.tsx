@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './CardLarge.scss';
 
-const CardLarge = () => {
+const CardLarge = ({ data }) => {
     return (
         <article id='card-large'>
             <Link to={`/story/${'1'}`}>

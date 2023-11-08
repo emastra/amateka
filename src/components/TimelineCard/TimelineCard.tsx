@@ -18,8 +18,14 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ variant, data }) => {
         return <CardMedium data={data} />;
     }
 
+    if (variant === 'large') {
+        return <CardLarge data={data} />;
+    }
+
     // // return CurrentComponent ? <CurrentComponent /> : null;
     // return <CurrentComponent />;
+
+    return null;
 };
 
 export default TimelineCard;
