@@ -10,6 +10,7 @@ div#backbar {
     padding: 4px 16px;
     background-color: var(--color-primary-0);
     box-shadow: var(--shadow-down);
+    z-index: var(--z-index-bar);
 
     .back-wrapper {
         height: 48px;

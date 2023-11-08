@@ -5,7 +5,7 @@ div.menu-screen {
     // background-color: rgb(35, 16, 7, 96%);
     // https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
     background: radial-gradient(#e66465, #9198e5);
-    z-index: 800;
+    z-index: var(--z-index-menu);
     position: fixed;
     top: 0;
     right: 0;
