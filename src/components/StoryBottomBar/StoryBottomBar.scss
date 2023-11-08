@@ -11,6 +11,7 @@ div#storybottombar {
     background-color: var(--color-primary-0);
     padding: 4px 16px;
     box-shadow: var(--shadow-up);
+    z-index: var(--z-index-bar);
 
     .storybottombar-icon-wrapper {
         min-width: 72px;
