@@ -1,17 +1,12 @@
-@use '../../../../styles/variables' as *;
-
-article#card-large:not(:last-child) {
-    margin-bottom: 24px;
-}
-article#card-large:last-child {
-    margin-bottom: 64px; // height of storybottombar
-}
-
 article#card-large {
     border-radius: 12px;
     height: 70%;
     background-color: var(--color-primary-0);
     box-shadow: 4px 4px 2px rgb(35, 45, 46, 25%);
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
 
     img.card-top-image {
         height: 279px;
