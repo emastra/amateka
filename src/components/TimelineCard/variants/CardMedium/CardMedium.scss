@@ -2,7 +2,7 @@ article#card-medium {
     border-radius: 12px;
     background-color: var(--color-primary-0);
     box-shadow: var(--shadow-border);
-    position: relative; // just to contain card-date-wrapper which is position absolute
+    // position: relative; // just to contain card-date-wrapper which is position absolute. NON SERVE QUI
 
     // height: 240px; // small 112 medium 240 large 580+16
 
