@@ -6,8 +6,9 @@ const Article = () => {
     console.log('useparams: articleId:', articleId);
 
     return (
+        // story-events che fa i margini dovrebbe esse una class generale, la usano pure le varie pagine delle cards.
         <>
-            <main id='article'>article body</main>
+            <main id='story-events'>article body</main>
         </>
     );
 };

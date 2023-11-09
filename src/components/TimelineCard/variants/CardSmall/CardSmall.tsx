@@ -14,7 +14,7 @@ const CardSmall = ({ data: { date, image, title, tags } }) => {
 
     return (
         <article id='card-small'>
-            <Link to={`/test/${'1'}`} className='anchor-wrapper'>
+            <Link to={`/test/${'1'}/article/${'1'}`} className='anchor-wrapper'>
                 <div className='card-left-wrap'>
                     <div className='card-date'>{date}</div>
                     {!!image ? <img className='card-image' src={image} alt='placeholder_image' /> : null}

@@ -4,7 +4,7 @@ import './CardLarge.scss';
 const CardLarge = ({ data: { date, image, title, subtitle, description, tags } }) => {
     return (
         <article id='card-large'>
-            <Link to={`/story/${'1'}`} className='anchor-wrapper'>
+            <Link to={`/story/${'1'}/article/${'1'}`} className='anchor-wrapper'>
                 {/* TODO: non dovrei chiamarla card-image-wrapper, ma card-top-box-wrapper */}
                 {/* potrei mette lo stile reduced nell'altro comp se lo faccio */}
                 <div className={`card-image-wrapper ${!!image ? '' : 'reduced'}`}>
