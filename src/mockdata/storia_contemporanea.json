@@ -22,19 +22,42 @@
                     "subtitle": "",
                     "structure": [
                         {
-                            "text": ""
+                            "id": "1",
+                            "type": "text",
+                            "content": ""
                         },
                         {
-                            "accordion": {
-                                "title": "",
-                                "content": ""
-                            }
+                            "id": "2",
+                            "type": "accordion",
+                            "title": "",
+                            "content": ""
                         },
-                        { "text": "" },
-                        { "title-2": "" },
-                        { "text": "" },
-                        { "image": { "url": "", "caption": "" } },
-                        { "text": "" }
+                        {
+                            "id": "3",
+                            "type": "text",
+                            "content": ""
+                        },
+                        {
+                            "id": "4",
+                            "type": "title-2",
+                            "content": ""
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": ""
+                        },
+                        {
+                            "id": "6",
+                            "type": "image",
+                            "url": "",
+                            "caption": ""
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": ""
+                        }
                     ]
                 }
             }

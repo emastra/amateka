@@ -21,32 +21,19 @@ const Article = () => {
                         <div className='card-subtitle-wrapper'>
                             {true && (
                                 <div className='subtitle'>
-                                    {
-                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.'
-                                    }
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis
+                                    iaculis.
                                 </div>
                             )}
                         </div>
                     </div>
 
                     <div className='article-body-wrapper'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tellus blandit.</p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
+                            Lorem ipsum <a href=''>dolor</a> sit amet, consectetur adipiscing elit. Vestibulum quis
+                            tellus blandit.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p>
-                        {/* <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
                             Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
                             nec, luctus maximus ipsum.
@@ -60,7 +47,7 @@ const Article = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
                             Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
                             nec, luctus maximus ipsum.
-                        </p> */}
+                        </p>
                     </div>
                 </div>
             </main>
