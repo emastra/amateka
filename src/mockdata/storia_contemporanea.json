@@ -43,7 +43,7 @@
                         },
                         {
                             "id": "4",
-                            "type": "title-2",
+                            "type": "chapterTitle",
                             "content": ""
                         },
                         {
@@ -53,12 +53,32 @@
                         },
                         {
                             "id": "6",
+                            "type": "sectionTitle",
+                            "content": ""
+                        },
+                        {
+                            "id": "7",
+                            "type": "text",
+                            "content": ""
+                        },
+                        {
+                            "id": "8",
                             "type": "image",
                             "url": "",
                             "caption": ""
                         },
                         {
-                            "id": "5",
+                            "id": "9",
+                            "type": "text",
+                            "content": ""
+                        },
+                        {
+                            "id": "10",
+                            "type": "chapterTitle",
+                            "content": ""
+                        },
+                        {
+                            "id": "11",
                             "type": "text",
                             "content": ""
                         }
