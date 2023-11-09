@@ -6,11 +6,7 @@ const StoryIntro = () => {
         <>
             <main id='story-intro'>
                 <div className='intro-image-wrapper'>
-                    <img
-                        className='intro-top-image'
-                        src='/src/assets/images/placeholder_image.jpg'
-                        alt='placeholder_image'
-                    />
+                    <img className='intro-top-image' src='/src/assets/images/ann-ann.jpg' alt='placeholder_image' />
                 </div>
 
                 <div className='intro-info-wrapper'>

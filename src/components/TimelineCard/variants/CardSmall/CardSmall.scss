@@ -39,7 +39,7 @@ article#card-small {
 
             div.card-date {
                 // font-family: var(--font-family-header);
-                font-size: var(--font-size-p-main);
+                font-size: var(--font-size-p-mid);
                 color: var(--color-neutral-4);
                 font-weight: var(--font-weight-bold);
                 position: absolute;
@@ -62,19 +62,12 @@ article#card-small {
                 object-fit: cover;
                 position: absolute;
             }
-
-            // div.colored-rectangle {
-            //     height: 100%;
-            //     width: 100%;
-            //     border-radius: 12px 0 0 12px;
-            //     background-color: #ee8888;
-            // }
         }
 
         div.card-right-wrap {
             flex-basis: auto;
             width: 60%;
-            padding: 12px 8px 8px;
+            padding: 12px 12px 8px 12px;
 
             display: flex;
             flex-direction: column;

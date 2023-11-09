@@ -60,7 +60,7 @@ article#card-medium {
         }
 
         .card-info-wrapper {
-            padding: 24px 24px 16px 24px;
+            padding: 20px 24px 16px 24px;
 
             .card-title-wrapper {
                 margin-bottom: 0.5rem;
@@ -78,9 +78,9 @@ article#card-medium {
 
             // same same?
             .intro-text-wrapper {
-                margin: 24px 0 28px 0;
-                // p line-height is 1.4. 1.4 * 4 lines = 5.6em. (em si basa sulla font-size dell'el corrente).
-                max-height: 5.6em; // TODO: just height if i want fixed height.
+                margin: 16px 0 24px 0;
+                // p line-height is 1.4. 1.4 * 3 lines = 4.2em. (em si basa sulla font-size dell'el corrente).
+                max-height: 4.2em; // TODO: just height if i want fixed height.
                 width: 100%;
                 overflow-y: hidden;
 
@@ -89,7 +89,7 @@ article#card-medium {
                     height: 100%;
                     width: 100%;
                     display: -webkit-box;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                 }
             }
@@ -103,7 +103,7 @@ article#card-medium {
 
                 .tag-box {
                     display: inline-block;
-                    padding: 6px 8px;
+                    padding: 8px 10px;
                     font-size: var(--font-size-p-sm);
                     color: var(--color-neutral-3);
                     border: 1px solid var(--color-neutral-1);
