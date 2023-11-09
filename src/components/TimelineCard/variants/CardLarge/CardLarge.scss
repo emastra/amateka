@@ -27,6 +27,10 @@ article#card-large {
             background-color: lightgreen;
             border-radius: 12px 12px 0 0;
 
+            &.reduced {
+                padding-bottom: 17%;
+            }
+
             // same same? ma piu grnade di small
             div.card-date {
                 font-family: var(--font-family-header);
@@ -72,6 +76,28 @@ article#card-large {
                 }
             }
 
+            .card-subtitle-wrapper {
+                width: 100%;
+                // max-height: 2.8em; // 1.4 * 2
+                // overflow-y: hidden;
+                // se voglio hide the overflow, la linea sotto scompare. Dovrei aggiunegre un div fuori da .card-subtitle-wrapper
+
+                .subtitle {
+                    font-size: var(--font-size-p-main);
+                    color: var(--color-neutral-2);
+                    line-height: var(--line-height-p);
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 30%;
+                        height: 2px;
+                        background: var(--color-neutral-1);
+                        margin: 12px 0 24px 0;
+                    }
+                }
+            }
+
             // same same?
             .intro-text-wrapper {
                 margin: 16px 0 24px 0;
@@ -80,6 +106,10 @@ article#card-large {
                 width: 100%;
                 overflow-y: hidden;
 
+                &.extended {
+                    max-height: 8.4em;
+                }
+
                 p.intro-text {
                     color: var(--color-neutral-3);
                     height: 100%;
@@ -87,6 +117,10 @@ article#card-large {
                     display: -webkit-box;
                     -webkit-line-clamp: 4;
                     -webkit-box-orient: vertical;
+
+                    &.extended {
+                        -webkit-line-clamp: 6;
+                    }
                 }
             }
 

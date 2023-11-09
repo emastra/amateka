@@ -7,7 +7,7 @@ const CardMedium = ({ data: { date, image, title, description, tags } }) => {
             <Link to={`/story/${'1'}`} className='anchor-wrapper'>
                 <div className='card-image-wrapper'>
                     <div className='card-date'>{date}</div>
-                    {!!image ? <img className='card-top-image' src={image} alt='placeholder_image' /> : null}
+                    {image ? <img className='card-top-image' src={image} alt='placeholder_image' /> : null}
                 </div>
 
                 <div className='card-info-wrapper'>
