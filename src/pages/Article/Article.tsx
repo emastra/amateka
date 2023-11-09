@@ -6,6 +6,7 @@ import Text from './components/Text';
 import Accordion from './components/Accordion';
 import ChapterTitle from './components/ChapterTitle/ChapterTitle';
 import Image from './components/Image';
+import SectionTitle from './components/SectionTitle/SectionTitle';
 
 const Article = () => {
     const { articleId } = useParams();
@@ -52,6 +53,9 @@ const Article = () => {
                         <ChapterTitle data={chapterTitleData} />
                         <Text data={textData} />
                         <Image data={imageData} />
+                        <Text data={textData} />
+                        <SectionTitle data={chapterTitleData} />
+                        <Text data={textData} />
                     </div>
                 </div>
             </main>
