@@ -3,10 +3,16 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import Text from './components/Text';
+import Accordion from './components/Accordion';
 
 const Article = () => {
     const { articleId } = useParams();
     console.log('useparams: articleId:', articleId);
+
+    const textData = [
+        "Lorem ipsum <a href=''>dolor</a> sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue.",
+        'Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue',
+    ];
 
     return (
         <>
@@ -31,7 +37,9 @@ const Article = () => {
                     </div>
 
                     <div className='article-body-wrapper'>
-                        <Text />
+                        <Text data={textData} />
+                        <Accordion items={[{ title: 'quick facts', content: 'test content' }]} />
+                        <Text data={textData} />
                     </div>
                 </div>
             </main>
