@@ -2,6 +2,8 @@ import './Article.scss';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+import Text from './components/Text';
+
 const Article = () => {
     const { articleId } = useParams();
     console.log('useparams: articleId:', articleId);
@@ -29,25 +31,7 @@ const Article = () => {
                     </div>
 
                     <div className='article-body-wrapper'>
-                        <p>
-                            Lorem ipsum <a href=''>dolor</a> sit amet, consectetur adipiscing elit. Vestibulum quis
-                            tellus blandit.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p>
+                        <Text />
                     </div>
                 </div>
             </main>
