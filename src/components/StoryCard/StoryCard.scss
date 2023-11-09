@@ -43,7 +43,7 @@ article.story-card {
         }
 
         .intro-text-wrapper {
-            margin: 24px 0 28px 0;
+            margin: 20px 0 24px 0;
             // p line-height is 1.4. 1.4 * 4 lines = 5.6em. (em si basa sulla font-size dell'el corrente).
             max-height: 5.6em; // TODO: just height if i want fixed height.
             width: 100%;

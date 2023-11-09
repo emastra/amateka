@@ -19,31 +19,32 @@ article#card-medium {
         height: 100%;
         width: 100%;
 
-        // uguale agli altri, ma piu grande?
-        div.card-date {
-            font-size: var(--font-size-p-mid);
-            color: var(--color-neutral-4);
-            font-weight: var(--font-weight-bold);
-            position: absolute;
-            top: 10px;
-            left: 0px;
-            background-color: rgba(255, 255, 255, 1);
-            padding: 6px 8px;
-            border-radius: 0 0 4px 0;
-            z-index: 1;
-        }
-
         div.card-image-wrapper {
             // padding-bottom-trick part2
             height: 0;
-            padding-bottom: 56.25%; // 16:9 aspect ratio for the image
+            padding-bottom: 34%; // aspect ratio for the image
             position: relative;
-            overflow: hidden;
+            // overflow: hidden; // TODO: serve? se voglio la card-date to come out its parent this must be commented
 
             // give color to padding
             background-clip: padding-box;
             background-color: lightgreen;
-            border-radius: 12px 0 0 12px;
+            border-radius: 12px 12px 0 0;
+
+            // same same? ma piu grnade di small
+            div.card-date {
+                font-family: var(--font-family-header);
+                font-size: var(--font-size-h-main);
+                color: var(--color-neutral-4);
+                font-weight: var(--font-weight-bold);
+                position: absolute;
+                top: 12px;
+                left: -4px;
+                background-color: rgba(255, 255, 255, 90%);
+                padding: 6px 24px;
+                border-radius: 4px 0 0 4px;
+                z-index: 1;
+            }
 
             img.card-top-image {
                 border-radius: 12px 12px 0 0;
@@ -59,35 +60,58 @@ article#card-medium {
         }
 
         .card-info-wrapper {
-            padding: 16px 12px;
+            padding: 24px 24px 16px 24px;
 
-            // .card-title-wrapper {
-            //     h2 {
-            //         font-size: 24px;
-            //     }
-            // }
+            .card-title-wrapper {
+                margin-bottom: 0.5rem;
+                font-size: var(--font-size-h-main); // per usare em qui sotto
+                line-height: var(--line-height-h);
 
-            // .intro-text-wrapper {
-            //     margin: 16px 0;
-            //     height: 4.4rem;
-            //     // text-overflow: ellipsis;
+                max-height: 2.2em; // 1.1 * 2
+                width: 100%;
+                overflow-y: hidden;
 
-            //     p {
-            //         color: #3f4d4d;
-            //         font-size: 1rem;
-            //         line-height: 1.1;
-            //     }
-            // }
+                h2 {
+                    font-size: var(--font-size-h-main);
+                }
+            }
 
-            // .tag-box {
-            //     display: inline-block;
-            //     background-color: #e3e3e3;
-            //     font-size: 14px;
-            //     padding: 0.5rem 1rem;
-            //     border-radius: 2rem;
-            //     margin-right: 8px;
-            //     color: var(--color-neutral-4);
-            // }
+            // same same?
+            .intro-text-wrapper {
+                margin: 24px 0 28px 0;
+                // p line-height is 1.4. 1.4 * 4 lines = 5.6em. (em si basa sulla font-size dell'el corrente).
+                max-height: 5.6em; // TODO: just height if i want fixed height.
+                width: 100%;
+                overflow-y: hidden;
+
+                p.intro-text {
+                    color: var(--color-neutral-3);
+                    height: 100%;
+                    width: 100%;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                }
+            }
+
+            // same everywhere probably
+            .tags-wrapper {
+                flex-basis: auto;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+
+                .tag-box {
+                    display: inline-block;
+                    padding: 6px 8px;
+                    font-size: var(--font-size-p-sm);
+                    color: var(--color-neutral-3);
+                    border: 1px solid var(--color-neutral-1);
+                    border-radius: 16px;
+                    margin-right: 8px;
+                    line-height: 0.8;
+                }
+            }
         }
     }
 }
