@@ -6,7 +6,7 @@ const ChapterTitle = ({ data }) => {
     return (
         <>
             <div className='chapter-title-container'>
-                <div className='chapter-title'>{data.content}</div>
+                <div className='chapter-title'>{data}</div>
             </div>
         </>
     );

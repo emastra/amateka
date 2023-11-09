@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Text from './components/Text';
 import Accordion from './components/Accordion';
 import ChapterTitle from './components/ChapterTitle/ChapterTitle';
+import Image from './components/Image';
 
 const Article = () => {
     const { articleId } = useParams();
@@ -15,7 +16,12 @@ const Article = () => {
         'Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue',
     ];
 
-    const content = 'Un chapter title test';
+    const chapterTitleData = 'Un chapter title test';
+
+    const imageData = {
+        url: '/src/assets/images/ann-ann.jpg',
+        caption: 'Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Lorem ipsum  dolor sit amet.',
+    };
 
     return (
         <>
@@ -43,8 +49,9 @@ const Article = () => {
                         <Text data={textData} />
                         <Accordion items={[{ title: 'quick facts', content: 'test content' }]} />
                         <Text data={textData} />
-                        <ChapterTitle data={{ content }} />
+                        <ChapterTitle data={chapterTitleData} />
                         <Text data={textData} />
+                        <Image data={imageData} />
                     </div>
                 </div>
             </main>
