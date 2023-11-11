@@ -100,11 +100,14 @@
         "concepts": [
             {
                 "id": "c1",
-                "image": "",
+                "image": "/src/assets/images/ann-ann.jpg",
                 "title": "The Shadow of War and the Dawn of Peace",
-                "subtitle": "test test",
-                "introText": "to be written",
-                "tags": [{}],
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "introText": "Aliquam pretium scelerisque mauris vel condimentum. Mauris varius, arcu sed sagittis bibendum, tellus dolor ornare elit, non dignissim lacus ante vitae nisl. Morbi pharetra pretium dui dignissim tempus. Nulla facilisi. Nullam in nibh finibus, fermentum augue aliquet, iaculis sem. Proin enim felis, ornare vel nisi et, congue dapibus nulla. Nunc hendrerit arcu gravida purus malesuada, eget sodales est volutpat. Vivamus at pharetra est, sed tristique lacus. Aenean scelerisque tempor commodo. Aenean scelerisque, metus ac commodo gravida, ante nibh fringilla odio, sed dictum libero libero vel dui. Aliquam nec blandit orci. Cras mollis, nunc sed viverra gravida, massa diam congue dui, at congue ipsum dolor sed justo. Cras nec pulvinar magna. ",
+                "tags": [
+                    { "id": "1", "name": "World" },
+                    { "id": "2", "name": "Test" }
+                ],
                 "articleContent": {
                     "images": [],
                     "structure": [

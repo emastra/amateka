@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import './CardLarge.scss';
 
-const CardLarge = ({ data: { date, image, title, subtitle, description, tags } }) => {
+const CardLarge = ({ data: { id, image, date, title, subtitle, introText, tags, articleContent } }) => {
+    console.log(id, image, title, subtitle, introText, tags, articleContent);
+
     return (
         <article id='card-large'>
-            <Link to={`/story/${'1'}/article/${'1'}`} className='anchor-wrapper'>
+            <Link to={`/story/${'1'}/article/${id}`} className='anchor-wrapper'>
                 {/* TODO: non dovrei chiamarla card-image-wrapper, ma card-top-box-wrapper */}
                 {/* potrei mette lo stile reduced nell'altro comp se lo faccio */}
                 <div className={`card-image-wrapper ${!!image ? '' : 'reduced'}`}>
@@ -23,13 +25,13 @@ const CardLarge = ({ data: { date, image, title, subtitle, description, tags } }
 
                     {/* add extended. O faccio un altro comp tipo CardLargeNoImage...hmm... */}
                     <div className='intro-text-wrapper'>
-                        <p className='intro-text'>{description} wefqf fqdfq fqwdfq fdqwdfqw fqwfqwe fqwf qfqwfq</p>
+                        <p className='intro-text'>{introText}</p>
                     </div>
 
                     <div className='tags-wrapper'>
                         {tags.map((tag) => (
-                            <div key={tag} className='tag-box'>
-                                {tag}
+                            <div key={tag.id} className='tag-box'>
+                                {tag.name}
                             </div>
                         ))}
                     </div>
