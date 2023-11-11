@@ -1,7 +1,7 @@
 import './Image.scss';
 
 const Image = ({ data }) => {
-    console.log('!!', data);
+    // console.log('!!', data);
 
     return (
         <>

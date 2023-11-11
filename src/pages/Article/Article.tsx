@@ -2,11 +2,7 @@ import './Article.scss';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import Text from './components/Text';
-import Accordion from './components/Accordion';
-import ChapterTitle from './components/ChapterTitle/ChapterTitle';
-import Image from './components/Image';
-import SectionTitle from './components/SectionTitle/SectionTitle';
+import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
 
 import jsondata from '../../mockdata/storia_contemporanea.json';
 
@@ -48,8 +44,7 @@ const Article = () => {
 
                     <div className='article-body-wrapper'>
                         {concept.articleContent.structure.map((item) => {
-                            // item.type
-                            return null;
+                            return <ArticleUnit key={item.id} type={item.type} data={item.content} />;
                         })}
 
                         {/* create ArticleItems component, same technique as TimelineCards!! */}

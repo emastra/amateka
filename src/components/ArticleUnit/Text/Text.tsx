@@ -3,11 +3,13 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Text = ({ data }) => {
+    const paragraphs = data.split('\n');
+
     return (
         <>
             <div className='text-container'>
-                {data.map((paragraphContent) => {
-                    return <p>{paragraphContent}</p>;
+                {paragraphs.map((paragraph) => {
+                    return <p>{paragraph}</p>;
                 })}
             </div>
         </>

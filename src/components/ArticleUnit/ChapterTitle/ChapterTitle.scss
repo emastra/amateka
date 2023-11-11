@@ -1,8 +1,8 @@
 .chapter-title-container {
     .chapter-title {
         font-family: var(--font-family-header);
-        font-size: 24px;
-        font-weight: 700;
+        font-size: var(--font-size-h-small);
+        font-weight: var(--font-weight-bold);
         margin-bottom: 24px;
     }
 }
