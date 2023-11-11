@@ -100,7 +100,7 @@
         "concepts": [
             {
                 "id": "c1",
-                "image": "/src/assets/images/ann-ann.jpg",
+                "image": "/src/assets/images/europe-city-destruction.png",
                 "title": "The Shadow of War and the Dawn of Peace",
                 "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "introText": "Aliquam pretium scelerisque mauris vel condimentum. Mauris varius, arcu sed sagittis bibendum, tellus dolor ornare elit, non dignissim lacus ante vitae nisl. Morbi pharetra pretium dui dignissim tempus. Nulla facilisi. Nullam in nibh finibus, fermentum augue aliquet, iaculis sem. Proin enim felis, ornare vel nisi et, congue dapibus nulla. Nunc hendrerit arcu gravida purus malesuada, eget sodales est volutpat. Vivamus at pharetra est, sed tristique lacus. Aenean scelerisque tempor commodo. Aenean scelerisque, metus ac commodo gravida, ante nibh fringilla odio, sed dictum libero libero vel dui. Aliquam nec blandit orci. Cras mollis, nunc sed viverra gravida, massa diam congue dui, at congue ipsum dolor sed justo. Cras nec pulvinar magna. ",
@@ -185,6 +185,264 @@
                             "id": "s15",
                             "type": "text",
                             "content": "In this landscape of destruction and rebirth, the world of 1945 was at a crossroads, facing the monumental task of rebuilding from the ruins of war while navigating the complex dynamics of a new global order. It was a time of contradictions – of mourning and hope, of division and cooperation – as the foundations were laid for the modern world we know today."
+                        },
+
+                        {
+                            "id": "s16",
+                            "type": "chapterTitle",
+                            "content": "1.2 Seeds of a new world order: The Formation of the United Nations"
+                        },
+                        {
+                            "id": "s17",
+                            "type": "text",
+                            "content": "As the world emerged from the shadow of World War II, a collective yearning for peace and stability led to the formation of an organization with an ambitious goal – to prevent such a catastrophic conflict from ever occurring again. This marked the birth of the United Nations (UN), an institution that would come to play a central role in shaping the post-war world order."
+                        },
+                        {
+                            "id": "s18",
+                            "type": "sectionTitle",
+                            "content": "The Vision of Unity"
+                        },
+                        {
+                            "id": "s19",
+                            "type": "text",
+                            "content": "The idea of the United Nations was conceived during the war as a means to build an international framework for maintaining peace. The name 'United Nations' was first coined by United States President Franklin D. Roosevelt and referred to the countries allied against the Axis powers. The UN Charter was signed on June 26, 1945, by 50 countries, laying the foundation for an organization based on principles of sovereign equality, non-interference in internal affairs, and collective security."
+                        },
+                        {
+                            "id": "s20",
+                            "type": "sectionTitle",
+                            "content": "Early Successes and Challenges"
+                        },
+                        {
+                            "id": "s21",
+                            "type": "text",
+                            "content": "The early years of the UN were marked by both optimism and challenges. One of its first major achievements was the facilitation of decolonization, overseeing the peaceful transition of many territories to self-governance. However, the UN also faced significant obstacles, primarily due to the emerging Cold War tensions between the Soviet Union and the United States. These tensions often paralyzed the UN Security Council, limiting its ability to act decisively in some conflicts."
+                        },
+                        {
+                            "id": "s22",
+                            "type": "sectionTitle",
+                            "content": "Humanitarian and Social Milestones"
+                        },
+                        {
+                            "id": "s23",
+                            "type": "text",
+                            "content": "Beyond conflict resolution, the UN quickly became a platform for addressing global social and humanitarian issues. The Universal Declaration of Human Rights, adopted in 1948, was a landmark achievement. It provided a comprehensive framework for human rights, setting standards for the treatment of individuals worldwide. This period also saw the establishment of various specialized agencies like the World Health Organization (WHO), the Food and Agriculture Organization (FAO), and the United Nations Educational, Scientific and Cultural Organization (UNESCO), each playing a critical role in addressing global challenges."
+                        },
+                        {
+                            "id": "s24",
+                            "type": "sectionTitle",
+                            "content": "The Challenge of Peacekeeping"
+                        },
+                        {
+                            "id": "s25",
+                            "type": "text",
+                            "content": "One of the most notable roles of the UN has been in peacekeeping. Initially, this involved mostly observing ceasefires and monitoring armistice agreements. Over time, the scope of peacekeeping expanded to include more complex operations involving conflict resolution, rebuilding administrative structures, and supporting elections in post-conflict zones. These operations, though sometimes fraught with difficulties and controversies, highlighted the UN's evolving role in maintaining international peace and security."
+                        },
+                        {
+                            "id": "s26",
+                            "type": "sectionTitle",
+                            "content": "A Beacon of Hope"
+                        },
+                        {
+                            "id": "s27",
+                            "type": "text",
+                            "content": "In the post-war era, the UN emerged as a beacon of hope for a world eager to avoid repeating the horrors of the past. It represented an ideal of global cooperation and governance, a forum where nations could resolve their differences through dialogue rather than conflict. The organization's existence and its early efforts in peacekeeping, humanitarian aid, and human rights advocacy laid the groundwork for a new era of international relations."
+                        },
+                        {
+                            "id": "s28",
+                            "type": "text",
+                            "content": "In summary, the formation of the United Nations was a pivotal moment in contemporary history. It represented a collective aspiration for a new world order, one rooted in principles of cooperation, human rights, and collective security. This section of the book underscores the UN's foundational role in shaping the post-war world, navigating the complex interplay of global politics while striving to uphold its ideals amid real-world challenges."
+                        },
+
+                        {
+                            "id": "s29",
+                            "type": "chapterTitle",
+                            "content": "1.3 The Iron Curtain Descends: Beginnings of the Cold War"
+                        },
+                        {
+                            "id": "s30",
+                            "type": "text",
+                            "content": "In the aftermath of World War II, a new kind of conflict began to take shape, one defined not by direct military confrontation but by ideological division, political rivalry, and a constant threat of nuclear annihilation. This period, known as the Cold War, saw the world divided into two blocs – the Western bloc led by the United States and its allies, and the Eastern bloc dominated by the Soviet Union."
+                        },
+                        {
+                            "id": "s31",
+                            "type": "sectionTitle",
+                            "content": "The Ideological Divide"
+                        },
+                        {
+                            "id": "s32",
+                            "type": "text",
+                            "content": "The roots of the Cold War lay in the stark ideological differences between the United States and the Soviet Union. The U.S. championed capitalism and liberal democracy, while the Soviet Union promoted communism and a centrally planned economy. These conflicting ideologies became the basis for a global struggle for influence."
+                        },
+                        {
+                            "id": "s33",
+                            "type": "sectionTitle",
+                            "content": "Churchill's 'Iron Curtain' Speech"
+                        },
+                        {
+                            "id": "s34",
+                            "type": "text",
+                            "content": "The term 'Iron Curtain' was popularized by British Prime Minister Winston Churchill in a 1946 speech, where he vividly described the division of Europe. He spoke of an 'iron Curtain' that had descended across the continent, separating the democratic governments of the West from the communist regimes of the East. This speech is often considered one of the first explicit acknowledgments of the Cold War divisions."
+                        },
+                        {
+                            "id": "s35",
+                            "type": "sectionTitle",
+                            "content": "The Truman Doctrine and the Marshall Plan"
+                        },
+                        {
+                            "id": "s36",
+                            "type": "text",
+                            "content": "The United States responded to the growing Soviet influence with two significant policies. The Truman Doctrine, articulated in 1947, promised American support for countries resisting communist subjugation. This policy marked a significant shift in American foreign policy towards active containment of Soviet expansion. In conjunction with this, the Marshall Plan was launched to rebuild war-torn European economies, thus preventing the spread of communism by fostering economic stability."
+                        },
+                        {
+                            "id": "s37",
+                            "type": "sectionTitle",
+                            "content": "The Berlin Crisis"
+                        },
+                        {
+                            "id": "s38",
+                            "type": "text",
+                            "content": "One of the early flashpoints of the Cold War was the Berlin Crisis of 1948-1949. Berlin, located deep within Soviet-controlled East Germany, was a symbol of Cold War tensions. The Soviet blockade of West Berlin, intended to push the Western Allies out of the city, led to the dramatic Berlin Airlift, where the Western Allies supplied the city via air for almost a year until the blockade was lifted."
+                        },
+                        {
+                            "id": "s39",
+                            "type": "sectionTitle",
+                            "content": "NATO and the Warsaw Pact"
+                        },
+                        {
+                            "id": "s40",
+                            "type": "text",
+                            "content": "The Cold War also led to the formation of military alliances. In 1949, the United States and several Western European countries formed the North Atlantic Treaty Organization (NATO), a collective defense pact. In response, the Soviet Union and its Eastern European allies established the Warsaw Pact in 1955, formalizing the military alignment of the Eastern bloc."
+                        },
+                        {
+                            "id": "s41",
+                            "type": "sectionTitle",
+                            "content": "A World Divided"
+                        },
+                        {
+                            "id": "s42",
+                            "type": "text",
+                            "content": "The Cold War reshaped the global landscape, dividing not only Europe but influencing politics, economies, and societies worldwide. It led to a series of proxy wars in Asia, Africa, and Latin America, as the superpowers vied for influence without direct confrontation. The period was marked by a constant fear of nuclear war, as both the U.S. and the Soviet Union amassed vast arsenals of nuclear weapons."
+                        },
+                        {
+                            "id": "s43",
+                            "type": "text",
+                            "content": "The early years of the Cold War set the stage for several decades of global tension. This period was characterized by a pervasive sense of uncertainty and fear, as the world grappled with the reality of living under the shadow of potential nuclear conflict. Section 1.3 of the book captures this tense atmosphere, illustrating how the ideological battle between the U.S. and the Soviet Union came to dominate global affairs and shape the post-war world."
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "c2",
+                "image": "/src/assets/images/usa-vs-ussr.png",
+                "title": "Chapter 2: The Cold War Tapestry",
+                "subtitle": "Overview of the Cold War era: Defining the Cold War, its global impact, and its significance in contemporary history.",
+                "introText": "In the aftermath of the cataclysmic Second World War, the world found itself precariously balanced on the edge of a new kind of conflict, one that would shape international relations, politics, and cultures for almost half a century. This period, known as the Cold War, was not marked by direct large-scale warfare between the major powers but by a profound and pervasive ideological, political, and military rivalry that gripped the entire globe. It was a conflict defined not by the clash of armies, but by the struggle of ideas, the competition for influence, and a race for technological and military supremacy.\nThe Cold War began in the late 1940s as the euphoria of victory against the Axis powers faded, giving way to growing tensions between the United States and the Soviet Union, the two superpowers that emerged from the war.\nIn this chapter, we will unravel the complex tapestry of the Cold War. We will examine its origins, key events, and the various dimensions through which it influenced global affairs. The chapter aims to provide a comprehensive overview of the era, exploring not just the political and military aspects, but also the cultural, social, and economic impacts of this prolonged period of global tension.",
+                "tags": [
+                    { "id": "1", "name": "World" },
+                    { "id": "2", "name": "Cold War" }
+                ],
+                "articleContent": {
+                    "images": [],
+                    "structure": [
+                        {
+                            "id": "s1",
+                            "type": "chapterTitle",
+                            "content": "2.1 Ideological Showdown: Capitalism vs. Communism"
+                        },
+                        {
+                            "id": "s2",
+                            "type": "text",
+                            "content": "At the heart of the Cold War was a profound ideological clash between capitalism, as championed by the United States, and communism, as advocated by the Soviet Union. This showdown was far more than a mere rivalry between two superpowers; it was a contest of economic and political philosophies that had far-reaching implications for the entire world."
+                        },
+                        {
+                            "id": "s3",
+                            "type": "sectionTitle",
+                            "content": "Origins of the Ideological Conflict"
+                        },
+                        {
+                            "id": "s4",
+                            "type": "text",
+                            "content": "The ideological seeds of the Cold War were sown in the contrasting outcomes of World War II for the United States and the Soviet Union. The United States emerged from the war relatively unscathed, its industrial might bolstered and its position as a global economic leader solidified. In contrast, the Soviet Union, despite suffering immense human and material losses, emerged as a major military power with a commitment to spreading its communist ideology.\nThe contrasting experiences of the two superpowers during the Great Depression also played a role. The economic turmoil of the 1930s had exposed the vulnerabilities of capitalism, leading to widespread poverty and unemployment in capitalist countries. Conversely, the Soviet Union, with its planned economy, seemed to offer an alternative model that appeared immune to such economic crises."
+                        },
+                        {
+                            "id": "s5",
+                            "type": "sectionTitle",
+                            "content": "Key Philosophies of Capitalism and Communism"
+                        },
+                        {
+                            "id": "s6",
+                            "type": "text",
+                            "content": "Capitalism, as practiced by the United States and its allies, was based on principles of private ownership, market competition, and limited government intervention in the economy. It emphasized individual freedoms and democratic governance.\nCommunism, as practiced by the Soviet Union, was based on the collective ownership of the means of production, a centrally planned economy, and a one-party state. It promised economic equality and social welfare but often at the cost of personal freedoms and political pluralism."
+                        },
+                        {
+                            "id": "s7",
+                            "type": "sectionTitle",
+                            "content": "Influence of Ideology on Global Politics and Alliances"
+                        },
+                        {
+                            "id": "s8",
+                            "type": "text",
+                            "content": "The ideological divide between the United States and the Soviet Union shaped not only their own policies but also their foreign relations. The U.S. adopted a policy of containment, aiming to prevent the spread of communism worldwide. This policy led to the formation of alliances with like-minded nations and the provision of economic and military aid to counter Soviet influence.\nThe Soviet Union, for its part, sought to expand its influence by supporting communist parties and movements around the world, often in direct opposition to American interests. This led to the establishment of communist governments in Eastern Europe and support for revolutionary movements in Asia, Africa, and Latin America.\nThe ideological conflict also manifested in international organizations such as the United Nations, where the U.S. and the Soviet Union often found themselves in opposing camps, leading to a polarization of global politics."
+                        },
+                        {
+                            "id": "s10",
+                            "type": "text",
+                            "content": "In summary, Section 2.1 explores the ideological underpinnings of the Cold War, a confrontation that was as much about economic and political beliefs as it was about military might. This clash of ideologies set the stage for the numerous conflicts and confrontations that characterized the Cold War era, deeply influencing global politics, economies, and societies."
+                        },
+                        {
+                            "id": "s11",
+                            "type": "chapterTitle",
+                            "content": "2.2 Flashpoints of Conflict: Key Events of the Cold War"
+                        },
+                        {
+                            "id": "s12",
+                            "type": "text",
+                            "content": "The Cold War, a period of geopolitical tension between the United States and the Soviet Union, was punctuated by several critical events that not only exemplified the intense rivalry between these superpowers but also had far-reaching consequences for the world. These flashpoints, occurring in different regions and contexts, showcased the multifaceted nature of the Cold War conflict."
+                        },
+                        {
+                            "id": "s13",
+                            "type": "sectionTitle",
+                            "content": "The Berlin Blockade and Airlift (1948-1949)"
+                        },
+                        {
+                            "id": "s14",
+                            "type": "text",
+                            "content": "One of the earliest confrontations of the Cold War occurred in Berlin, a city symbolically and physically divided between the Western powers and the Soviet Union. The Berlin Blockade, initiated by the Soviet Union in 1948, was an attempt to gain control over the entire city by cutting off all land and water routes to West Berlin. In response, the United States and its allies embarked on the Berlin Airlift, a remarkable effort that involved flying in food, fuel, and other essentials to sustain the isolated Western sectors. This operation, lasting almost a year, demonstrated not only the logistical capabilities of the West but also its commitment to stand against Soviet expansionism."
+                        },
+                        {
+                            "id": "s16",
+                            "type": "sectionTitle",
+                            "content": "The Korean War (1950-1953)"
+                        },
+                        {
+                            "id": "s17",
+                            "type": "text",
+                            "content": "The Korean War was a significant military conflict during the Cold War, representing the first major proxy war between the United States and the Soviet Union. It began when North Korea, supported by the Soviet Union and China, invaded South Korea, which was backed by United Nations forces predominantly from the United States. The conflict saw extensive military engagement and ended with an armistice in 1953, establishing the Korean Demilitarized Zone. The war solidified the division of Korea and exemplified the broader ideological and military struggle between the communist and capitalist blocs."
+                        },
+                        {
+                            "id": "s18",
+                            "type": "sectionTitle",
+                            "content": "The Cuban Missile Crisis (1962)"
+                        },
+                        {
+                            "id": "s19",
+                            "type": "text",
+                            "content": "Perhaps the most perilous moment of the Cold War was the Cuban Missile Crisis. It brought the world to the brink of nuclear war when the Soviet Union secretly placed nuclear missiles in Cuba, just 90 miles from the shores of the United States. The discovery of these missiles led to a tense 13-day standoff, with President John F. Kennedy and Premier Nikita Khrushchev engaged in a delicate diplomatic and military balancing act. The crisis was eventually resolved with the Soviet Union agreeing to withdraw the missiles in exchange for a U.S. commitment not to invade Cuba and the secret removal of U.S. missiles from Turkey. This event marked a turning point in the Cold War, leading to a temporary easing of tensions and the establishment of direct communication lines between Washington and Moscow."
+                        },
+                        {
+                            "id": "s20",
+                            "type": "sectionTitle",
+                            "content": "The Vietnam War (1955-1975)"
+                        },
+                        {
+                            "id": "s21",
+                            "type": "text",
+                            "content": "The Vietnam War was a protracted and controversial conflict that further exemplified the global reach of the Cold War. The war pitted the communist government of North Vietnam and its allies in the South, known as the Viet Cong, against South Vietnam and its principal ally, the United States. The war was marked by intense combat, significant civilian casualties, and widespread protests, particularly in the United States. The conflict ended with the fall of Saigon in 1975 and the reunification of Vietnam under communist rule. The Vietnam War had profound impacts on the American public, leading to a reassessment of U.S. foreign policy and leaving a deep psychological scar."
+                        },
+                        {
+                            "id": "s23",
+                            "type": "text",
+                            "content": "These key events of the Cold War were not isolated incidents but rather interconnected occurrences that reflected the broader ideological, political, and military struggle between the United States and the Soviet Union. Each event, in its own way, contributed to shaping the course of the Cold War, affecting the lives of millions and altering the course of international relations for decades to come."
                         }
                     ]
                 }

@@ -10,7 +10,7 @@ const Article = () => {
     const { articleId } = useParams();
     console.log('useparams: articleId:', articleId);
 
-    const concept = jsondata.content.concepts[0];
+    const concept = jsondata.content.concepts.filter((c) => c.id === articleId)[0];
     console.log('concept:', concept);
 
     // const textData = [
@@ -46,18 +46,6 @@ const Article = () => {
                         {concept.articleContent.structure.map((item) => {
                             return <ArticleUnit key={item.id} type={item.type} data={item.content} />;
                         })}
-
-                        {/* create ArticleItems component, same technique as TimelineCards!! */}
-
-                        {/* <Text data={textData} />
-                        <Accordion items={[{ title: 'quick facts', content: 'test content' }]} />
-                        <Text data={textData} />
-                        <ChapterTitle data={chapterTitleData} />
-                        <Text data={textData} />
-                        <Image data={imageData} />
-                        <Text data={textData} />
-                        <SectionTitle data={chapterTitleData} />
-                        <Text data={textData} /> */}
                     </div>
                 </div>
             </main>
