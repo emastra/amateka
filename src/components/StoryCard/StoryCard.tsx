@@ -11,7 +11,7 @@ const StoryCard = ({ imgurl }) => {
 
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
-                        <h2>Storia Contemporanea</h2>
+                        <h2>Contemporary World History</h2>
                     </div>
 
                     <div className='intro-text-wrapper'>

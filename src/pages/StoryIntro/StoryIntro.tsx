@@ -11,7 +11,7 @@ const StoryIntro = () => {
 
                 <div className='intro-info-wrapper'>
                     <div className='intro-title-wrapper'>
-                        <h2>Storia Contemporanea lorem lorem ipsum</h2>
+                        <h2>Contemporary World History</h2>
                     </div>
                     <div className='i-wrapper'>
                         <ol>
@@ -26,37 +26,31 @@ const StoryIntro = () => {
                         </ol>
                     </div>
                     <div className='text-wrapper'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis tellus blandit.</p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
+                            Welcome to the immersive exploration of European recent history, a captivating journey that
+                            unravels the intricacies and pivotal moments that have sculpted the continent's contemporary
+                            narrative. This interactive experience invites you to traverse the annals of time, where
+                            you'll encounter triumphs, challenges, and the ever-evolving tapestry of European
+                            civilization.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
+                            As you embark on this historical odyssey, envision the landscapes transformed by the echoes
+                            of events that reverberate across borders and through generations. Europe, with its diverse
+                            cultures, languages, and histories, has been a crucible for change, a stage where the forces
+                            of progress and tradition intertwine in a complex dance.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p>
-                        {/* <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
+                            Our narrative begins with a glance at the overarching forces that have shaped Europe in
+                            recent decades. From the geopolitical realignments of the Cold War to the collaborative
+                            aspirations of the European Union, the introduction sets the stage for a multifaceted
+                            exploration of a continent in constant motion.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
+                            Step into the shoes of the people who witnessed the fall of the Berlin Wall, the signing of
+                            pivotal treaties, and the expansion of the European Union. Engage with the spirit of the
+                            1980s, a time of winds of change that swept through the continent, and navigate the
+                            challenges and triumphs of subsequent decades.
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula at elit quis iaculis.
-                            Phasellus ullamcorper risus et pellentesque dignissim. Sed leo orci, ullamcorper et dolor
-                            nec, luctus maximus ipsum.
-                        </p> */}
                     </div>
                     {/* controlla la 2a var dal default scelto */}
                     <div className='enter-btn-wrapper'>

@@ -6,8 +6,8 @@
     "tags": [""],
     "content": {
         "intro": {
-            "info": [""],
-            "text": ""
+            "info": ["test info 1", "test info 2"],
+            "text": "Welcome to the immersive exploration of European recent history, a captivating journey that unravels the intricacies and pivotal moments that have sculpted the continent's contemporary narrative. This interactive experience invites you to traverse the annals of time, where you'll encounter triumphs, challenges, and the ever-evolving tapestry of European civilization.\nAs you embark on this historical odyssey, envision the landscapes transformed by the echoes of events that reverberate across borders and through generations. Europe, with its diverse cultures, languages, and histories, has been a crucible for change, a stage where the forces of progress and tradition intertwine in a complex dance."
         },
         "events": [
             {
@@ -86,8 +86,106 @@
                 }
             }
         ],
-        "years": [],
+        "years": [
+            {
+                "id": "1",
+                "date": "1980",
+                "image": "",
+                "title": "The Rise of Solidarity in Poland",
+                "intro": "Witness the birth of the Solidarity movement, a pivotal moment in Polish history that ignited resistance against communist rule, ultimately shaping the political landscape of Eastern Europe.",
+                "tags": ["test1", "test2"]
+            }
+        ],
         "decades": [],
-        "concepts": []
+        "concepts": [
+            {
+                "id": "c1",
+                "image": "",
+                "title": "The Shadow of War and the Dawn of Peace",
+                "subtitle": "test test",
+                "introText": "to be written",
+                "tags": [{}],
+                "articleContent": {
+                    "images": [],
+                    "structure": [
+                        {
+                            "id": "s1",
+                            "type": "chapterTitle",
+                            "content": "1.1 The World After 1945: A Landscape of Ruins and Rebirth"
+                        },
+                        {
+                            "id": "2",
+                            "type": "text",
+                            "content": "As the smoke of World War II cleared, the world in 1945 presented a tableau of devastation and hope, a paradoxical scene where the ruins of old met the seeds of a new era. Europe lay in shreds, its cities reduced to rubble, its people grappling with loss on an unimaginable scale. Asia, too, bore the scars of war, with Japan facing the aftermath of nuclear devastation. Yet, amid this desolation, a collective resolve to rebuild and prevent future conflicts began to take shape, marking the beginning of a significant transformation in global politics, society, and ideology."
+                        },
+                        {
+                            "id": "3",
+                            "type": "sectionTitle",
+                            "content": "The Devastation"
+                        },
+                        {
+                            "id": "3",
+                            "type": "text",
+                            "content": "Europe's landscape in the immediate post-war years was a stark testament to the war's ferocity. Cities like Berlin, Warsaw, and London had been heavily bombed, leaving vast swathes of destruction. The economic structures of entire nations were disrupted, leading to widespread poverty and famine. In Asia, the Japanese cities of Hiroshima and Nagasaki emerged as symbols of the war's new, terrifying potential for destruction with the advent of atomic weapons."
+                        },
+                        {
+                            "id": "4",
+                            "type": "sectionTitle",
+                            "content": "The Human Cost"
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": "The human cost of the war was profound and far-reaching. Millions had perished, families were torn apart, and communities were displaced. The Holocaust had revealed the depths of human cruelty, leaving a permanent scar on the collective conscience of humanity. Soldiers returning home carried the psychological scars of war, many struggling to reintegrate into a peacetime society."
+                        },
+                        {
+                            "id": "4",
+                            "type": "sectionTitle",
+                            "content": "A New Superpower Dynamic"
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": "The post-war world also saw the emergence of the United States and the Soviet Union as superpowers, setting the stage for future geopolitical dynamics. The U.S., relatively unscathed territorially, emerged as a global leader in economic and military terms. The Soviet Union, despite immense wartime losses, expanded its influence over Eastern Europe, establishing a communist bloc that stood in ideological opposition to the capitalist West."
+                        },
+                        {
+                            "id": "4",
+                            "type": "sectionTitle",
+                            "content": "Rebuilding Efforts"
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": "The task of rebuilding was colossal. The Marshall Plan, initiated by the United States, injected much-needed funds into Western Europe, aiding in its recovery and helping to stem the spread of communism. In contrast, the Soviet Union consolidated its hold over Eastern Europe, implementing socialist economic models and establishing communist governments."
+                        },
+                        {
+                            "id": "4",
+                            "type": "sectionTitle",
+                            "content": "The Birth of the UN"
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": "Amid these efforts, the United Nations was founded with the goal of preventing future conflicts and fostering international cooperation. The UN Charter, signed in 1945, embodied the hopes of a war-torn world for a peaceful future, emphasizing principles like the sovereign equality of all its members and the resolution of disputes by peaceful means."
+                        },
+                        {
+                            "id": "4",
+                            "type": "sectionTitle",
+                            "content": "The Atomic Age"
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": "The use of atomic bombs in Hiroshima and Nagasaki had ushered in the Atomic Age, bringing with it a new level of existential threat. The immediate post-war years saw the beginning of an arms race, as nations grappled with the implications of nuclear technology and its potential for both destruction and peaceful use."
+                        },
+                        {
+                            "id": "5",
+                            "type": "text",
+                            "content": "In this landscape of destruction and rebirth, the world of 1945 was at a crossroads, facing the monumental task of rebuilding from the ruins of war while navigating the complex dynamics of a new global order. It was a time of contradictions – of mourning and hope, of division and cooperation – as the foundations were laid for the modern world we know today."
+                        }
+                    ]
+                }
+            }
+        ]
     }
 }
