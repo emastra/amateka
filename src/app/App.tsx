@@ -15,6 +15,7 @@ import StoryDecades from '../pages/StoryDecades/StoryDecades';
 import StoryConcepts from '../pages/StoryConcepts/StoryConcepts';
 import Article from '../pages/Article/Article';
 import NotFound from '../pages/NotFound';
+import MDEditorPage from '../pages/MDEditorPage/MDEditorPage';
 
 function App() {
     return (
@@ -36,6 +37,8 @@ function App() {
                 <Route element={<ArticleLayout />}>
                     <Route path='/story/:id/article/:articleId' element={<Article />} />
                 </Route>
+
+                <Route path='/editor' element={<MDEditorPage />} />
 
                 <Route path='*' element={<NotFound />} />
             </Routes>
