@@ -13,77 +13,23 @@
             {
                 "id": "ev-01",
                 "image": "",
-                "date": "",
-                "title": "",
-                "tags": [{}],
-                "content": {
-                    "image": "",
-                    "title": "",
-                    "subtitle": "",
-                    "structure": [
-                        {
-                            "id": "1",
-                            "type": "text",
-                            "content": [
-                                "Lorem ipsum <a href=''>dolor</a> sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue.",
-                                "Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue",
-                                "test"
-                            ]
-                        },
-                        {
-                            "id": "2",
-                            "type": "accordion",
-                            "title": "",
-                            "content": ""
-                        },
-                        {
-                            "id": "3",
-                            "type": "text",
-                            "content": ""
-                        },
-                        {
-                            "id": "4",
-                            "type": "chapterTitle",
-                            "content": ""
-                        },
-                        {
-                            "id": "5",
-                            "type": "text",
-                            "content": ""
-                        },
-                        {
-                            "id": "6",
-                            "type": "sectionTitle",
-                            "content": ""
-                        },
-                        {
-                            "id": "7",
-                            "type": "text",
-                            "content": ""
-                        },
-                        {
-                            "id": "8",
-                            "type": "image",
-                            "url": "",
-                            "caption": ""
-                        },
-                        {
-                            "id": "9",
-                            "type": "text",
-                            "content": ""
-                        },
-                        {
-                            "id": "10",
-                            "type": "chapterTitle",
-                            "content": ""
-                        },
-                        {
-                            "id": "11",
-                            "type": "text",
-                            "content": ""
-                        }
-                    ]
-                }
+                "date": "1945-01-27",
+                "title": "Liberation of Auschwitz",
+                "description": "Soviet troops liberated Auschwitz, the largest Nazi concentration and death camp, revealing the horrors of the Holocaust."
+            },
+            {
+                "id": "ev-02",
+                "image": "",
+                "date": "1945-02-04",
+                "title": "Yalta Conference",
+                "description": "Leaders of the Allied Powers (USA, UK, USSR) met in Yalta to discuss post-war reorganization."
+            },
+            {
+                "id": "ev-03",
+                "image": "",
+                "date": "1945-02-13",
+                "title": "Bombing of Dresden",
+                "description": "This controversial Allied bombing raid devastated the German city for three days, raising questions about wartime conduct and civilian casualties."
             }
         ],
         "years": [
