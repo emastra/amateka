@@ -4,7 +4,9 @@ div.menu-screen {
     height: 100%;
     // background-color: rgb(35, 16, 7, 96%);
     // https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
-    background: radial-gradient(#e66465, #9198e5);
+    // background: radial-gradient(#e66465, #9198e5);
+    background-color: var(--color-primary-0);
+
     z-index: var(--z-index-menu);
     position: fixed;
     top: 0;
@@ -30,13 +32,13 @@ div.menu-screen {
 
         li.menu-item {
             margin-bottom: 18px;
-            color: #fff;
+            // color: #fff;
         }
 
         li.menu-item a {
             font-size: 24px;
-            font-weight: 600;
-            color: #fff;
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-neutral-4);
         }
 
         ol.menu-1,

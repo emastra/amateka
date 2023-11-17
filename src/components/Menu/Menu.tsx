@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import './Menu.scss';
 
 const Menu = () => {
+    const closeMenu = () => {};
+
     return (
         <div className='menu-screen'>
             <div className='close-icon-wrapper'>

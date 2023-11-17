@@ -1,10 +1,12 @@
 import StoryCard from '../../components/StoryCard';
+import Menu from '../../components/Menu/Menu';
 
 import './Home.scss';
 
 const Home = () => {
     return (
         <>
+            {/* <Menu /> */}
             <main id='home'>
                 <StoryCard imgurl='/src/assets/images/artistic-collage-portraits.png'></StoryCard>
                 <StoryCard imgurl='/src/assets/images/ann-ann.jpg'></StoryCard>
