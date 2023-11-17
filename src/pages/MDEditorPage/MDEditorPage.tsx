@@ -1,3 +1,5 @@
+// https://mdxeditor.dev
+
 import './MDEditorPage.scss';
 import { useRef } from 'react';
 import { MDXEditor } from '@mdxeditor/editor/MDXEditor';
