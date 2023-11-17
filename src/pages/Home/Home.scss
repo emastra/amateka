@@ -12,10 +12,11 @@ button.create-btn {
     background-color: var(--color-primary-0);
     padding: 12px 22px;
     border-radius: 32px;
-    font-size: 1.1rem;
-    font-weight: 500; // !! importa pure medium!!
+    font-size: var(--font-size-p-main);
+    font-weight: var(--font-weight-regular);
     border: none;
     box-shadow: 0 2px 8px 4px rgb(35, 45, 46, 25%);
+    // box-shadow: var(--shadow-border);
 
     .plus-icon {
         margin-right: 12px;
