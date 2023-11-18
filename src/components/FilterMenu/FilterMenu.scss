@@ -1,0 +1,68 @@
+div#filtermenu {
+    // uguale menu!!
+    display: none;
+
+    height: 100%;
+    background-color: var(--color-primary-0);
+
+    z-index: var(--z-index-menu);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .bar {
+        height: 64px;
+        width: 100%;
+        padding: 8px 16px;
+        border-bottom: 1px solid var(--color-neutral-0);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .back-wrapper {
+            height: 48px;
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            left: -15px;
+            float: left;
+        }
+
+        .title {
+            float: left;
+        }
+
+        .reset-btn {
+            float: right;
+        }
+    }
+
+    // uguale a storyintro
+    .enter-btn-wrapper {
+        display: flex;
+        width: calc(100% - 48px); // minus side padding 24px * 2
+        align-items: center;
+        position: fixed;
+        bottom: 24px;
+
+        .enter-btn {
+            display: block;
+            text-align: center;
+            min-width: 12rem;
+            padding: 12px 16px;
+            background-color: var(--color-primary-1);
+            color: var(--color-neutral-4);
+            font-size: 1.5rem;
+            font-weight: var(--font-weight-semibold);
+            border-radius: 50px;
+            margin: auto;
+            box-shadow: var(--shadow-border);
+        }
+    }
+}
