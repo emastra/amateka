@@ -1,7 +1,7 @@
 div#sortmenu {
     // display: none;
 
-    height: 60%;
+    // height: 60%;
     width: 100%;
     background-color: var(--color-primary-0);
     border-radius: 8% 8% 0 0;
@@ -14,6 +14,10 @@ div#sortmenu {
 
     div.closing-handle-wrapper {
         width: 100%;
+
+        label::first-letter {
+            text-transform: capitalize;
+        }
 
         div.closing-handle {
             max-width: 18%;
@@ -33,11 +37,20 @@ div#sortmenu {
     }
 
     .sort-options-wrapper {
-        input {
-            float: right;
-            margin-right: 8px;
-            // height: 24px;
-            // width: auto;
+        div.sort-option {
+            margin-top: 1.3rem;
+
+            &:last-child {
+                margin-bottom: 3rem;
+            }
+
+            input {
+                float: right;
+                margin-right: 8px;
+                // transform: scale(1.5);
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
