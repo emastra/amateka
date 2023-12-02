@@ -1,12 +1,16 @@
 import './StoryBar.scss';
 // import { Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const StoryBar = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div id='storybar'>
-                <div className='back-wrapper'>
-                    <img className='back-icon' src='/src/assets/svg/back-arrow.svg' alt='go-back' />
+                {/* back-home? or use exit icon? check navigate usage. */}
+                <div className='back-wrapper' onClick={() => navigate('/')}>
+                    <img className='back-icon' src='/src/assets/svg/home.svg' alt='go-back' />
                 </div>
 
                 <div className='story-title-wrapper'>

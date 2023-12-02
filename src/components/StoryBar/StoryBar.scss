@@ -22,6 +22,11 @@ div#storybar {
         cursor: pointer;
         position: relative;
         left: -15px;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     .story-title-wrapper {
