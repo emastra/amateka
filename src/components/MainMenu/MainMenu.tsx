@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import './MainMenu.scss';
 
-const Menu = () => {
-    const closeMenu = () => {};
+// https://chat.openai.com/c/59c0726f-de38-4fe6-adf8-1dd9749199d3
 
+const Menu = ({ toggleMainMenu }) => {
     return (
         <div className='mainmenu-screen'>
-            <div className='close-icon-wrapper'>
+            <div className='close-icon-wrapper' onClick={toggleMainMenu}>
                 <img className='close-icon' src='/src/assets/svg/circle-x.svg' alt='close' />
                 <div style={{ clear: 'both' }}></div>
             </div>

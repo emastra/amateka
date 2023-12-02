@@ -1,16 +1,30 @@
+import './Home.scss';
+import { useOutletContext } from 'react-router-dom';
+
 import StoryCard from '../../components/StoryCard';
 import MainMenu from '../../components/MainMenu';
 import SortMenu from '../../components/SortMenu';
 import FilterMenu from '../../components/FilterMenu';
 
-import './Home.scss';
+interface MenusContextState {
+    isMainMenuOpen: boolean;
+    toggleMainMenu: () => void;
+    isSortMenuOpen: boolean;
+    toggleSortMenu: () => void;
+    isFilterMenuOpen: boolean;
+    toggleFilterMenu: () => void;
+}
 
 const Home = () => {
+    const { isMainMenuOpen, toggleMainMenu, isSortMenuOpen, toggleSortMenu, isFilterMenuOpen, toggleFilterMenu } =
+        useOutletContext<MenusContextState>();
+
     return (
         <>
-            <MainMenu />
-            <SortMenu />
-            <FilterMenu />
+            {isMainMenuOpen && <MainMenu toggleMainMenu={toggleMainMenu} />}
+            {isSortMenuOpen && <SortMenu toggleSortMenu={toggleSortMenu} />}
+            {isFilterMenuOpen && <FilterMenu toggleFilterMenu={toggleFilterMenu} />}
+
             <main id='home'>
                 <StoryCard imgurl='/src/assets/images/artistic-collage-portraits.png'></StoryCard>
                 <StoryCard imgurl='/src/assets/images/ann-ann.jpg'></StoryCard>

@@ -1,6 +1,4 @@
 div#sortmenu {
-    display: none;
-
     // height: 60%;
     width: 100%;
     background-color: var(--color-primary-0);
@@ -14,6 +12,7 @@ div#sortmenu {
 
     div.closing-handle-wrapper {
         width: 100%;
+        cursor: pointer;
 
         label::first-letter {
             text-transform: capitalize;

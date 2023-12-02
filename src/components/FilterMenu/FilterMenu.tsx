@@ -3,7 +3,7 @@ import './FilterMenu.scss';
 
 const options = ['Default', 'Option name 1', 'Option name 2', 'Option name 3', 'Option name 4', 'Option name 5'];
 
-const FilterMenu = () => {
+const FilterMenu = ({ toggleFilterMenu }) => {
     const [selectedOpt, setselectedOpt] = useState(options[0]);
 
     const handleRadioChange = (event) => {
@@ -13,7 +13,7 @@ const FilterMenu = () => {
     return (
         <div id='filtermenu'>
             <div className='bar'>
-                <div className='back-wrapper'>
+                <div className='back-wrapper' onClick={toggleFilterMenu}>
                     <img className='back-icon' src='/src/assets/svg/back-arrow.svg' alt='go-back' />
                 </div>
                 <div className='title'>Filters</div>

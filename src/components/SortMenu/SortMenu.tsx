@@ -3,7 +3,7 @@ import './SortMenu.scss';
 
 const options = ['Default', 'Option name 1', 'Option name 2', 'Option name 3', 'Option name 4', 'Option name 5'];
 
-const SortMenu = () => {
+const SortMenu = ({ toggleSortMenu }) => {
     const [selectedOpt, setselectedOpt] = useState(options[0]);
 
     const handleRadioChange = (event) => {
@@ -13,7 +13,7 @@ const SortMenu = () => {
     return (
         <div id='sortmenu'>
             <div className='closing-handle-wrapper'>
-                <div className='closing-handle'></div>
+                <div className='closing-handle' onClick={toggleSortMenu}></div>
             </div>
             <div className='secondary-menu-title'>Ordina per</div>
             <div className='sort-options-wrapper'>
