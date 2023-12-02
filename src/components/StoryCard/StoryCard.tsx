@@ -24,9 +24,6 @@ const StoryCard = ({ imgurl }) => {
                         <div className='tag-box'>A tag 1</div>
                         <div className='tag-box'>Tag tag 2</div>
                         <div className='tag-box'>Third tag</div>
-                        <div className='tag-box'>A tag 1</div>
-                        <div className='tag-box'>Tag tag 2</div>
-                        <div className='tag-box'>Third tag</div>
                     </div>
                 </div>
             </Link>
