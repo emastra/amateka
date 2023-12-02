@@ -1,11 +1,14 @@
 // import { useEffect, useState } from 'react';
 import './BackBar.scss';
+import { Link, Routes, Route, useNavigate } from 'react-router-dom';
 
 const BackBar = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div id='backbar'>
-                <div className='back-wrapper'>
+                <div className='back-wrapper' onClick={() => navigate(-1)}>
                     <img className='back-icon' src='/src/assets/svg/back-arrow.svg' alt='go-back' />
                 </div>
 
