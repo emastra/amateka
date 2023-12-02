@@ -1,4 +1,4 @@
-div.menu-screen {
+div.mainmenu-screen {
     display: none;
 
     height: 100%;
@@ -26,7 +26,7 @@ div.menu-screen {
         }
     }
 
-    nav.menu {
+    nav.mainmenu {
         text-align: center;
         margin: 128px 16px;
 
@@ -41,8 +41,8 @@ div.menu-screen {
             color: var(--color-neutral-4);
         }
 
-        ol.menu-1,
-        ol.menu-2 {
+        ol.section-1,
+        ol.section-2 {
             margin-bottom: 64px;
         }
     }

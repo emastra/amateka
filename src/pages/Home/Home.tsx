@@ -1,14 +1,14 @@
 import StoryCard from '../../components/StoryCard';
-import Menu from '../../components/Menu/Menu';
-import SortMenu from '../../components/SortMenu/SortMenu';
-import FilterMenu from '../../components/FilterMenu/FilterMenu';
+import MainMenu from '../../components/MainMenu';
+import SortMenu from '../../components/SortMenu';
+import FilterMenu from '../../components/FilterMenu';
 
 import './Home.scss';
 
 const Home = () => {
     return (
         <>
-            <Menu />
+            <MainMenu />
             <SortMenu />
             <FilterMenu />
             <main id='home'>
