@@ -10,6 +10,7 @@ import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
 import ContentMenu from '../../components/ContentMenu/ContentMenu';
 import ColorMenu from '../../components/ColorMenu/ColorMenu';
+import FontMenu from '../../components/FontMenu/FontMenu';
 
 const Article = () => {
     const { articleId } = useParams();
@@ -24,6 +25,7 @@ const Article = () => {
         <>
             {isContentMenuOpen && <ContentMenu />}
             {isColorMenuOpen && <ColorMenu />}
+            {isFontMenuOpen && <FontMenu />}
 
             <main id='article'>
                 <div className='top-image-wrapper'>

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './ColorMenu.scss';
 import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
