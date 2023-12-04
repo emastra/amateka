@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import './MainMenu.scss';
 
-// https://chat.openai.com/c/59c0726f-de38-4fe6-adf8-1dd9749199d3
-
 const Menu = ({ toggleMainMenu }) => {
     return (
         <div className='mainmenu-screen'>

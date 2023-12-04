@@ -5,6 +5,8 @@ import { Outlet } from 'react-router-dom';
 import Topbar from '../Topbar/Topbar';
 import SearchBar from '../SearchBar/SearchBar';
 
+// https://chat.openai.com/c/59c0726f-de38-4fe6-adf8-1dd9749199d3
+
 const MainLayout = () => {
     const [isMainMenuOpen, setMainMenuOpen] = useState(false);
     const [isSortMenuOpen, setSortMenuOpen] = useState(false);
