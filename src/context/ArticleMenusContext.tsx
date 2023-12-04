@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 
-interface IArticleMenusContext {
+export interface IArticleMenusContext {
     isContentMenuOpen: boolean;
     toggleContentMenu: () => void;
     isColorMenuOpen: boolean;
@@ -11,7 +11,7 @@ interface IArticleMenusContext {
     toggleMoreMenu: () => void;
 }
 
-export const ArticleMenusContext = createContext<IArticleMenusContext | null>(null);
+export const ArticleMenusContext = createContext<IArticleMenusContext | undefined>(undefined);
 
 export const ArticleMenusProvider = ({ children }) => {
     const [isContentMenuOpen, setContentMenuOpen] = useState(false);
@@ -47,20 +47,16 @@ export const ArticleMenusProvider = ({ children }) => {
         setMoreMenuOpen(!isMoreMenuOpen);
     };
 
-    return (
-        <ArticleMenusContext.Provider
-            value={{
-                isContentMenuOpen,
-                isColorMenuOpen,
-                isFontMenuOpen,
-                isMoreMenuOpen,
-                toggleContentMenu,
-                toggleColorMenu,
-                toggleFontMenu,
-                toggleMoreMenu,
-            }}
-        >
-            {children}
-        </ArticleMenusContext.Provider>
-    );
+    const contextValue: IArticleMenusContext = {
+        isContentMenuOpen,
+        isColorMenuOpen,
+        isFontMenuOpen,
+        isMoreMenuOpen,
+        toggleContentMenu,
+        toggleColorMenu,
+        toggleFontMenu,
+        toggleMoreMenu,
+    };
+
+    return <ArticleMenusContext.Provider value={contextValue}>{children}</ArticleMenusContext.Provider>;
 };

@@ -1,9 +1,8 @@
 import './ArticleBottomBar.scss';
-import { useContext } from 'react';
-import { ArticleMenusContext } from '../../context/ArticleMenusContext';
+import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
 const ArticleBottomBar = () => {
-    const { toggleContentMenu, toggleColorMenu, toggleFontMenu, toggleMoreMenu } = useContext(ArticleMenusContext);
+    const { toggleContentMenu, toggleColorMenu, toggleFontMenu, toggleMoreMenu } = useArticleMenusContext();
 
     return (
         <div id='articlebottombar'>
