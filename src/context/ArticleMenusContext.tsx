@@ -1,6 +1,17 @@
 import { createContext, useState } from 'react';
 
-export const ArticleMenusContext = createContext<any>(null);
+interface IArticleMenusContext {
+    isContentMenuOpen: boolean;
+    toggleContentMenu: () => void;
+    isColorMenuOpen: boolean;
+    toggleColorMenu: () => void;
+    isFontMenuOpen: boolean;
+    toggleFontMenu: () => void;
+    isMoreMenuOpen: boolean;
+    toggleMoreMenu: () => void;
+}
+
+export const ArticleMenusContext = createContext<IArticleMenusContext | null>(null);
 
 export const ArticleMenusProvider = ({ children }) => {
     const [isContentMenuOpen, setContentMenuOpen] = useState(false);
