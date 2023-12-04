@@ -1,0 +1,55 @@
+div#colormenu {
+    // uguale a sortmenu
+    width: 100%;
+    background-color: var(--color-primary-0);
+    border-radius: 8% 8% 0 0;
+    padding: 8px 24px 24px;
+
+    z-index: var(--z-index-menu);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    div.closing-handle-wrapper {
+        width: 100%;
+        cursor: pointer;
+
+        label::first-letter {
+            text-transform: capitalize;
+        }
+
+        div.closing-handle {
+            max-width: 18%;
+            height: 0.4rem;
+            margin: auto;
+            background-color: var(--color-neutral-1);
+            border-radius: 20px;
+        }
+    }
+
+    div.secondary-menu-title {
+        margin: 24px 0 32px 0;
+        font-family: var(--font-family-header);
+        color: var(--color-neutral-4);
+        font-size: var(--font-size-h-main);
+        font-weight: var(--font-weight-semibold);
+    }
+
+    .sort-options-wrapper {
+        div.sort-option {
+            margin-top: 1.3rem;
+
+            &:last-child {
+                margin-bottom: 3rem;
+            }
+
+            input {
+                float: right;
+                margin-right: 8px;
+                // transform: scale(1.5);
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

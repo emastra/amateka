@@ -6,9 +6,10 @@ import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
 
 import jsondata from '../../mockdata/storia_contemporanea.json';
 
-import ContentMenu from '../../components/ContentMenu/ContentMenu';
-
 import useArticleMenusContext from '../../hooks/useArticleMenusContext';
+
+import ContentMenu from '../../components/ContentMenu/ContentMenu';
+import ColorMenu from '../../components/ColorMenu/ColorMenu';
 
 const Article = () => {
     const { articleId } = useParams();
@@ -17,11 +18,12 @@ const Article = () => {
     const concept = jsondata.content.concepts.filter((c) => c.id === articleId)[0];
     console.log('concept:', concept);
 
-    const { isContentMenuOpen } = useArticleMenusContext();
+    const { isContentMenuOpen, isColorMenuOpen, isFontMenuOpen, isMoreMenuOpen } = useArticleMenusContext();
 
     return (
         <>
             {isContentMenuOpen && <ContentMenu />}
+            {isColorMenuOpen && <ColorMenu />}
 
             <main id='article'>
                 <div className='top-image-wrapper'>
