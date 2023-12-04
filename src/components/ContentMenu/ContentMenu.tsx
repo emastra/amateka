@@ -1,15 +1,18 @@
+import './ContentMenu.scss';
 import { Link } from 'react-router-dom';
-import './MainMenu.scss';
 
-const MainMenu = ({ toggleMainMenu }) => {
+const ContentMenu = () => {
     return (
-        <div className='mainmenu-screen'>
-            <div className='close-icon-wrapper' onClick={toggleMainMenu}>
-                <img className='close-icon' src='/src/assets/svg/circle-x.svg' alt='close' />
-                <div style={{ clear: 'both' }}></div>
+        <div className='contentmenu-screen'>
+            <div className='header-wrapper'>
+                <div className='menu-title'>Article Contents</div>
+                <div className='close-icon-wrapper'>
+                    <img className='close-icon' src='/src/assets/svg/circle-x.svg' alt='close' />
+                    <div style={{ clear: 'both' }}></div>
+                </div>
             </div>
 
-            <nav className='mainmenu'>
+            <nav className='contentmenu'>
                 <ol className='section-1'>
                     <li className='menu-item'>
                         <Link to='/'>Home</Link>
@@ -44,4 +47,4 @@ const MainMenu = ({ toggleMainMenu }) => {
     );
 };
 
-export default MainMenu;
+export default ContentMenu;
