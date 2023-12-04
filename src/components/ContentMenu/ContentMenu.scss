@@ -1,8 +1,6 @@
 div.contentmenu-screen {
+    // uguale a mainmenu!!!!!
     height: 100%;
-    // background-color: rgb(35, 16, 7, 96%);
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
-    // background: radial-gradient(#e66465, #9198e5);
     background-color: var(--color-primary-0);
 
     z-index: var(--z-index-menu);
@@ -12,15 +10,32 @@ div.contentmenu-screen {
     bottom: 0;
     left: 0;
 
-    div.close-icon-wrapper {
-        margin: 16px 0;
+    div.header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        width: 100%;
 
-        .close-icon {
-            height: 32px;
+        &::before {
+            content: '';
             width: 32px;
-            float: right;
-            margin-right: 14px;
-            cursor: pointer;
+            margin-left: 12px;
+        }
+
+        .menu-title {
+            font-size: var(--font-size-h-small);
+            font-weight: var(--font-weight-semibold);
+        }
+
+        div.close-icon-wrapper {
+            margin-right: 12px;
+
+            .close-icon {
+                height: 32px;
+                width: 32px;
+                cursor: pointer;
+            }
         }
     }
 

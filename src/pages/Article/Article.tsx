@@ -6,6 +6,10 @@ import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
 
 import jsondata from '../../mockdata/storia_contemporanea.json';
 
+import ContentMenu from '../../components/ContentMenu/ContentMenu';
+
+import useArticleMenusContext from '../../hooks/useArticleMenusContext';
+
 const Article = () => {
     const { articleId } = useParams();
     console.log('useparams: articleId:', articleId);
@@ -13,20 +17,12 @@ const Article = () => {
     const concept = jsondata.content.concepts.filter((c) => c.id === articleId)[0];
     console.log('concept:', concept);
 
-    // const textData = [
-    //     "Lorem ipsum <a href=''>dolor</a> sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue.",
-    //     'Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod lorem, ut tincidunt libero. Proin vitae sem suscipit, pharetra nisi ac, sollicitudin augue',
-    // ];
-
-    // const chapterTitleData = 'Un chapter title test';
-
-    // const imageData = {
-    //     url: '/src/assets/images/ann-ann.jpg',
-    //     caption: 'Lorem ipsum  dolor sit amet, consectetur adipiscing elit. Lorem ipsum  dolor sit amet.',
-    // };
+    const { isContentMenuOpen } = useArticleMenusContext();
 
     return (
         <>
+            {isContentMenuOpen && <ContentMenu />}
+
             <main id='article'>
                 <div className='top-image-wrapper'>
                     <img className='top-image' src={concept.image} alt='placeholder_image' />
