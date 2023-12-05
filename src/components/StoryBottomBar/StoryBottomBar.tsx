@@ -1,26 +1,37 @@
 import './StoryBottomBar.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { NavIcon } from './NavIcon';
+
+const links = [
+    { name: 'Events', to: `/story/${'1'}/events` },
+    { name: 'Years', to: `/story/${'1'}/years` },
+    { name: 'Decades', to: `/story/${'1'}/decades` },
+    { name: 'Concepts', to: `/story/${'1'}/concepts` },
+];
+
+const NavigationLink = ({ name, to }) => {
+    return (
+        <NavLink
+            to={to}
+            className='storybottombar-icon-wrapper'
+            children={({ isActive }) => (
+                <>
+                    {/* <img className={`storybottombar-icon ${isActive ? 'active' : ''}`} src={iconSrc} alt={name} /> */}
+                    <NavIcon name={name} isActive={isActive} />
+                    <div className='storybottombar-label'>{name}</div>
+                </>
+            )}
+        ></NavLink>
+    );
+};
 
 const StoryBottomBar = () => {
     return (
         <>
             <div id='storybottombar'>
-                <Link to={`/story/${'1'}/events`} className='storybottombar-icon-wrapper'>
-                    <img className='storybottombar-icon' src='/src/assets/svg/event-icon.svg' alt='Events' />
-                    <div className='storybottombar-label'>Events</div>
-                </Link>
-                <Link to={`/story/${'1'}/years`} className='storybottombar-icon-wrapper'>
-                    <img className='storybottombar-icon' src='/src/assets/svg/rising-sun-icon.svg' alt='Years' />
-                    <div className='storybottombar-label'>Years</div>
-                </Link>
-                <Link to={`/story/${'1'}/decades`} className='storybottombar-icon-wrapper'>
-                    <img className='storybottombar-icon' src='/src/assets/svg/decade-icon.svg' alt='Decades' />
-                    <div className='storybottombar-label'>Decades</div>
-                </Link>
-                <Link to={`/story/${'1'}/concepts`} className='storybottombar-icon-wrapper'>
-                    <img className='storybottombar-icon' src='/src/assets/svg/brain-icon.svg' alt='Concepts' />
-                    <div className='storybottombar-label'>Concepts</div>
-                </Link>
+                {links.map((link) => (
+                    <NavigationLink name={link.name} to={link.to} />
+                ))}
             </div>
         </>
     );

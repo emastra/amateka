@@ -20,8 +20,19 @@ div#storybottombar {
         color: var(--color-neutral-4);
         cursor: pointer;
 
+        &.active {
+            color: var(--color-primary-4);
+        }
+
         .storybottombar-icon {
             margin-top: 3px;
+
+            // Non serve perchè uso svg currentColor
+            // &.active {
+            //     path {
+            //         fill: var(--color-primary-4);
+            //     }
+            // }
         }
 
         .storybottombar-label {
