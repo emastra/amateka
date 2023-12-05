@@ -19,10 +19,15 @@ export const ArticleMenusProvider = ({ children }) => {
     const [isFontMenuOpen, setFontMenuOpen] = useState(false);
     const [isMoreMenuOpen, setMoreMenuOpen] = useState(false);
 
+    const toggleBodyScroll = (shouldScroll) => {
+        document.body.style.overflow = shouldScroll ? 'auto' : 'hidden';
+    };
+
     const toggleContentMenu = () => {
         setColorMenuOpen(false);
         setFontMenuOpen(false);
         setMoreMenuOpen(false);
+        toggleBodyScroll(isContentMenuOpen);
         setContentMenuOpen(!isContentMenuOpen);
     };
 

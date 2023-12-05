@@ -1,3 +1,10 @@
+// to apply to body if i dont want the page to scroll
+// https://blog.logrocket.com/how-to-prevent-overflow-scrolling-css/
+// touch-action: none;
+// // -webkit-overflow-scrolling: none;
+// overflow: hidden;
+// overscroll-behavior: none;
+
 div.contentmenu-screen {
     // uguale a mainmenu!!!!!
     height: 100%;
@@ -9,6 +16,7 @@ div.contentmenu-screen {
     right: 0;
     bottom: 0;
     left: 0;
+    overflow-y: auto;
 
     div.header-wrapper {
         display: flex;
@@ -17,53 +25,66 @@ div.contentmenu-screen {
         height: 56px;
         width: 100%;
 
-        &::before {
-            content: '';
-            width: 32px;
-            margin-left: 12px;
-        }
+        position: fixed;
+        top: 0;
+        background-color: var(--color-primary-0);
+
+        // &::before {
+        //     content: '';
+        //     width: 32px;
+        //     margin-left: 12px;
+        // }
 
         .menu-title {
-            font-size: var(--font-size-h-small);
+            font-size: 18px;
             font-weight: var(--font-weight-semibold);
+            margin-left: 24px;
         }
 
         div.close-icon-wrapper {
             margin-right: 12px;
 
             .close-icon {
-                height: 32px;
-                width: 32px;
+                height: 28px; //32
+                width: 28px;
                 cursor: pointer;
             }
         }
     }
 
-    nav.contentmenu {
-        text-align: center;
-        margin: 92px 16px;
+    div.content-list-wrapper {
+        margin: calc(32px + 56px) 24px;
+        // margin: 32px 24px;
 
-        li.menu-item {
-            margin-bottom: 18px;
-            // color: #fff;
-        }
+        nav.contentmenu {
+            // .ch-title {
+            //     font-size: 22px;
+            //     font-weight: var(--font-weight-semibold);
+            //     // margin-left: 24px;
+            //     margin-bottom: 24px;
+            // }
 
-        li.menu-item a {
-            font-size: 24px;
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-neutral-4);
-        }
+            .section-title {
+                // font-size: var(--font-size-p-main);
+                font-size: 16px;
+                font-weight: var(--font-weight-semibold);
+                margin-bottom: 1rem;
+                line-height: 1.4;
+                cursor: pointer;
 
-        ol.section-1,
-        ol.section-2 {
-            margin-bottom: 64px;
+                span {
+                    font-weight: var(--font-weight-bold);
+                    margin-right: 0.4rem;
+                }
+            }
+
+            .par-title {
+                // font-size: var(--font-size-p-main);
+                font-size: 16px;
+                margin-left: 24px;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
         }
     }
 }
-
-// to apply to body if i dont want the page to scroll
-// https://blog.logrocket.com/how-to-prevent-overflow-scrolling-css/
-// touch-action: none;
-// // -webkit-overflow-scrolling: none;
-// overflow: hidden;
-// overscroll-behavior: none;
