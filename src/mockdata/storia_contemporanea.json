@@ -49,11 +49,8 @@
                 "image": "/src/assets/images/europe-city-destruction.png",
                 "title": "The Shadow of War and the Dawn of Peace",
                 "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                "introText": "Aliquam pretium scelerisque mauris vel condimentum. Mauris varius, arcu sed sagittis bibendum, tellus dolor ornare elit, non dignissim lacus ante vitae nisl. Morbi pharetra pretium dui dignissim tempus. Nulla facilisi. Nullam in nibh finibus, fermentum augue aliquet, iaculis sem. Proin enim felis, ornare vel nisi et, congue dapibus nulla. Nunc hendrerit arcu gravida purus malesuada, eget sodales est volutpat. Vivamus at pharetra est, sed tristique lacus. Aenean scelerisque tempor commodo. Aenean scelerisque, metus ac commodo gravida, ante nibh fringilla odio, sed dictum libero libero vel dui. Aliquam nec blandit orci. Cras mollis, nunc sed viverra gravida, massa diam congue dui, at congue ipsum dolor sed justo. Cras nec pulvinar magna. ",
-                "tags": [
-                    { "id": "1", "name": "World" },
-                    { "id": "2", "name": "Test" }
-                ],
+                "description": "Aliquam pretium scelerisque mauris vel condimentum. Mauris varius, arcu sed sagittis bibendum, tellus dolor ornare elit, non dignissim lacus ante vitae nisl. Morbi pharetra pretium dui dignissim tempus. Nulla facilisi. Nullam in nibh finibus, fermentum augue aliquet, iaculis sem. Proin enim felis, ornare vel nisi et, congue dapibus nulla. Nunc hendrerit arcu gravida purus malesuada, eget sodales est volutpat. Vivamus at pharetra est, sed tristique lacus. Aenean scelerisque tempor commodo. Aenean scelerisque, metus ac commodo gravida, ante nibh fringilla odio, sed dictum libero libero vel dui. Aliquam nec blandit orci. Cras mollis, nunc sed viverra gravida, massa diam congue dui, at congue ipsum dolor sed justo. Cras nec pulvinar magna. ",
+                "tags": ["World", "Test"],
                 "articleContent": {
                     "images": [],
                     "structure": [
@@ -283,11 +280,8 @@
                 "image": "/src/assets/images/usa-vs-ussr.png",
                 "title": "Chapter 2: The Cold War Tapestry",
                 "subtitle": "Overview of the Cold War era: Defining the Cold War, its global impact, and its significance in contemporary history.",
-                "introText": "In the aftermath of the cataclysmic Second World War, the world found itself precariously balanced on the edge of a new kind of conflict, one that would shape international relations, politics, and cultures for almost half a century. This period, known as the Cold War, was not marked by direct large-scale warfare between the major powers but by a profound and pervasive ideological, political, and military rivalry that gripped the entire globe. It was a conflict defined not by the clash of armies, but by the struggle of ideas, the competition for influence, and a race for technological and military supremacy.\nThe Cold War began in the late 1940s as the euphoria of victory against the Axis powers faded, giving way to growing tensions between the United States and the Soviet Union, the two superpowers that emerged from the war.\nIn this chapter, we will unravel the complex tapestry of the Cold War. We will examine its origins, key events, and the various dimensions through which it influenced global affairs. The chapter aims to provide a comprehensive overview of the era, exploring not just the political and military aspects, but also the cultural, social, and economic impacts of this prolonged period of global tension.",
-                "tags": [
-                    { "id": "1", "name": "World" },
-                    { "id": "2", "name": "Cold War" }
-                ],
+                "description": "In the aftermath of the cataclysmic Second World War, the world found itself precariously balanced on the edge of a new kind of conflict, one that would shape international relations, politics, and cultures for almost half a century. This period, known as the Cold War, was not marked by direct large-scale warfare between the major powers but by a profound and pervasive ideological, political, and military rivalry that gripped the entire globe. It was a conflict defined not by the clash of armies, but by the struggle of ideas, the competition for influence, and a race for technological and military supremacy.\nThe Cold War began in the late 1940s as the euphoria of victory against the Axis powers faded, giving way to growing tensions between the United States and the Soviet Union, the two superpowers that emerged from the war.\nIn this chapter, we will unravel the complex tapestry of the Cold War. We will examine its origins, key events, and the various dimensions through which it influenced global affairs. The chapter aims to provide a comprehensive overview of the era, exploring not just the political and military aspects, but also the cultural, social, and economic impacts of this prolonged period of global tension.",
+                "tags": ["World", "Test"],
                 "articleContent": {
                     "images": [],
                     "structure": [
