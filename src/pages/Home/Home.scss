@@ -4,11 +4,12 @@ main#home {
     height: 100%;
 }
 
-button.create-btn {
+.create-btn {
     position: fixed;
     bottom: 40px;
     right: 20px;
 
+    color: var(--color-neutral-4);
     background-color: var(--color-primary-0);
     padding: 12px 22px;
     border-radius: 32px;

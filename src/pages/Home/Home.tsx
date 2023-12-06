@@ -1,5 +1,5 @@
 import './Home.scss';
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, Link } from 'react-router-dom';
 
 import StoryCard from '../../components/StoryCard';
 import MainMenu from '../../components/MainMenu';
@@ -31,10 +31,10 @@ const Home = () => {
                 <StoryCard imgurl='/src/assets/images/martin-luther-king.jpg'></StoryCard>
                 <StoryCard imgurl='/src/assets/images/placeholder_image.jpg'></StoryCard>
             </main>
-            <button className='create-btn'>
+            <Link className='create-btn' to={`/editor`}>
                 <img className='plus-icon' src='/src/assets/svg/plus.svg' alt='plus' />
                 Crea
-            </button>
+            </Link>
         </>
     );
 };
