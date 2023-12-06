@@ -3,10 +3,10 @@
     "image": "artistic-collage-portraits.png",
     "title": "Contemporary World History",
     "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. 'A Connected World: The Global Journey from Post-War to Digital Age' offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.",
-    "tags": [""],
+    "tags": ["Test", "World", "History"],
     "content": {
         "intro": {
-            "info": ["test info 1", "test info 2"],
+            "info": ["test info to show 1", "test info to show 2"],
             "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. \"A Connected World: The Global Journey from Post-War to Digital Age\" offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.\r\n\r\nEmbark on a journey through the pivotal moments of contemporary history:\r\n\r\n    Unravel the Intricacies of the Cold War: Delve into the ideological battles, proxy wars, and political chess games that defined the second half of the 20th century.\r\n    Witness the Winds of Change in Decolonization: Explore the struggles and triumphs of nations as they sought independence, reshaping global dynamics and forging new identities.\r\n    Navigate the Digital Revolution: Understand how technological advancements have transformed our way of life, communication, and global interactions in the 21st century.\r\n\r\nAuthored for a generation of Millennials and Gen Z, this book brings history to life, making it relatable and understandable. It's not just a recounting of events but a tapestry of stories that demonstrate how the past continually shapes our present and future.\r\n\r\n\"A Connected World\" invites readers to reflect on the lessons of history, understand the interconnectedness of global events, and engage with the ongoing narrative of our world. This book is a must-read for anyone seeking to comprehend the forces that have shaped our contemporary world and continue to influence the path we tread into the future."
         },
         "events": [
@@ -339,7 +339,7 @@
                 "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "description": "Aliquam pretium scelerisque mauris vel condimentum. Mauris varius, arcu sed sagittis bibendum, tellus dolor ornare elit, non dignissim lacus ante vitae nisl. Morbi pharetra pretium dui dignissim tempus. Nulla facilisi. Nullam in nibh finibus, fermentum augue aliquet, iaculis sem. Proin enim felis, ornare vel nisi et, congue dapibus nulla. Nunc hendrerit arcu gravida purus malesuada, eget sodales est volutpat. Vivamus at pharetra est, sed tristique lacus. Aenean scelerisque tempor commodo. Aenean scelerisque, metus ac commodo gravida, ante nibh fringilla odio, sed dictum libero libero vel dui. Aliquam nec blandit orci. Cras mollis, nunc sed viverra gravida, massa diam congue dui, at congue ipsum dolor sed justo. Cras nec pulvinar magna. ",
                 "tags": ["World", "Test"],
-                "articleContent": {
+                "content": {
                     "images": [],
                     "structure": [
                         {
@@ -570,7 +570,7 @@
                 "subtitle": "Overview of the Cold War era: Defining the Cold War, its global impact, and its significance in contemporary history.",
                 "description": "In the aftermath of the cataclysmic Second World War, the world found itself precariously balanced on the edge of a new kind of conflict, one that would shape international relations, politics, and cultures for almost half a century. This period, known as the Cold War, was not marked by direct large-scale warfare between the major powers but by a profound and pervasive ideological, political, and military rivalry that gripped the entire globe. It was a conflict defined not by the clash of armies, but by the struggle of ideas, the competition for influence, and a race for technological and military supremacy.\nThe Cold War began in the late 1940s as the euphoria of victory against the Axis powers faded, giving way to growing tensions between the United States and the Soviet Union, the two superpowers that emerged from the war.\nIn this chapter, we will unravel the complex tapestry of the Cold War. We will examine its origins, key events, and the various dimensions through which it influenced global affairs. The chapter aims to provide a comprehensive overview of the era, exploring not just the political and military aspects, but also the cultural, social, and economic impacts of this prolonged period of global tension.",
                 "tags": ["World", "Test"],
-                "articleContent": {
+                "content": {
                     "images": [],
                     "structure": [
                         {
