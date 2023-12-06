@@ -1,13 +1,13 @@
 {
     "id": "story-01",
     "image": "artistic-collage-portraits.png",
-    "title": "",
-    "text": "",
+    "title": "Contemporary World History",
+    "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. 'A Connected World: The Global Journey from Post-War to Digital Age' offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.",
     "tags": [""],
     "content": {
         "intro": {
             "info": ["test info 1", "test info 2"],
-            "text": "Welcome to the immersive exploration of European recent history, a captivating journey that unravels the intricacies and pivotal moments that have sculpted the continent's contemporary narrative. This interactive experience invites you to traverse the annals of time, where you'll encounter triumphs, challenges, and the ever-evolving tapestry of European civilization.\nAs you embark on this historical odyssey, envision the landscapes transformed by the echoes of events that reverberate across borders and through generations. Europe, with its diverse cultures, languages, and histories, has been a crucible for change, a stage where the forces of progress and tradition intertwine in a complex dance."
+            "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. \"A Connected World: The Global Journey from Post-War to Digital Age\" offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.\r\n\r\nEmbark on a journey through the pivotal moments of contemporary history:\r\n\r\n    Unravel the Intricacies of the Cold War: Delve into the ideological battles, proxy wars, and political chess games that defined the second half of the 20th century.\r\n    Witness the Winds of Change in Decolonization: Explore the struggles and triumphs of nations as they sought independence, reshaping global dynamics and forging new identities.\r\n    Navigate the Digital Revolution: Understand how technological advancements have transformed our way of life, communication, and global interactions in the 21st century.\r\n\r\nAuthored for a generation of Millennials and Gen Z, this book brings history to life, making it relatable and understandable. It's not just a recounting of events but a tapestry of stories that demonstrate how the past continually shapes our present and future.\r\n\r\n\"A Connected World\" invites readers to reflect on the lessons of history, understand the interconnectedness of global events, and engage with the ongoing narrative of our world. This book is a must-read for anyone seeking to comprehend the forces that have shaped our contemporary world and continue to influence the path we tread into the future."
         },
         "events": [
             {
@@ -22,30 +22,318 @@
                 "image": "",
                 "date": "1945-02-04",
                 "title": "Yalta Conference",
-                "description": "Leaders of the Allied Powers (USA, UK, USSR) met in Yalta to discuss post-war reorganization."
+                "description": "Leaders of the Allied Powers met in Yalta to discuss post-war reorganization, laying the groundwork for the post-WWII order."
             },
             {
                 "id": "ev-03",
                 "image": "",
                 "date": "1945-02-13",
                 "title": "Bombing of Dresden",
-                "description": "This controversial Allied bombing raid devastated the German city for three days, raising questions about wartime conduct and civilian casualties."
+                "description": "Allied forces conducted a massive bombing raid on Dresden, Germany, leading to extensive destruction and civilian casualties."
+            },
+            {
+                "id": "ev-04",
+                "image": "",
+                "date": "1945-04-12",
+                "title": "Death of Franklin D. Roosevelt",
+                "description": "U.S. President Roosevelt died in office; Vice President Harry S. Truman assumed the presidency during a critical phase of WWII."
+            },
+            {
+                "id": "ev-05",
+                "image": "",
+                "date": "1945-04-30",
+                "title": "Suicide of Adolf Hitler",
+                "description": "Adolf Hitler committed suicide in his bunker in Berlin, marking a symbolic end to Nazi Germany."
+            },
+            {
+                "id": "ev-06",
+                "image": "",
+                "date": "1945-05-07",
+                "title": "V-E Day (Victory in Europe)",
+                "description": "Nazi Germany surrendered unconditionally to the Allies, marking the end of World War II in Europe."
+            },
+            {
+                "id": "ev-07",
+                "image": "",
+                "date": "1945-07-16",
+                "title": "Trinity Test",
+                "description": "The world's first nuclear weapon was detonated in New Mexico, showcasing a new, formidable military technology."
+            },
+            {
+                "id": "ev-08",
+                "image": "",
+                "date": "1945-07-26",
+                "title": "Potsdam Declaration",
+                "description": "The Allies issued an ultimatum to Japan: surrender unconditionally or face 'prompt and utter destruction'."
+            },
+            {
+                "id": "ev-09",
+                "image": "",
+                "date": "1945-08-06",
+                "title": "Atomic Bombing of Hiroshima",
+                "description": "The U.S. dropped the first atomic bomb on Hiroshima, Japan, changing warfare and leading to Japan's eventual surrender."
+            },
+            {
+                "id": "ev-10",
+                "image": "",
+                "date": "1945-08-09",
+                "title": "Atomic Bombing of Nagasaki",
+                "description": "A second atomic bomb was dropped on Nagasaki, Japan, compelling Japan to surrender and effectively ending WWII."
+            },
+            {
+                "id": "ev-11",
+                "image": "",
+                "date": "1945-08-15",
+                "title": "V-J Day (Victory over Japan)",
+                "description": "Japan announced its surrender, effectively ending World War II."
+            },
+            {
+                "id": "ev-12",
+                "image": "",
+                "date": "1945-09-02",
+                "title": "Formal Surrender of Japan",
+                "description": "Japan formally surrendered aboard the USS Missouri, officially ending World War II."
+            },
+            {
+                "id": "ev-13",
+                "image": "",
+                "date": "1945-10-24",
+                "title": "Founding of the United Nations",
+                "description": "The United Nations was established to promote international cooperation and prevent future conflicts."
+            },
+            {
+                "id": "ev-14",
+                "image": "",
+                "date": "1945-11-20",
+                "title": "Nuremberg Trials Begin",
+                "description": "Key Nazi leaders were put on trial for war crimes, setting a precedent for international justice."
+            },
+            {
+                "id": "ev-15",
+                "image": "",
+                "date": "1945-12-27",
+                "title": "IMF Created",
+                "description": "The International Monetary Fund was established to foster global monetary cooperation and financial stability."
+            },
+            {
+                "id": "ev-16",
+                "image": "",
+                "date": "1945-01-17",
+                "title": "Warsaw Liberated",
+                "description": "The Soviet Army liberated Warsaw from German occupation, marking a significant event in the Eastern Front of WWII."
+            },
+            {
+                "id": "ev-17",
+                "image": "",
+                "date": "1945-02-19",
+                "title": "Battle of Iwo Jima",
+                "description": "The iconic Battle of Iwo Jima began, a critical episode in the Pacific Theater of World War II."
+            },
+            {
+                "id": "ev-18",
+                "image": "",
+                "date": "1945-03-09",
+                "title": "Bombing of Tokyo",
+                "description": "The U.S. conducted a massive firebombing raid on Tokyo, resulting in extensive civilian casualties and damage."
+            },
+            {
+                "id": "ev-19",
+                "image": "",
+                "date": "1945-04-01",
+                "title": "Battle of Okinawa",
+                "description": "The Battle of Okinawa, one of the bloodiest in the Pacific Theater, began, marking a significant phase in WWII."
+            },
+            {
+                "id": "ev-20",
+                "image": "",
+                "date": "1945-04-25",
+                "title": "Elbe Day",
+                "description": "Soviet and American troops met at the Elbe River, a symbol of the Allies' victory and cooperation in Europe."
             }
         ],
         "years": [
             {
-                "id": "1",
+                "id": "ye-01",
                 "date": "1980",
-                "image": "",
-                "title": "The Rise of Solidarity in Poland",
-                "intro": "Witness the birth of the Solidarity movement, a pivotal moment in Polish history that ignited resistance against communist rule, ultimately shaping the political landscape of Eastern Europe.",
-                "tags": ["test1", "test2"]
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Tumultuous Global Shifts",
+                "intro": "The year 1980 was marked by pivotal events that had a profound impact on global politics, culture, and technology. It was a year when the world witnessed the intensification of the Cold War, revolutionary shifts in Iran and Afghanistan, and groundbreaking advancements in technology and entertainment. The echoes of these developments resonated through the decades, shaping the modern world as we know it.",
+                "tags": ["Cold War", "Technological Advancements"]
+            },
+            {
+                "id": "ye-02",
+                "date": "1981",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Political and Social Changes",
+                "intro": "1981 was a year characterized by significant political shifts and social changes. It witnessed the inauguration of Ronald Reagan, the assassination attempt on Pope John Paul II, and the emergence of the AIDS epidemic, marking the start of a new era in global health and politics.",
+                "tags": ["Reagan Era", "Global Health"]
+            },
+            {
+                "id": "ye-03",
+                "date": "1982",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Conflicts and Technological Breakthroughs",
+                "intro": "In 1982, the world faced both turmoil and progress. The Falklands War erupted, highlighting geopolitical tensions, while at the same time, the technological revolution gained momentum with the release of the Commodore 64, igniting a new era in personal computing.",
+                "tags": ["Falklands War", "Computer Revolution"]
+            },
+            {
+                "id": "ye-04",
+                "date": "1983",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Global Tensions and Cultural Icons",
+                "intro": "1983 was marked by escalating Cold War tensions, exemplified by the deployment of Pershing II missiles in Europe. Meanwhile, cultural milestones were set with the airing of Michael Jackson's 'Thriller' video, impacting music and pop culture globally.",
+                "tags": ["Cold War", "Pop Culture"]
+            },
+            {
+                "id": "ye-05",
+                "date": "1984",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Orwellian Echoes and Global Movements",
+                "intro": "In 1984, the world seemed to reflect Orwellian overtones amidst global movements for change. The Indian Prime Minister Indira Gandhi was assassinated, leading to significant political upheaval, and the Apple Macintosh was introduced, revolutionizing personal computing.",
+                "tags": ["Political Upheaval", "Technology"]
+            },
+            {
+                "id": "ye-06",
+                "date": "1985",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Diplomatic Shifts and Cultural Milestones",
+                "intro": "1985 saw significant diplomatic shifts with Gorbachev's rise to power in the Soviet Union, signaling a change in Cold War dynamics. It was also a year of cultural milestones, including the Live Aid concert for famine relief, showcasing global unity through music.",
+                "tags": ["Cold War Dynamics", "Cultural Milestones"]
+            },
+            {
+                "id": "ye-07",
+                "date": "1986",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Challenger_explosion.jpg",
+                "title": "A Year of Tragic Disasters and Political Shifts",
+                "intro": "1986 was marked by the tragic Challenger Space Shuttle disaster and the Chernobyl nuclear accident, alongside major political changes with the Philippines’ People Power Revolution.",
+                "tags": ["Space Exploration", "Nuclear Disaster"]
+            },
+            {
+                "id": "ye-08",
+                "date": "1987",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Reagan_Gorbachev_sign.jpg",
+                "title": "A Year of Diplomatic Advances and Market Crashes",
+                "intro": "1987 witnessed significant diplomatic progress with the signing of the INF Treaty between the US and the USSR, and a major financial setback with the Black Monday stock market crash.",
+                "tags": ["Cold War Diplomacy", "Financial Crisis"]
+            },
+            {
+                "id": "ye-09",
+                "date": "1988",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Pan_Am_Flight_103_wreckage.jpg",
+                "title": "A Year of Celebrations and Global Tragedies",
+                "intro": "In 1988, the Seoul Summer Olympics brought nations together, while the world faced tragedies like the bombing of Pan Am Flight 103 over Lockerbie and the devastating Armenian earthquake.",
+                "tags": ["Olympic Games", "Terrorist Attack"]
+            },
+            {
+                "id": "ye-10",
+                "date": "1989",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Berlin-Wall-1989.jpg",
+                "title": "A Year of Revolutionary Change and Liberation",
+                "intro": "1989 was a year of monumental change, highlighted by the fall of the Berlin Wall, symbolizing the end of the Cold War, and the Tiananmen Square protests in China, representing a cry for freedom and democracy.",
+                "tags": ["Cold War End", "Pro-Democracy Protests"]
+            },
+            {
+                "id": "ye-11",
+                "date": "1990",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Nelson_Mandela-2008_%28edit%29.jpg",
+                "title": "A Year of Unification and Freedom",
+                "intro": "1990 was marked by the unification of Germany, closing a chapter on Cold War divisions, and the release of Nelson Mandela, a landmark event in the fight against apartheid in South Africa.",
+                "tags": ["German Unification", "Anti-Apartheid Movement"]
+            },
+            {
+                "id": "ye-12",
+                "date": "1991",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Boris_Yeltsin_19_August_1991-1.jpg",
+                "title": "A Year of Dramatic Political Changes and Technological Advances",
+                "intro": "1991 witnessed the dissolution of the Soviet Union, marking an end to the Cold War, and significant technological strides with the introduction of the World Wide Web.",
+                "tags": ["Soviet Dissolution", "Internet Revolution"]
+            },
+            {
+                "id": "ye-13",
+                "date": "1992",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Riots_in_Los_Angeles_1992.jpg",
+                "title": "A Year of Social Unrest and Historical Agreements",
+                "intro": "In 1992, the Los Angeles riots brought issues of racial injustice to the forefront in the US, while the European Union was formed with the signing of the Maastricht Treaty.",
+                "tags": ["Racial Justice", "European Union Formation"]
+            },
+            {
+                "id": "ye-14",
+                "date": "1993",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Bill_Clinton_playing_saxophone.jpg",
+                "title": "A Year of Political Transitions and Cultural Moments",
+                "intro": "1993 saw Bill Clinton inaugurated as US President, and significant peace efforts with the signing of the Oslo Accords between Israel and the PLO.",
+                "tags": ["US Politics", "Middle East Peace Process"]
+            },
+            {
+                "id": "ye-15",
+                "date": "1994",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nelson_Mandela_in_1994.jpg",
+                "title": "A Year of Hope and Tragedy",
+                "intro": "1994 was a year of contrasts with Nelson Mandela becoming South Africa's first Black president, symbolizing the end of apartheid, and the tragic Rwandan Genocide.",
+                "tags": ["End of Apartheid", "Rwandan Genocide"]
+            },
+            {
+                "id": "ye-16",
+                "date": "1995",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Windows_95_at_Computer_History_Museum.jpg",
+                "title": "A Year of Technological Breakthroughs and Historic Agreements",
+                "intro": "In 1995, the Dayton Agreement was signed, ending the Bosnian War, and technology leaped forward with the release of Windows 95, a major milestone in personal computing.",
+                "tags": ["Bosnian War Resolution", "Tech Advancements"]
+            },
+            {
+                "id": "ye-17",
+                "date": "1996",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Dolly_face_closeup.jpg",
+                "title": "A Year of Scientific Milestones and Political Changes",
+                "intro": "1996 marked a breakthrough in science with the cloning of Dolly the sheep, the first mammal cloned from an adult cell, and significant political shifts with the reelection of Bill Clinton in the US.",
+                "tags": ["Cloning Breakthrough", "US Presidential Election"]
             }
         ],
-        "decades": [],
+        "decades": [
+            {
+                "id": "dec-01",
+                "date": "1970s",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Disco_ball2.jpg",
+                "title": "1970s: A Decade of Social Change and Technological Innovation",
+                "intro": "The 1970s were marked by the end of the Vietnam War, the Watergate scandal, the rise of environmentalism, and the emergence of the digital revolution, with the introduction of personal computing.",
+                "tags": ["Vietnam War", "Digital Revolution"]
+            },
+            {
+                "id": "dec-02",
+                "date": "1980s",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Berlin_Wall_1986.jpg",
+                "title": "1980s: A Decade of Cold War Tensions and Cultural Iconography",
+                "intro": "The 1980s experienced the escalation and subsequent decline of the Cold War, significant technological advancements, and the rise of pop culture icons like Michael Jackson and Madonna.",
+                "tags": ["Cold War", "Pop Culture"]
+            },
+            {
+                "id": "dec-03",
+                "date": "1990s",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/World_Wide_Web_Foundation_logo.jpg",
+                "title": "1990s: A Decade of Globalization and the Internet Boom",
+                "intro": "The 1990s were defined by the dissolution of the Soviet Union, the Rwandan Genocide, the rise of globalization, and the explosive growth of the internet and mobile communications.",
+                "tags": ["Globalization", "Internet Revolution"]
+            },
+            {
+                "id": "dec-04",
+                "date": "2000s",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/9-11_WTC_Photo.jpg",
+                "title": "2000s: A Decade of Terrorism, War, and Digital Expansion",
+                "intro": "The 2000s saw the devastating 9/11 attacks, the wars in Afghanistan and Iraq, and significant advancements in technology, leading to the rise of social media and smartphones.",
+                "tags": ["War on Terror", "Technology Advancements"]
+            },
+            {
+                "id": "dec-05",
+                "date": "2010s",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Black_Lives_Matter_protest.jpg",
+                "title": "2010s: A Decade of Digital Domination and Social Movements",
+                "intro": "The 2010s were dominated by the growth of digital platforms, major social movements like Black Lives Matter, and significant political events, including Brexit and the election of Donald Trump.",
+                "tags": ["Digital Age", "Social Movements"]
+            }
+        ],
         "concepts": [
             {
-                "id": "c1",
+                "id": "co-1",
                 "image": "/src/assets/images/europe-city-destruction.png",
                 "title": "The Shadow of War and the Dawn of Peace",
                 "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -276,7 +564,7 @@
                 "articleContentMd": ""
             },
             {
-                "id": "c2",
+                "id": "co-2",
                 "image": "/src/assets/images/usa-vs-ussr.png",
                 "title": "Chapter 2: The Cold War Tapestry",
                 "subtitle": "Overview of the Cold War era: Defining the Cold War, its global impact, and its significance in contemporary history.",

@@ -25,7 +25,11 @@ const StoryCard = ({ imgurl }) => {
 
                     <div className='intro-text-wrapper'>
                         <p className='intro-text'>
-                            Wikipedia remix. Wikipedia remix. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In the sweeping expanse of history from the end of World War II to the present day, our
+                            world has undergone transformations that are both profound and complex. "A Connected World:
+                            The Global Journey from Post-War to Digital Age" offers an engaging and insightful
+                            exploration of these dynamic times, weaving together the threads of political upheavals,
+                            cultural revolutions, technological advancements, and social transformations.
                         </p>
                     </div>
 
