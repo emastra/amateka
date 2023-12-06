@@ -9,8 +9,15 @@ const CardLarge = ({ data }) => {
                 {/* potrei mette lo stile reduced nell'altro comp se lo faccio */}
                 <div className={`card-image-wrapper ${!!data.image ? '' : 'reduced'}`}>
                     {data.date && <div className='card-date'>{data.date}</div>}
-                    {/* TODO: non dovrei chiamarla card-top-image, ma card-top-box */}
-                    {data.image && <img className='card-top-image' src={data.image} alt='placeholder_image' />}
+                    {data.image ? (
+                        <img className='card-top-image' src={data.image} alt='card_image' />
+                    ) : (
+                        <img
+                            className='card-top-image'
+                            src='/src/assets/images/placeholder_image.jpg'
+                            alt='placeholder_image'
+                        />
+                    )}
                 </div>
 
                 <div className='card-info-wrapper'>
@@ -23,13 +30,13 @@ const CardLarge = ({ data }) => {
 
                     {/* add extended. O faccio un altro comp tipo CardLargeNoImage...hmm... */}
                     <div className='intro-text-wrapper'>
-                        <p className='intro-text'>{data.introText}</p>
+                        <p className='intro-text'>{data.description}</p>
                     </div>
 
                     <div className='tags-wrapper'>
                         {data.tags.map((tag) => (
-                            <div key={tag.id} className='tag-box'>
-                                {tag.name}
+                            <div key={tag} className='tag-box'>
+                                {tag}
                             </div>
                         ))}
                     </div>

@@ -6,6 +6,7 @@ article#card-large {
     // padding-bottom-trick part1
     width: 100%;
     // max-width: 624px; // se voglio limitare la width durante il responsive
+    // overflow: hidden; // TODO: serve?
 
     &:not(:last-child) {
         margin-bottom: 24px;
@@ -20,11 +21,8 @@ article#card-large {
             height: 0;
             padding-bottom: 56.25%; // aspect ratio for the image
             position: relative;
-            // overflow: hidden; // TODO: serve? se voglio la card-date to come out its parent this must be commented
-
-            // give color to padding
             background-clip: padding-box;
-            background-color: lightgreen;
+            background-color: #ffff; // give color to padding
             border-radius: 12px 12px 0 0;
 
             &.reduced {
@@ -39,18 +37,13 @@ article#card-large {
                 font-weight: var(--font-weight-bold);
                 position: absolute;
                 top: 12px;
-                left: -4px;
-                background-color: rgba(255, 255, 255, 90%);
+                background-color: rgba(255, 255, 255, 1);
                 padding: 6px 24px;
-                border-radius: 4px 0 0 4px;
                 z-index: 1;
             }
 
             img.card-top-image {
                 border-radius: 12px 12px 0 0;
-                // height: 279px;
-                // width: 100%;
-
                 // padding-bottom-trick part3
                 width: 100%;
                 height: 100%;
@@ -60,14 +53,14 @@ article#card-large {
         }
 
         .card-info-wrapper {
-            padding: 20px 24px 16px 24px;
+            padding: 20px 20px 16px 20px;
 
             .card-title-wrapper {
                 margin-bottom: 12px;
                 font-size: var(--font-size-h-main); // per usare em qui sotto
                 line-height: var(--line-height-h);
 
-                max-height: 2.2em; // 1.1 * 2
+                max-height: 2.4em; // 1.2 * 2
                 width: 100%;
                 overflow-y: hidden;
 
