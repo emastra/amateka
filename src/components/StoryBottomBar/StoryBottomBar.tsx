@@ -30,7 +30,7 @@ const StoryBottomBar = () => {
         <>
             <div id='storybottombar'>
                 {links.map((link) => (
-                    <NavigationLink name={link.name} to={link.to} />
+                    <NavigationLink key={link.name} name={link.name} to={link.to} />
                 ))}
             </div>
         </>
