@@ -2,15 +2,12 @@ article#card-small {
     border-radius: 12px;
     background-color: var(--color-primary-0);
     box-shadow: var(--shadow-border);
-
     // height: 112px;
 
     // padding-bottom-trick part1
     width: 100%;
     // max-width: 624px;
     // overflow: hidden; // TODO: serve?
-
-    // position: relative; // just to contain card-date-wrapper which is position absolute // no need we have it at part2 down
 
     &:not(:last-child) {
         margin-bottom: 18px;
@@ -24,38 +21,30 @@ article#card-small {
         div.card-left-wrap {
             flex-basis: auto;
             height: 100%;
-            width: 40%;
+            width: 38%;
 
             // padding-bottom-trick part2
             height: 0;
-            padding-bottom: 40%; // aspect ratio
+            padding-bottom: 38%; // aspect ratio
+            background-clip: padding-box;
             position: relative;
+            background-color: var(--color-white-0); // give color to padding
+            border-radius: 12px 0 0 12px;
             // overflow: hidden;
 
-            // give color to padding
-            background-clip: padding-box;
-            background-color: lightgreen;
-            border-radius: 12px 0 0 12px;
-
             div.card-date {
-                // font-family: var(--font-family-header);
                 font-size: var(--font-size-p-mid);
                 color: var(--color-neutral-4);
                 font-weight: var(--font-weight-bold);
                 position: absolute;
                 top: 10px;
-                left: -4px;
-                background-color: rgba(255, 255, 255, 0.9);
+                background-color: rgba(255, 255, 255, 1);
                 padding: 6px 8px;
-                border-radius: 4px 0 0 4px;
                 z-index: 1;
             }
 
             img.card-image {
                 border-radius: 12px 0 0 12px;
-                // height: 100%;
-                // width: 100%;
-
                 // padding-bottom-trick part3
                 width: 100%;
                 height: 100%;
@@ -67,7 +56,7 @@ article#card-small {
         div.card-right-wrap {
             flex-basis: auto;
             width: 60%;
-            padding: 12px 12px 8px 12px;
+            padding: 12px 8px 8px 12px;
 
             display: flex;
             flex-direction: column;
@@ -76,17 +65,13 @@ article#card-small {
             .card-title-wrap {
                 flex-basis: auto;
                 margin-bottom: 0.5rem;
-                font-size: var(--font-size-h-small); // per usare em qui sotto
                 line-height: var(--line-height-h);
-
-                height: 3.3em; // 1.1 * 2
                 width: 100%;
                 overflow-y: hidden;
 
                 h2 {
-                    font-size: var(--font-size-h-small);
                     font-weight: var(--font-weight-semibold);
-
+                    font-size: var(--font-size-h-xs);
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
@@ -98,13 +83,11 @@ article#card-small {
                 width: 100%;
                 white-space: nowrap;
                 overflow: hidden;
-                // margin-top: 12px;
 
                 .tag-box {
                     display: inline-block;
                     padding: 6px 8px;
                     color: var(--color-neutral-3);
-                    // background-color: var(--color-neutral-0);
                     border: 1px solid var(--color-neutral-1);
                     border-radius: 16px;
                     margin-right: 8px;

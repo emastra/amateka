@@ -2,8 +2,6 @@ article#card-medium {
     border-radius: 12px;
     background-color: var(--color-primary-0);
     box-shadow: var(--shadow-border);
-    // position: relative; // just to contain card-date-wrapper which is position absolute. NON SERVE QUI
-
     // height: 240px; // small 112 medium 240 large 580+16
 
     // padding-bottom-trick part1
@@ -22,13 +20,10 @@ article#card-medium {
         div.card-image-wrapper {
             // padding-bottom-trick part2
             height: 0;
-            padding-bottom: 34%; // aspect ratio for the image
+            padding-bottom: 38%; // aspect ratio for the image
             position: relative;
-            // overflow: hidden; // TODO: serve? se voglio la card-date to come out its parent this must be commented
-
-            // give color to padding
             background-clip: padding-box;
-            background-color: lightgreen;
+            background-color: #ffff; // give color to padding
             border-radius: 12px 12px 0 0;
 
             // same same? ma piu grnade di small
@@ -39,18 +34,13 @@ article#card-medium {
                 font-weight: var(--font-weight-bold);
                 position: absolute;
                 top: 12px;
-                left: -4px;
-                background-color: rgba(255, 255, 255, 90%);
+                background-color: rgba(255, 255, 255, 1);
                 padding: 6px 24px;
-                border-radius: 4px 0 0 4px;
                 z-index: 1;
             }
 
             img.card-top-image {
                 border-radius: 12px 12px 0 0;
-                // height: 111px;
-                // width: 100%;
-
                 // padding-bottom-trick part3
                 width: 100%;
                 height: 100%;
@@ -67,7 +57,7 @@ article#card-medium {
                 font-size: var(--font-size-h-main); // per usare em qui sotto
                 line-height: var(--line-height-h);
 
-                max-height: 2.2em; // 1.1 * 2
+                max-height: 2.4em; // 1.2 * 2
                 width: 100%;
                 overflow-y: hidden;
 
