@@ -6,6 +6,15 @@ const StoryCard = ({ imgurl }) => {
         <article className='story-card'>
             <Link to={`/story/${'1'}/intro`}>
                 <div className='card-image-wrapper'>
+                    <div className='interaction-wrapper'>
+                        <div className='icon-wrapper'>
+                            <img className='share-icon' src='/src/assets/svg/share.svg' alt='share' />
+                        </div>
+                        <div className='icon-wrapper'>
+                            <img className='favorite-icon' src='/src/assets/svg/heart.svg' alt='save' />
+                        </div>
+                    </div>
+
                     <img className='card-top-image' src={imgurl} alt='story-image' />
                 </div>
 

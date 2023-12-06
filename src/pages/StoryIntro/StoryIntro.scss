@@ -88,7 +88,8 @@ main#story-intro {
                 font-weight: var(--font-weight-semibold);
                 border-radius: 50px;
                 margin: auto;
-                box-shadow: var(--shadow-border);
+                box-shadow: 0 2px 8px 4px rgb(35, 45, 46, 25%);
+                // box-shadow: var(--shadow-border);
             }
         }
     }

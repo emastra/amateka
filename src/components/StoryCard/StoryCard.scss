@@ -1,6 +1,6 @@
 article.story-card {
     border-radius: 12px;
-    background-color: var(--color-primary-0);
+    background-color: var(--color-white-0);
     // box-shadow: var(--shadow-border); // filter !!!!
     box-shadow: var(--shadow-border);
 
@@ -20,6 +20,34 @@ article.story-card {
         padding-bottom: 56.25%; // 16:9 aspect ratio for the image
         position: relative;
         overflow: hidden;
+
+        .interaction-wrapper {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin-top: 10px;
+
+            .icon-wrapper {
+                background-color: #ffff;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                margin-right: 10px;
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    margin: auto;
+                }
+            }
+        }
 
         img.card-top-image {
             border-radius: 12px 12px 0 0;
