@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
 import './StoryCard.scss';
 
-const StoryCard = ({ imgurl }) => {
+const IMAGE_BASE_URL = '/src/assets/images/';
+
+const StoryCard = ({ data }) => {
+    const { id, image, title, text, tags } = data;
+    const imageUrl = image ? IMAGE_BASE_URL + image : IMAGE_BASE_URL + 'placeholder_image.jpg';
+
     return (
         <article className='story-card'>
-            <Link to={`/story/${'1'}/intro`}>
+            <Link to={`/story/${id}/intro`}>
                 <div className='card-image-wrapper'>
                     <div className='interaction-wrapper'>
                         <div className='icon-wrapper'>
@@ -15,28 +20,24 @@ const StoryCard = ({ imgurl }) => {
                         </div>
                     </div>
 
-                    <img className='card-top-image' src={imgurl} alt='story-image' />
+                    <img className='card-top-image' src={imageUrl} alt='story-image' />
                 </div>
 
                 <div className='card-info-wrapper'>
                     <div className='card-title-wrapper'>
-                        <h2>Contemporary World History</h2>
+                        <h2>{title}</h2>
                     </div>
 
                     <div className='intro-text-wrapper'>
-                        <p className='intro-text'>
-                            In the sweeping expanse of history from the end of World War II to the present day, our
-                            world has undergone transformations that are both profound and complex. "A Connected World:
-                            The Global Journey from Post-War to Digital Age" offers an engaging and insightful
-                            exploration of these dynamic times, weaving together the threads of political upheavals,
-                            cultural revolutions, technological advancements, and social transformations.
-                        </p>
+                        <p className='intro-text'>{text}</p>
                     </div>
 
                     <div className='tags-wrapper'>
-                        <div className='tag-box'>A tag 1</div>
-                        <div className='tag-box'>Tag tag 2</div>
-                        <div className='tag-box'>Third tag</div>
+                        {tags.map((tag) => (
+                            <div key={tag} className='tag-box'>
+                                {tag}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </Link>
