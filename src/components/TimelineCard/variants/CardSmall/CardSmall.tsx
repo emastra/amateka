@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './CardSmall.scss';
 
+const IMAGE_BASE_URL = '/src/assets/images/';
+
 // interface CardSmallProps {
 //     date: string;
 //     image: string;
@@ -16,11 +18,11 @@ const CardSmall = ({ data: { date, image, title, tags } }) => {
                 <div className='card-left-wrap'>
                     <div className='card-date'>{date}</div>
                     {!!image ? (
-                        <img className='card-image' src={image} alt='card_image' />
+                        <img className='card-image' src={IMAGE_BASE_URL + image} alt='card_image' />
                     ) : (
                         <img
                             className='card-image'
-                            src='/src/assets/images/placeholder_image.jpg'
+                            src={IMAGE_BASE_URL + 'placeholder_image.jpg'}
                             alt='placeholder_image'
                         />
                     )}

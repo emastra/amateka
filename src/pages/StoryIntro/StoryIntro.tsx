@@ -56,8 +56,8 @@ const StoryIntro = () => {
                             </div>
                             <div className='i-wrapper'>
                                 <ol>
-                                    {data.content.intro.info.map((infoText) => (
-                                        <li>
+                                    {data.content.intro.info.map((infoText, i) => (
+                                        <li key={i}>
                                             <img
                                                 className='info-icon'
                                                 src='/src/assets/svg/info-circle.svg'
