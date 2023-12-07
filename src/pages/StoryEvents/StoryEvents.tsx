@@ -4,7 +4,7 @@ import { useParams, useOutletContext } from 'react-router-dom';
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
 // TODO: write types for data, different for each timelinecard variant
-interface IEvents {
+interface IEvent {
     id: string;
     image: string;
     date: string;
@@ -16,7 +16,7 @@ interface IEvents {
 
 const StoryEvents = () => {
     const { storyData } = useOutletContext<any>();
-    const events: IEvents[] = storyData.content.events;
+    const events: IEvent[] = storyData.content.events;
     console.log('!!! events', events);
 
     return (

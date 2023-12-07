@@ -1,31 +1,45 @@
 import './StoryDecades.scss';
-import { useParams } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
-const StoryDecades = () => {
-    const { id } = useParams();
-    console.log('useparams: id:', id);
+interface IDecade {
+    id: string;
+    date: string;
+    image: string;
+    title: string;
+    intro: string;
+    tags: string[];
+}
 
-    const date = '1970s';
-    const image = '/src/assets/images/placeholder_image.jpg';
-    const image2 = '/src/assets/images/ann-ann.jpg';
-    const image3 = '/src/assets/images/martin-luther-king.jpg';
-    const title = 'Un anno tenebroso.';
-    const description =
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut turpis eget nunc volutpat vulputate quis non nulla. Cras non euismod.';
-    const tags = ['Santiago'];
+const StoryDecades = () => {
+    const { storyData } = useOutletContext<any>();
+    const decades: IDecade[] = storyData.content.decades;
 
     return (
         <main id='story-events'>
-            <TimelineCard variant='large' data={{ date, image, title, description, tags }} />
+            {decades.map((decade) => (
+                <TimelineCard
+                    variant='large'
+                    key={decade.id}
+                    data={{
+                        date: decade.date,
+                        image: decade.image,
+                        title: decade.title,
+                        description: decade.intro,
+                        tags: decade.tags,
+                    }}
+                />
+            ))}
+
+            {/* <TimelineCard variant='large' data={{ date, image, title, description, tags }} />
             <TimelineCard variant='large' data={{ date, image: null, title, description, tags }} />
             <TimelineCard variant='large' data={{ date, image: image2, title, description, tags }} />
             <TimelineCard variant='large' data={{ date, image: image3, title, description, tags }} />
             <TimelineCard variant='large' data={{ date, image, title, description, tags }} />
             <TimelineCard variant='large' data={{ date, image, title, description, tags }} />
             <TimelineCard variant='large' data={{ date, image, title, description, tags }} />
-            <TimelineCard variant='large' data={{ date, image, title, description, tags }} />
+            <TimelineCard variant='large' data={{ date, image, title, description, tags }} /> */}
         </main>
     );
 };
