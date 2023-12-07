@@ -1,12 +1,12 @@
 {
-    "id": "story-01",
+    "id": "st-01",
     "image": "artistic-collage-portraits.png",
     "title": "Contemporary World History",
     "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. 'A Connected World: The Global Journey from Post-War to Digital Age' offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.",
     "tags": ["Test", "World", "History"],
     "content": {
         "intro": {
-            "info": ["test info to show 1", "test info to show 2"],
+            "info": ["test info to show 1 test", "test info to show 2"],
             "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. \"A Connected World: The Global Journey from Post-War to Digital Age\" offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.\r\n\r\nEmbark on a journey through the pivotal moments of contemporary history:\r\n\r\n    Unravel the Intricacies of the Cold War: Delve into the ideological battles, proxy wars, and political chess games that defined the second half of the 20th century.\r\n    Witness the Winds of Change in Decolonization: Explore the struggles and triumphs of nations as they sought independence, reshaping global dynamics and forging new identities.\r\n    Navigate the Digital Revolution: Understand how technological advancements have transformed our way of life, communication, and global interactions in the 21st century.\r\n\r\nAuthored for a generation of Millennials and Gen Z, this book brings history to life, making it relatable and understandable. It's not just a recounting of events but a tapestry of stories that demonstrate how the past continually shapes our present and future.\r\n\r\n\"A Connected World\" invites readers to reflect on the lessons of history, understand the interconnectedness of global events, and engage with the ongoing narrative of our world. This book is a must-read for anyone seeking to comprehend the forces that have shaped our contemporary world and continue to influence the path we tread into the future."
         },
         "events": [

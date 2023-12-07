@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
 
-import jsondata from '../../mockdata/storia_contemporanea.json';
+import jsondata from '../../mockdata/contemporary_world_history.json';
 
 import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
@@ -43,7 +43,7 @@ const Article = () => {
                     </div>
 
                     <div className='article-body-wrapper'>
-                        {concept.articleContent.structure.map((item) => {
+                        {concept.content.structure.map((item) => {
                             return <ArticleUnit key={item.id} type={item.type} data={item.content} />;
                         })}
                     </div>

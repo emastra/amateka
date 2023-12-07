@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
-import jsondata from '../../mockdata/storia_contemporanea.json';
+import jsondata from '../../mockdata/contemporary_world_history.json';
 
 const StoryConcepts = () => {
     const { id } = useParams();

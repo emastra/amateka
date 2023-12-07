@@ -8,8 +8,9 @@ const Text = ({ data }) => {
     return (
         <>
             <div className='text-container'>
-                {paragraphs.map((paragraph) => {
-                    return <p>{paragraph}</p>;
+                {/* key !! */}
+                {paragraphs.map((paragraph, i) => {
+                    return <p key={i}>{paragraph}</p>;
                 })}
             </div>
         </>
