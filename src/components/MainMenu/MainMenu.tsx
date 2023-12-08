@@ -18,6 +18,9 @@ const MainMenu = ({ toggleMainMenu }) => {
                         <Link to='/'>Favoriti</Link>
                     </li>
                     <li className='menu-item'>
+                        <Link to='/customize'>Personalizza</Link>
+                    </li>
+                    <li className='menu-item'>
                         <Link to='/'>Impostazioni</Link>
                     </li>
                     <li className='menu-item'>

@@ -16,6 +16,7 @@ import StoryConcepts from '../pages/StoryConcepts/StoryConcepts';
 import Article from '../pages/Article/Article';
 import NotFound from '../pages/NotFound';
 import MDEditorPage from '../pages/MDEditorPage/MDEditorPage';
+import CustomizePage from '../pages/CustomizePage/Customize';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
             <Routes>
                 <Route element={<MainLayout />}>
                     <Route path='/' element={<Home />} />
+                    <Route path='/customize' element={<CustomizePage />} />
                 </Route>
                 <Route element={<IntroLayout />}>
                     <Route path='/story/:id/intro' element={<StoryIntro />} />
