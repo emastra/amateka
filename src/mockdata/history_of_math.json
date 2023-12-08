@@ -1,0 +1,89 @@
+{
+    "id": "st-02",
+    "image": "math-components.png",
+    "title": "History of Math",
+    "text": "Welcome, traveler, on a journey through the ages, exploring the rich and fascinating history of mathematics. In \"Numbers Through Time: A Journey in the History of Mathematics,\" we embark on an enlightening expedition that transcends time and culture, unveiling the story of mathematics and its profound impact on our world.",
+    "tags": ["Test", "Hip Hop", "History"],
+    "content": {
+        "intro": {
+            "info": ["test info to show 1 test", "test info to show 2"],
+            "text": "Welcome, traveler, on a journey through the ages, exploring the rich and fascinating history of mathematics. In \"Numbers Through Time: A Journey in the History of Mathematics,\" we embark on an enlightening expedition that transcends time and culture, unveiling the story of mathematics and its profound impact on our world.\r\n\r\nFrom ancient civilizations etching tallies into bones to modern mathematicians exploring the mysteries of quantum mechanics, mathematics has been a constant companion in humanity's quest for understanding. This journey is not just about numbers and formulas; it's about the people, the places, and the ideas that have shaped our understanding of the world around us.\r\n\r\nDiscovering the Language of the Universe\r\n\r\nMathematics is often called the language of the universe, a universal truth that underpins everything from the orbit of planets to the symmetries in a flower. As we travel through the epochs, we'll discover how this language developed, evolved, and was refined by some of the most brilliant minds in history.\r\n\r\nWe will start with the ancient civilizations, where the foundations of mathematics were laid in the practical needs of agriculture, trade, and astronomy. The journey will then take us through the philosophical realms of Ancient Greece, where mathematics was pursued not just as a tool, but as an intellectual discipline."
+        },
+        "events": [
+            {
+                "id": "ev-01",
+                "image": "",
+                "date": "1976",
+                "title": "Test title",
+                "tags": ["Test", "Another Test"],
+                "content": {
+                    "structure": [
+                        {
+                            "id": "s1",
+                            "type": "text",
+                            "content": "Test"
+                        }
+                    ]
+                }
+            }
+        ],
+        "years": [
+            {
+                "id": "ye-01",
+                "date": "1980",
+                "image": "",
+                "title": "Test",
+                "intro": "The year 1980 was marked by pivotal events that had a profound impact on global politics, culture, and technology. It was a year when the world witnessed the intensification of the Cold War, revolutionary shifts in Iran and Afghanistan, and groundbreaking advancements in technology and entertainment. The echoes of these developments resonated through the decades, shaping the modern world as we know it.",
+                "tags": ["Cold War", "Technological Advancements"]
+            }
+        ],
+        "decades": [
+            {
+                "id": "dec-01",
+                "date": "1970s",
+                "image": "",
+                "title": "1970s: A Decade of Social Change and Technological Innovation",
+                "intro": "The 1970s were marked by the end of the Vietnam War, the Watergate scandal, the rise of environmentalism, and the emergence of the digital revolution, with the introduction of personal computing.",
+                "tags": ["Vietnam War", "Digital Revolution"]
+            }
+        ],
+        "concepts": [
+            {
+                "id": "co-1",
+                "image": "",
+                "title": "The Origins of Mathematics",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Early Counting Systems: From fingers to figures\r\nAncient Civilizations: Egyptian, Babylonian, and Mayan mathematical advancements\r\nHighlight: Interactive timeline of early mathematical concepts",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-2",
+                "image": "",
+                "title": "The Greeks and the Birth of Formal Mathematics",
+                "subtitle": "",
+                "description": "Pythagoras and His Theorem.\r\nEuclid and the Elements: Laying the groundwork for geometry.\r\nArchimedes: Mathematician, Engineer, Inventor.\r\nSidebar: \"Math in Action\" - Real-world applications of ancient Greek mathematics.",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-3",
+                "image": "",
+                "title": "Mathematics in the Eastern World",
+                "subtitle": "",
+                "description": "Indian and Arabic Contributions: Zero, algebra, and beyond\r\n\r\nThe Chinese Mathematical Tradition: The Nine Chapters\r\n\r\nInteractive Section: Solve puzzles based on ancient Eastern mathematics\r\n",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            }
+        ]
+    }
+}

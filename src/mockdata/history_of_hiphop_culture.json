@@ -1,0 +1,125 @@
+{
+    "id": "st-02",
+    "image": "math-components.png",
+    "title": "History of Hip Hop Culture",
+    "text": "In the heart of New York's vibrant boroughs in the 1970s, a revolution was brewing, one that would echo across the globe and shape generations to come. This was not a revolution fought with guns and speeches, but with beats, words, moves, and art. It was the birth of hip hop culture, a dynamic and expressive force born from the struggles and creativity of African American and Latino communities.",
+    "tags": ["Test", "Mathematics", "History"],
+    "content": {
+        "intro": {
+            "info": ["test info to show 1 test", "test info to show 2"],
+            "text": "In the heart of New York's vibrant boroughs in the 1970s, a revolution was brewing, one that would echo across the globe and shape generations to come. This was not a revolution fought with guns and speeches, but with beats, words, moves, and art. It was the birth of hip hop culture, a dynamic and expressive force born from the struggles and creativity of African American and Latino communities. \"Rhythms of Resistance: The Journey of Hip Hop Culture\" dives into this pulsating world, tracing the roots of a movement that started on the streets and exploded into a global phenomenon. Hip hop is more than just a music genre; it is a composite of diverse artistic forms, a lifestyle, and a voice for the voiceless. This book is an odyssey through its four foundational elements: DJing, where turntables spun the soundtrack of a generation; MCing, where words flowed with rhythm and rhyme; breakdancing, the acrobatic dance that defied gravity; and graffiti, the bold visual statements that turned city walls into canvases. Each element, a thread in the vibrant tapestry of hip hop culture, intertwined and evolved but always stayed true to its roots of raw, unfiltered expression. Through the pages of this book, we journey from the block parties and community centers of the Bronx to the global stages where hip hop's influence resonates in music, fashion, language, and lifestyle. We meet the pioneers who laid the groundwork, the icons who propelled hip hop into mainstream consciousness, and the new generation of artists who continue to push its boundaries. But \"Rhythms of Resistance\" is more than a historical account; it's a reflection on how hip hop, as a cultural force, has challenged societal norms, given a voice to the marginalized, and sparked movements for change. It's a story of resilience, creativity, and the unyielding power of the human spirit to express itself against all odds. As you turn these pages, prepare to embark on a journey. It's a journey of beats and rhymes, of movement and art, of struggle and triumph. Welcome to the world of hip hop, a culture that continues to write its history with every beat, every verse, every dance move, and every spray-painted mural. Welcome to \"Rhythms of Resistance.\""
+        },
+        "events": [
+            {
+                "id": "ev-01",
+                "image": "",
+                "date": "2010 A.D.",
+                "title": "Test title",
+                "tags": ["Test", "Another Test"],
+                "content": {
+                    "structure": [
+                        {
+                            "id": "s1",
+                            "type": "text",
+                            "content": "Test"
+                        }
+                    ]
+                }
+            }
+        ],
+        "years": [
+            {
+                "id": "ye-01",
+                "date": "1980",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Alex_palace1.jpg",
+                "title": "A Year of Tumultuous Global Shifts",
+                "intro": "The year 1980 was marked by pivotal events that had a profound impact on global politics, culture, and technology. It was a year when the world witnessed the intensification of the Cold War, revolutionary shifts in Iran and Afghanistan, and groundbreaking advancements in technology and entertainment. The echoes of these developments resonated through the decades, shaping the modern world as we know it.",
+                "tags": ["Cold War", "Technological Advancements"]
+            }
+        ],
+        "decades": [
+            {
+                "id": "dec-01",
+                "date": "1970s",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Disco_ball2.jpg",
+                "title": "1970s: A Decade of Social Change and Technological Innovation",
+                "intro": "The 1970s were marked by the end of the Vietnam War, the Watergate scandal, the rise of environmentalism, and the emergence of the digital revolution, with the introduction of personal computing.",
+                "tags": ["Vietnam War", "Digital Revolution"]
+            }
+        ],
+        "concepts": [
+            {
+                "id": "co-1",
+                "image": "",
+                "title": "Chapter 1: The Birth of a Movement",
+                "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eleifend ex, at rhoncus leo condimentum ut. Aliquam lobortis dictum quam eget fermentum. Nulla luctus justo orci, vitae venenatis ligula porttitor sed. Praesent molestie blandit velit. Sed eleifend ut urna sed sagittis. Pellentesque id felis sit amet eros suscipit efficitur id quis nisi. Maecenas in scelerisque ante. Ut rutrum lorem risus, vitae tincidunt sem aliquet eu. Sed lectus lacus, semper non felis sit amet, venenatis efficitur elit. In malesuada lobortis justo, et commodo libero. Donec ultricies lorem ac purus aliquam, eget vestibulum odio venenatis. Nullam iaculis ante in faucibus tincidunt.",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-2",
+                "image": "",
+                "title": "Chapter 2: Beats, Rhymes, and Life",
+                "subtitle": "",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eleifend ex, at rhoncus leo condimentum ut. Aliquam lobortis dictum quam eget fermentum. Nulla luctus justo orci, vitae venenatis ligula porttitor sed. Praesent molestie blandit velit. Sed eleifend ut urna sed sagittis. Pellentesque id felis sit amet eros suscipit efficitur id quis nisi. Maecenas in scelerisque ante. Ut rutrum lorem risus, vitae tincidunt sem aliquet eu. Sed lectus lacus, semper non felis sit amet, venenatis efficitur elit. In malesuada lobortis justo, et commodo libero. Donec ultricies lorem ac purus aliquam, eget vestibulum odio venenatis. Nullam iaculis ante in faucibus tincidunt.",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-3",
+                "image": "",
+                "title": "Chapter 3: From Streets to the Mainstream",
+                "subtitle": "",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eleifend ex, at rhoncus leo condimentum ut. Aliquam lobortis dictum quam eget fermentum. Nulla luctus justo orci, vitae venenatis ligula porttitor sed. Praesent molestie blandit velit. Sed eleifend ut urna sed sagittis. Pellentesque id felis sit amet eros suscipit efficitur id quis nisi. Maecenas in scelerisque ante. Ut rutrum lorem risus, vitae tincidunt sem aliquet eu. Sed lectus lacus, semper non felis sit amet, venenatis efficitur elit. In malesuada lobortis justo, et commodo libero. Donec ultricies lorem ac purus aliquam, eget vestibulum odio venenatis. Nullam iaculis ante in faucibus tincidunt. ",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-4",
+                "image": "",
+                "title": "Chapter 4: A Global Phenomenon",
+                "subtitle": "",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eleifend ex, at rhoncus leo condimentum ut. Aliquam lobortis dictum quam eget fermentum. Nulla luctus justo orci, vitae venenatis ligula porttitor sed. Praesent molestie blandit velit. Sed eleifend ut urna sed sagittis. Pellentesque id felis sit amet eros suscipit efficitur id quis nisi. Maecenas in scelerisque ante. Ut rutrum lorem risus, vitae tincidunt sem aliquet eu. Sed lectus lacus, semper non felis sit amet, venenatis efficitur elit. In malesuada lobortis justo, et commodo libero. Donec ultricies lorem ac purus aliquam, eget vestibulum odio venenatis. Nullam iaculis ante in faucibus tincidunt. ",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-5",
+                "image": "",
+                "title": "Chapter 5: New Millennium, New Voices",
+                "subtitle": "",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eleifend ex, at rhoncus leo condimentum ut. Aliquam lobortis dictum quam eget fermentum. Nulla luctus justo orci, vitae venenatis ligula porttitor sed. Praesent molestie blandit velit. Sed eleifend ut urna sed sagittis. Pellentesque id felis sit amet eros suscipit efficitur id quis nisi. Maecenas in scelerisque ante. Ut rutrum lorem risus, vitae tincidunt sem aliquet eu. Sed lectus lacus, semper non felis sit amet, venenatis efficitur elit. In malesuada lobortis justo, et commodo libero. Donec ultricies lorem ac purus aliquam, eget vestibulum odio venenatis. Nullam iaculis ante in faucibus tincidunt. ",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            },
+            {
+                "id": "co-6",
+                "image": "",
+                "title": "Chapter 6: The Culture of Change",
+                "subtitle": "",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eleifend ex, at rhoncus leo condimentum ut. Aliquam lobortis dictum quam eget fermentum. Nulla luctus justo orci, vitae venenatis ligula porttitor sed. Praesent molestie blandit velit. Sed eleifend ut urna sed sagittis. Pellentesque id felis sit amet eros suscipit efficitur id quis nisi. Maecenas in scelerisque ante. Ut rutrum lorem risus, vitae tincidunt sem aliquet eu. Sed lectus lacus, semper non felis sit amet, venenatis efficitur elit. In malesuada lobortis justo, et commodo libero. Donec ultricies lorem ac purus aliquam, eget vestibulum odio venenatis. Nullam iaculis ante in faucibus tincidunt. ",
+                "tags": ["World", "Test"],
+                "content": {
+                    "images": [],
+                    "structure": []
+                }
+            }
+        ]
+    }
+}
