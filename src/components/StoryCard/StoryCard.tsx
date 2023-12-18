@@ -4,7 +4,8 @@ import './StoryCard.scss';
 const IMAGE_BASE_URL = '/src/assets/images/';
 
 const StoryCard = ({ data }) => {
-    const { id, image, title, text, tags } = data;
+    console.log('!!! from storycard !!! data:', data);
+    const { id, image, title, description, tags } = data;
     const imageUrl = image ? IMAGE_BASE_URL + image : IMAGE_BASE_URL + 'placeholder_image.jpg';
 
     return (
@@ -29,7 +30,7 @@ const StoryCard = ({ data }) => {
                     </div>
 
                     <div className='intro-text-wrapper'>
-                        <p className='intro-text'>{text}</p>
+                        <p className='intro-text'>{description}</p>
                     </div>
 
                     <div className='tags-wrapper'>
