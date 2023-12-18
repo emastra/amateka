@@ -19,6 +19,7 @@ main#home {
     box-shadow: 0 2px 8px 4px rgb(35, 45, 46, 25%);
     // box-shadow: var(--shadow-border);
     cursor: pointer;
+    z-index: var(--z-index-modal);
 
     .plus-icon {
         margin-right: 12px;

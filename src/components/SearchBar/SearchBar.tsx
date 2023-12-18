@@ -5,7 +5,7 @@ const SearchBar = ({ toggleSortMenu, toggleFilterMenu }) => {
     return (
         <div id='searchbar'>
             <div className='search-input-wrapper'>
-                <input type='text' className='search-input' placeholder='Search...' />
+                <input type='text' className='search-input' placeholder='Search for amatekas...' />
             </div>
 
             <div className='controls-wrapper'>
