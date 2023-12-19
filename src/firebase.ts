@@ -5,6 +5,7 @@ import { getAuth, connectAuthEmulator } from 'firebase/auth';
 
 function initialize() {
     const firebaseApp = initializeApp(firebaseConfig);
+
     const auth = getAuth(firebaseApp);
     const firestore = getFirestore(firebaseApp);
 

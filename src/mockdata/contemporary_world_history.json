@@ -371,12 +371,13 @@
                     "images": [],
                     "structure": [
                         {
-                            "id": "s1",
+                            "position": "1",
                             "type": "chapterTitle",
                             "content": "1.1 The World After 1945: A Landscape of Ruins and Rebirth"
                         },
                         {
-                            "id": "s2",
+                            "id": "????",
+                            "position": "2",
                             "type": "text",
                             "content": "As the smoke of World War II cleared, the world in 1945 presented a tableau of devastation and hope, a paradoxical scene where the ruins of old met the seeds of a new era. Europe lay in shreds, its cities reduced to rubble, its people grappling with loss on an unimaginable scale. Asia, too, bore the scars of war, with Japan facing the aftermath of nuclear devastation. Yet, amid this desolation, a collective resolve to rebuild and prevent future conflicts began to take shape, marking the beginning of a significant transformation in global politics, society, and ideology."
                         },
