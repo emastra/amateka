@@ -28,16 +28,7 @@ const MainLayout = () => {
 
             <Topbar toggleMainMenu={toggleMainMenu} />
             <SearchBar toggleSortMenu={toggleSortMenu} toggleFilterMenu={toggleFilterMenu} />
-            <Outlet
-                context={{
-                    isMainMenuOpen,
-                    toggleMainMenu,
-                    isSortMenuOpen,
-                    toggleSortMenu,
-                    isFilterMenuOpen,
-                    toggleFilterMenu,
-                }}
-            />
+            <Outlet />
         </>
     );
 };
