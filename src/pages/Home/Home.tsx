@@ -1,13 +1,11 @@
 import './Home.scss';
 import { useState, useEffect } from 'react';
-import { useOutletContext, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import { getFirebase } from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 
 import StoryCard from '../../components/StoryCard';
-// import MainMenu from '../../components/MainMenu';
-// import SortMenu from '../../components/SortMenu';
-// import FilterMenu from '../../components/FilterMenu';
 
 const { firestore } = getFirebase(); // , auth
 
@@ -34,15 +32,6 @@ const { firestore } = getFirebase(); // , auth
 //         tags: ['Hip Hop', 'Test'],
 //     },
 // ];
-
-// interface MenusContextState {
-//     isMainMenuOpen: boolean;
-//     toggleMainMenu: () => void;
-//     isSortMenuOpen: boolean;
-//     toggleSortMenu: () => void;
-//     isFilterMenuOpen: boolean;
-//     toggleFilterMenu: () => void;
-// }
 
 const Home = () => {
     const [loading, setLoading] = useState(true);

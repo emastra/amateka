@@ -1,6 +1,5 @@
-// import { useEffect, useState } from 'react';
 import './BackBar.scss';
-import { Link, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const BackBar = () => {
     const navigate = useNavigate();
