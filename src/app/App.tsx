@@ -38,17 +38,9 @@ function App() {
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
                     <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
                 </Route>
-                {/* <Route element={<ArticleLayout />}>
-                </Route> */}
-
-                <Route
-                    path='/story/:id/article/:articleId'
-                    element={
-                        <ArticleMenusProvider>
-                            <Article />
-                        </ArticleMenusProvider>
-                    }
-                />
+                <Route element={<ArticleLayout />}>
+                    <Route path='/story/:id/article/:articleId' element={<Article />} />
+                </Route>
 
                 <Route path='/editor' element={<MDEditorPage />} />
 
