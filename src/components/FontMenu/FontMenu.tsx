@@ -1,9 +1,6 @@
 import './FontMenu.scss';
-import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
-const FontMenu = () => {
-    const { toggleFontMenu } = useArticleMenusContext();
-
+const FontMenu = ({ toggleFontMenu }) => {
     return (
         <div id='fontmenu'>
             <div className='closing-handle-wrapper'>

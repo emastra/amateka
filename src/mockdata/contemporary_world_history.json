@@ -376,94 +376,93 @@
                             "content": "1.1 The World After 1945: A Landscape of Ruins and Rebirth"
                         },
                         {
-                            "id": "????",
                             "position": "2",
                             "type": "text",
                             "content": "As the smoke of World War II cleared, the world in 1945 presented a tableau of devastation and hope, a paradoxical scene where the ruins of old met the seeds of a new era. Europe lay in shreds, its cities reduced to rubble, its people grappling with loss on an unimaginable scale. Asia, too, bore the scars of war, with Japan facing the aftermath of nuclear devastation. Yet, amid this desolation, a collective resolve to rebuild and prevent future conflicts began to take shape, marking the beginning of a significant transformation in global politics, society, and ideology."
                         },
                         {
-                            "id": "s3",
+                            "position": "3",
                             "type": "sectionTitle",
                             "content": "The Devastation"
                         },
                         {
-                            "id": "s4",
+                            "position": "4",
                             "type": "text",
                             "content": "Europe's landscape in the immediate post-war years was a stark testament to the war's ferocity. Cities like Berlin, Warsaw, and London had been heavily bombed, leaving vast swathes of destruction. The economic structures of entire nations were disrupted, leading to widespread poverty and famine. In Asia, the Japanese cities of Hiroshima and Nagasaki emerged as symbols of the war's new, terrifying potential for destruction with the advent of atomic weapons."
                         },
                         {
-                            "id": "s5",
+                            "position": "5",
                             "type": "sectionTitle",
                             "content": "The Human Cost"
                         },
                         {
-                            "id": "s6",
+                            "position": "s6",
                             "type": "text",
                             "content": "The human cost of the war was profound and far-reaching. Millions had perished, families were torn apart, and communities were displaced. The Holocaust had revealed the depths of human cruelty, leaving a permanent scar on the collective conscience of humanity. Soldiers returning home carried the psychological scars of war, many struggling to reintegrate into a peacetime society."
                         },
                         {
-                            "id": "s7",
+                            "position": "s7",
                             "type": "sectionTitle",
                             "content": "A New Superpower Dynamic"
                         },
                         {
-                            "id": "s8",
+                            "position": "s8",
                             "type": "text",
                             "content": "The post-war world also saw the emergence of the United States and the Soviet Union as superpowers, setting the stage for future geopolitical dynamics. The U.S., relatively unscathed territorially, emerged as a global leader in economic and military terms. The Soviet Union, despite immense wartime losses, expanded its influence over Eastern Europe, establishing a communist bloc that stood in ideological opposition to the capitalist West."
                         },
                         {
-                            "id": "s9",
+                            "position": "s9",
                             "type": "sectionTitle",
                             "content": "Rebuilding Efforts"
                         },
                         {
-                            "id": "s10",
+                            "position": "s10",
                             "type": "text",
                             "content": "The task of rebuilding was colossal. The Marshall Plan, initiated by the United States, injected much-needed funds into Western Europe, aiding in its recovery and helping to stem the spread of communism. In contrast, the Soviet Union consolidated its hold over Eastern Europe, implementing socialist economic models and establishing communist governments."
                         },
                         {
-                            "id": "s11",
+                            "position": "s11",
                             "type": "sectionTitle",
                             "content": "The Birth of the UN"
                         },
                         {
-                            "id": "s12",
+                            "position": "s12",
                             "type": "text",
                             "content": "Amid these efforts, the United Nations was founded with the goal of preventing future conflicts and fostering international cooperation. The UN Charter, signed in 1945, embodied the hopes of a war-torn world for a peaceful future, emphasizing principles like the sovereign equality of all its members and the resolution of disputes by peaceful means."
                         },
                         {
-                            "id": "s13",
+                            "position": "s13",
                             "type": "sectionTitle",
                             "content": "The Atomic Age"
                         },
                         {
-                            "id": "s14",
+                            "position": "s14",
                             "type": "text",
                             "content": "The use of atomic bombs in Hiroshima and Nagasaki had ushered in the Atomic Age, bringing with it a new level of existential threat. The immediate post-war years saw the beginning of an arms race, as nations grappled with the implications of nuclear technology and its potential for both destruction and peaceful use."
                         },
                         {
-                            "id": "s15",
+                            "position": "s15",
                             "type": "text",
                             "content": "In this landscape of destruction and rebirth, the world of 1945 was at a crossroads, facing the monumental task of rebuilding from the ruins of war while navigating the complex dynamics of a new global order. It was a time of contradictions – of mourning and hope, of division and cooperation – as the foundations were laid for the modern world we know today."
                         },
 
                         {
-                            "id": "s16",
+                            "position": "s16",
                             "type": "chapterTitle",
                             "content": "1.2 Seeds of a new world order: The Formation of the United Nations"
                         },
                         {
-                            "id": "s17",
+                            "position": "s17",
                             "type": "text",
                             "content": "As the world emerged from the shadow of World War II, a collective yearning for peace and stability led to the formation of an organization with an ambitious goal – to prevent such a catastrophic conflict from ever occurring again. This marked the birth of the United Nations (UN), an institution that would come to play a central role in shaping the post-war world order."
                         },
                         {
-                            "id": "s18",
+                            "position": "s18",
                             "type": "sectionTitle",
                             "content": "The Vision of Unity"
                         },
                         {
-                            "id": "s19",
+                            "position": "s19",
                             "type": "text",
                             "content": "The idea of the United Nations was conceived during the war as a means to build an international framework for maintaining peace. The name 'United Nations' was first coined by United States President Franklin D. Roosevelt and referred to the countries allied against the Axis powers. The UN Charter was signed on June 26, 1945, by 50 countries, laying the foundation for an organization based on principles of sovereign equality, non-interference in internal affairs, and collective security."
                         },

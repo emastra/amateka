@@ -1,16 +1,9 @@
 import './Article.scss';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
 
 import jsondata from '../../mockdata/contemporary_world_history.json';
-
-import useArticleMenusContext from '../../hooks/useArticleMenusContext';
-
-import ContentMenu from '../../components/ContentMenu/ContentMenu';
-import ColorMenu from '../../components/ColorMenu/ColorMenu';
-import FontMenu from '../../components/FontMenu/FontMenu';
 
 const Article = () => {
     const { articleId } = useParams();
@@ -19,14 +12,8 @@ const Article = () => {
     const concept = jsondata.content.concepts.filter((c) => c.id === articleId)[0];
     console.log('concept:', concept);
 
-    const { isContentMenuOpen, isColorMenuOpen, isFontMenuOpen, isMoreMenuOpen } = useArticleMenusContext();
-
     return (
         <>
-            {isContentMenuOpen && <ContentMenu />}
-            {isColorMenuOpen && <ColorMenu />}
-            {isFontMenuOpen && <FontMenu />}
-
             <main id='article'>
                 <div className='top-image-wrapper'>
                     <img className='top-image' src={concept.image} alt='placeholder_image' />
@@ -44,7 +31,7 @@ const Article = () => {
 
                     <div className='article-body-wrapper'>
                         {concept.content.structure.map((item) => {
-                            return <ArticleUnit key={item.id} type={item.type} data={item.content} />;
+                            return <ArticleUnit key={item.position || item.id} type={item.type} data={item.content} />;
                         })}
                     </div>
                 </div>

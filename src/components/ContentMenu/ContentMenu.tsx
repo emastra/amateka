@@ -1,10 +1,7 @@
 import './ContentMenu.scss';
 import { Link } from 'react-router-dom';
-import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
-const ContentMenu = () => {
-    const { toggleContentMenu } = useArticleMenusContext();
-
+const ContentMenu = ({ toggleContentMenu }) => {
     return (
         <div className='contentmenu-screen'>
             <div className='header-wrapper'>

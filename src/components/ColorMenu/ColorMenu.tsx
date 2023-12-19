@@ -1,9 +1,6 @@
 import './ColorMenu.scss';
-import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
-const ColorMenu = () => {
-    const { toggleColorMenu } = useArticleMenusContext();
-
+const ColorMenu = ({ toggleColorMenu }) => {
     return (
         <div id='colormenu'>
             <div className='closing-handle-wrapper'>

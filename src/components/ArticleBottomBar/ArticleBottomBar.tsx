@@ -1,9 +1,6 @@
 import './ArticleBottomBar.scss';
-import useArticleMenusContext from '../../hooks/useArticleMenusContext';
 
-const ArticleBottomBar = () => {
-    const { toggleContentMenu, toggleColorMenu, toggleFontMenu, toggleMoreMenu } = useArticleMenusContext();
-
+const ArticleBottomBar = ({ toggleContentMenu, toggleColorMenu, toggleFontMenu, toggleMoreMenu }) => {
     return (
         <div id='articlebottombar'>
             <div className='contents-button-wrapper' onClick={toggleContentMenu}>
