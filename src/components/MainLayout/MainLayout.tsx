@@ -2,6 +2,10 @@ import './MainLayout.scss';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
+import MainMenu from '../../components/MainMenu';
+import SortMenu from '../../components/SortMenu';
+import FilterMenu from '../../components/FilterMenu';
+
 import Topbar from '../Topbar/Topbar';
 import SearchBar from '../SearchBar/SearchBar';
 
@@ -18,6 +22,10 @@ const MainLayout = () => {
 
     return (
         <>
+            {isMainMenuOpen && <MainMenu toggleMainMenu={toggleMainMenu} />}
+            {isSortMenuOpen && <SortMenu toggleSortMenu={toggleSortMenu} />}
+            {isFilterMenuOpen && <FilterMenu toggleFilterMenu={toggleFilterMenu} />}
+
             <Topbar toggleMainMenu={toggleMainMenu} />
             <SearchBar toggleSortMenu={toggleSortMenu} toggleFilterMenu={toggleFilterMenu} />
             <Outlet

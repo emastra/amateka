@@ -5,9 +5,9 @@ import { getFirebase } from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 
 import StoryCard from '../../components/StoryCard';
-import MainMenu from '../../components/MainMenu';
-import SortMenu from '../../components/SortMenu';
-import FilterMenu from '../../components/FilterMenu';
+// import MainMenu from '../../components/MainMenu';
+// import SortMenu from '../../components/SortMenu';
+// import FilterMenu from '../../components/FilterMenu';
 
 const { firestore } = getFirebase(); // , auth
 
@@ -35,19 +35,16 @@ const { firestore } = getFirebase(); // , auth
 //     },
 // ];
 
-interface MenusContextState {
-    isMainMenuOpen: boolean;
-    toggleMainMenu: () => void;
-    isSortMenuOpen: boolean;
-    toggleSortMenu: () => void;
-    isFilterMenuOpen: boolean;
-    toggleFilterMenu: () => void;
-}
+// interface MenusContextState {
+//     isMainMenuOpen: boolean;
+//     toggleMainMenu: () => void;
+//     isSortMenuOpen: boolean;
+//     toggleSortMenu: () => void;
+//     isFilterMenuOpen: boolean;
+//     toggleFilterMenu: () => void;
+// }
 
 const Home = () => {
-    const { isMainMenuOpen, toggleMainMenu, isSortMenuOpen, toggleSortMenu, isFilterMenuOpen, toggleFilterMenu } =
-        useOutletContext<MenusContextState>();
-
     const [loading, setLoading] = useState(true);
     const [stories, setStories] = useState<any>(null);
 
@@ -72,21 +69,18 @@ const Home = () => {
 
     return (
         <>
-            {isMainMenuOpen && <MainMenu toggleMainMenu={toggleMainMenu} />}
-            {isSortMenuOpen && <SortMenu toggleSortMenu={toggleSortMenu} />}
-            {isFilterMenuOpen && <FilterMenu toggleFilterMenu={toggleFilterMenu} />}
-
             <main id='home'>
                 {!loading &&
                     stories.map((story) => {
                         console.log('story', story);
                         return <StoryCard key={story.id} data={story}></StoryCard>;
                     })}
+
+                <Link className='create-btn' to={`/editor`}>
+                    <img className='plus-icon' src='/src/assets/svg/plus.svg' alt='plus' />
+                    <span>Crea</span>
+                </Link>
             </main>
-            <Link className='create-btn' to={`/editor`}>
-                <img className='plus-icon' src='/src/assets/svg/plus.svg' alt='plus' />
-                Crea
-            </Link>
         </>
     );
 };
