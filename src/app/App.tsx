@@ -38,6 +38,12 @@ function App() {
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
                     <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
                 </Route>
+
+                {/* <Route path='/story/:id/content' element={<StoryContainer />}>
+                        <Route path='/:sectionORscreen' element={<StoryPagesORscreens />}></Route>
+                    </Route> 
+                */}
+
                 <Route element={<ArticleLayout />}>
                     <Route path='/story/:id/article/:articleId' element={<Article />} />
                 </Route>
