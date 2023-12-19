@@ -34,6 +34,7 @@ const ArticleUnit: React.FC<ArticleUnitProps> = ({ type, data }) => {
         return <Text data={data} />;
     }
 
+    console.error('Provided type does not exist');
     return null;
 };
 

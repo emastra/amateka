@@ -18,6 +18,8 @@ import NotFound from '../pages/NotFound';
 import MDEditorPage from '../pages/MDEditorPage/MDEditorPage';
 import CustomizePage from '../pages/CustomizePage/Customize';
 
+import { ArticleMenusProvider } from '../context/ArticleMenusContext';
+
 function App() {
     return (
         <div className='app-container'>
@@ -36,9 +38,17 @@ function App() {
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
                     <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
                 </Route>
-                <Route element={<ArticleLayout />}>
-                    <Route path='/story/:id/article/:articleId' element={<Article />} />
-                </Route>
+                {/* <Route element={<ArticleLayout />}>
+                </Route> */}
+
+                <Route
+                    path='/story/:id/article/:articleId'
+                    element={
+                        <ArticleMenusProvider>
+                            <Article />
+                        </ArticleMenusProvider>
+                    }
+                />
 
                 <Route path='/editor' element={<MDEditorPage />} />
 
