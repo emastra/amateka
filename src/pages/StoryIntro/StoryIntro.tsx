@@ -1,37 +1,44 @@
 import './StoryIntro.scss';
 import { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useLocation } from 'react-router-dom';
 
 import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
 
 const IMAGE_BASE_URL = '/src/assets/images/';
 
-const storymap = {
-    'st-01': 'contemporary_world_history',
-    'st-02': 'history_of_math',
-    'st-03': 'history_of_hiphop_culture',
-};
-
 const StoryIntro = () => {
     const { id } = useParams();
     if (!id) return;
+
+    const location = useLocation();
+    const currentStory = location.state?.currentStory;
+    console.log('##! currentStory', currentStory);
 
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState<any>(null);
 
     useEffect(() => {
-        fetch(`/src/mockdata/${storymap[id]}.json`)
-            .then((res) => res.json())
-            .then((data) => {
-                setData(data);
-                console.log('# data:', data);
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.log(err);
-                setLoading(false);
-            });
+        if (currentStory) {
+            setData(currentStory);
+            setLoading(false);
+        } else {
+            // do same call to firestore as in Home
+        }
     }, []);
+
+    // useEffect(() => {
+    //     fetch(`/src/mockdata/${storymap[id]}.json`)
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             setData(data);
+    //             console.log('# data:', data);
+    //             setLoading(false);
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //             setLoading(false);
+    //         });
+    // }, []);
 
     return (
         <>
@@ -56,7 +63,7 @@ const StoryIntro = () => {
                             </div>
                             <div className='i-wrapper'>
                                 <ol>
-                                    {data.content.intro.info.map((infoText, i) => (
+                                    {data.intro.info.map((infoText, i) => (
                                         <li key={i}>
                                             <img
                                                 className='info-icon'
@@ -69,7 +76,7 @@ const StoryIntro = () => {
                                 </ol>
                             </div>
                             <div className='text-wrapper'>
-                                <ArticleUnit type='text' data={data.content.intro.text} />
+                                <ArticleUnit type='text' data={data.intro.text} />
                             </div>
 
                             {/* controlla la 2a var dal default scelto */}

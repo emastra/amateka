@@ -56,4 +56,18 @@ function App() {
     );
 }
 
+{
+    /* err: Perchè uso il router Outlet invece che children */
+}
+{
+    /* <Route
+            path='/'
+            element={
+                <MainLayout>
+                    <Home />
+                </MainLayout>
+            }
+    /> */
+}
+
 export default App;
