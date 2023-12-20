@@ -15,20 +15,19 @@ export const StoryProvider = ({ children }) => {
 
     useEffect(() => {
         const { firestore } = getFirebase();
-
         const storyRef = doc(firestore, 'stories', id);
 
         getDoc(storyRef).then((storySnap) => {
-            const shallowStoryData = { id: storySnap.id, ...storySnap.data() };
+            const basicStoryData = { id: storySnap.id, ...storySnap.data() };
 
-            const eventsCollectionRef = collection(storyRef, 'events');
+            const sectionsColRef = collection(storyRef, 'sections');
 
-            getDocs(eventsCollectionRef).then((eventsSnap) => {
-                const shallowEventsData = eventsSnap.docs.map((d) => {
+            getDocs(sectionsColRef).then((snaphot) => {
+                const sectionsDocs = snaphot.docs.map((d) => {
                     return { id: d.id, ...d.data() };
                 });
 
-                setStoryData({ ...shallowStoryData, sections: shallowEventsData });
+                setStoryData({ ...basicStoryData, sections: sectionsDocs });
             });
         });
     }, []);
