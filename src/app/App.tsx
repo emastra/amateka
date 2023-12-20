@@ -17,6 +17,7 @@ import Article from '../pages/Article/Article';
 import NotFound from '../pages/NotFound';
 import MDEditorPage from '../pages/MDEditorPage/MDEditorPage';
 import CustomizePage from '../pages/CustomizePage/Customize';
+import StoryContainer from '../pages/StoryContainer/StoryContainer';
 
 // import { ArticleMenusProvider } from '../context/ArticleMenusContext';
 import { StoryProvider } from '../context/StoryContext';
@@ -53,7 +54,7 @@ function App() {
                         </StoryProvider>
                     }
                 >
-                    <Route path='/story/:id/content/:section' element={<StoryEvents />}></Route>
+                    <Route path='/story/:id/content/:section' element={<StoryContainer />}></Route>
                 </Route>
 
                 <Route element={<ArticleLayout />}>
