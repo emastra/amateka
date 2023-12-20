@@ -3,6 +3,8 @@ import { useParams, useOutletContext } from 'react-router-dom';
 
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
+import useStoryContext from '../../hooks/useStoryContext';
+
 // TODO: write types for data, different for each timelinecard variant
 interface IEvent {
     id: string;
@@ -15,27 +17,23 @@ interface IEvent {
 }
 
 const StoryEvents = () => {
-    const { storyData } = useOutletContext<any>();
-    const events: IEvent[] = storyData.content.events;
-    console.log('!!! events', events);
+    // const { storyData } = useOutletContext<any>();
+    // const events: IEvent[] = storyData.content.events;
+    // console.log('!!! events', events);
+
+    const storyData = useStoryContext();
+    console.log('##!! storyData:', storyData);
 
     return (
         <main id='story-events'>
-            {events.map((ev) => (
+            test
+            {/* {events.map((ev) => (
                 <TimelineCard
                     variant='small'
                     key={ev.id}
                     data={{ date: ev.date, image: ev.image, title: ev.title, tags: ev.tags }}
                 />
-            ))}
-
-            {/* <TimelineCard variant='small' data={{ date, image, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: null, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: image2, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: image3, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image: null, title, tags }} />
-            <TimelineCard variant='small' data={{ date, image, title, tags }} /> */}
+            ))} */}
         </main>
     );
 };

@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 // https://blog.webdevsimplified.com/2022-07/react-router/  --> c'è anche differenti layout per routes. cosa che mi serve
 // improve SEO --> https://synodus.com/blog/web-development/single-page-application-seo/
 
@@ -19,6 +19,7 @@ import MDEditorPage from '../pages/MDEditorPage/MDEditorPage';
 import CustomizePage from '../pages/CustomizePage/Customize';
 
 // import { ArticleMenusProvider } from '../context/ArticleMenusContext';
+import { StoryProvider } from '../context/StoryContext';
 
 function App() {
     return (
@@ -33,21 +34,27 @@ function App() {
                     <Route path='/story/:id/intro' element={<StoryIntro />} />
                 </Route>
 
-                <Route element={<StoryLayout />}>
+                {/* <Route element={<StoryLayout />}>
                     <Route path='/story/:id/events' element={<StoryEvents />}></Route>
                     <Route path='/story/:id/years' element={<StoryYears />}></Route>
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
                     <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
-                </Route>
+                </Route> */}
 
                 {/* <Route path='/story/:id/content' element={<StoryContainer />}>
                         <Route path='/:sectionORscreen' element={<StoryPagesORscreens />}></Route>
                     </Route> 
                 */}
 
-                {/* <Route element={<ContextProvider />}>
-                    <Route path='/story/:id/content/:sectionORscreen' element={<StoryPagesORscreens />}></Route>
-                </Route> */}
+                <Route
+                    element={
+                        <StoryProvider>
+                            <Outlet />
+                        </StoryProvider>
+                    }
+                >
+                    <Route path='/story/:id/content/:section' element={<StoryEvents />}></Route>
+                </Route>
 
                 <Route element={<ArticleLayout />}>
                     <Route path='/story/:id/article/:articleId' element={<Article />} />

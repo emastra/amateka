@@ -81,7 +81,7 @@ const StoryIntro = () => {
 
                             {/* controlla la 2a var dal default scelto */}
                             <div className='enter-btn-wrapper'>
-                                <Link to={`/story/${id}/${'events'}`} className='enter-btn'>
+                                <Link to={`/story/${id}/content/${'events'}`} className='enter-btn'>
                                     Entra
                                 </Link>
                             </div>
