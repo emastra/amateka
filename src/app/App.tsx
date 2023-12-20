@@ -28,11 +28,12 @@ function App() {
                     <Route path='/' element={<Home />} />
                     <Route path='/customize' element={<CustomizePage />} />
                 </Route>
+
                 <Route element={<IntroLayout />}>
                     <Route path='/story/:id/intro' element={<StoryIntro />} />
                 </Route>
+
                 <Route element={<StoryLayout />}>
-                    {/* TODO: creo margin e padding della pagina sempre con main#story-events. Forse uso .story-container e lo stilizzo in _global.scss? */}
                     <Route path='/story/:id/events' element={<StoryEvents />}></Route>
                     <Route path='/story/:id/years' element={<StoryYears />}></Route>
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
@@ -43,6 +44,10 @@ function App() {
                         <Route path='/:sectionORscreen' element={<StoryPagesORscreens />}></Route>
                     </Route> 
                 */}
+
+                {/* <Route element={<ContextProvider />}>
+                    <Route path='/story/:id/content/:sectionORscreen' element={<StoryPagesORscreens />}></Route>
+                </Route> */}
 
                 <Route element={<ArticleLayout />}>
                     <Route path='/story/:id/article/:articleId' element={<Article />} />
