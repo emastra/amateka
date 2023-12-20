@@ -2,13 +2,6 @@ import './StoryBottomBar.scss';
 import { NavLink } from 'react-router-dom';
 import { NavIcon } from './NavIcon';
 
-const links = [
-    { name: 'Events', to: `/story/${'1'}/events` },
-    { name: 'Years', to: `/story/${'1'}/years` },
-    { name: 'Decades', to: `/story/${'1'}/decades` },
-    { name: 'Concepts', to: `/story/${'1'}/concepts` },
-];
-
 const NavigationLink = ({ name, to }) => {
     return (
         <NavLink
@@ -25,14 +18,16 @@ const NavigationLink = ({ name, to }) => {
     );
 };
 
-const StoryBottomBar = () => {
+const StoryBottomBar = ({ links }) => {
     return (
         <>
-            <div id='storybottombar'>
-                {links.map((link) => (
-                    <NavigationLink key={link.name} name={link.name} to={link.to} />
-                ))}
-            </div>
+            {links && (
+                <div id='storybottombar'>
+                    {links.map((link) => (
+                        <NavigationLink key={link.name} name={link.name} to={link.to} />
+                    ))}
+                </div>
+            )}
         </>
     );
 };

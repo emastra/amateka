@@ -17,23 +17,19 @@ interface IEvent {
 }
 
 const StoryEvents = () => {
-    // const { storyData } = useOutletContext<any>();
-    // const events: IEvent[] = storyData.content.events;
-    // console.log('!!! events', events);
-
-    const storyData = useStoryContext();
-    console.log('##!! storyData:', storyData);
+    const { storyData } = useOutletContext<any>();
+    const events: IEvent[] = storyData.content.events;
+    console.log('!!! events', events);
 
     return (
         <main id='story-events'>
-            test
-            {/* {events.map((ev) => (
+            {events.map((ev) => (
                 <TimelineCard
                     variant='small'
                     key={ev.id}
                     data={{ date: ev.date, image: ev.image, title: ev.title, tags: ev.tags }}
                 />
-            ))} */}
+            ))}
         </main>
     );
 };
