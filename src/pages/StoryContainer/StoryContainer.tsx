@@ -1,9 +1,19 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import useStoryContext from '../../hooks/useStoryContext';
 
 import StoryLayout from '../../components/StoryLayout/StoryLayout';
 
+// const StoryScreen = ({sectionName}) => {
+//     if (sectionName === 'events') {
+//         return ();
+//     }
+// }
+
 const StoryContainer = () => {
+    const { sectionName } = useParams();
+    console.log('# sectionName:', sectionName);
+
     const storyData = useStoryContext();
     console.log('##!! storyData:', storyData);
 

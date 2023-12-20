@@ -54,7 +54,7 @@ function App() {
                         </StoryProvider>
                     }
                 >
-                    <Route path='/story/:id/content/:section' element={<StoryContainer />}></Route>
+                    <Route path='/story/:id/content/:sectionName' element={<StoryContainer />}></Route>
                 </Route>
 
                 <Route element={<ArticleLayout />}>

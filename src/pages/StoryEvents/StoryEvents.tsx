@@ -23,13 +23,16 @@ const StoryEvents = () => {
 
     return (
         <main id='story-events'>
-            {events.map((ev) => (
-                <TimelineCard
-                    variant='small'
-                    key={ev.id}
-                    data={{ date: ev.date, image: ev.image, title: ev.title, tags: ev.tags }}
-                />
-            ))}
+            {storyData &&
+                storyData.sections
+                    .filter((s) => s.id === 'events')
+                    .map((ev) => (
+                        <TimelineCard
+                            variant='small'
+                            key={ev.id}
+                            data={{ date: ev.date, image: ev.image, title: ev.title, tags: ev.tags }}
+                        />
+                    ))}
         </main>
     );
 };
