@@ -27,7 +27,7 @@ const StoryContainer = () => {
 
     return (
         <StoryLayout links={links}>
-            <main id='story-events'>
+            <main id='story-container'>
                 <StoryScreen sectionName={sectionName} sections={storyData?.sections} />
             </main>
         </StoryLayout>
