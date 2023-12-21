@@ -2,7 +2,7 @@
     "id": "st-01",
     "images": ["artistic-collage-portraits.png"],
     "title": "Contemporary World History",
-    "text": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. 'A Connected World: The Global Journey from Post-War to Digital Age' offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.",
+    "description": "In the sweeping expanse of history from the end of World War II to the present day, our world has undergone transformations that are both profound and complex. 'A Connected World: The Global Journey from Post-War to Digital Age' offers an engaging and insightful exploration of these dynamic times, weaving together the threads of political upheavals, cultural revolutions, technological advancements, and social transformations.",
     "tags": ["Test", "World", "History"],
     "intro": {
         "info": ["test info to show 1 test", "test info to show 2"],
