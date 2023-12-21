@@ -16,7 +16,7 @@ const StoryContainer = () => {
         if (storyData) {
             setLinks(
                 storyData.sections.map((section) => {
-                    return { name: section.id, to: `/story/${storyData.id}/content/${section.id}` };
+                    return { name: section.id, to: `/story/${storyData.id}/screen/${section.id}` };
                 })
             );
         }
