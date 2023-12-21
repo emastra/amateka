@@ -1,8 +1,8 @@
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
 const StoryScreen = ({ sectionName, sections }) => {
-    console.log('## sections', sections);
     if (!sections) return null;
+    console.log('## sections', sections);
 
     const currentSection = sections.filter((s) => s.id === sectionName)[0];
 

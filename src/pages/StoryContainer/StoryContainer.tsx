@@ -8,10 +8,7 @@ import StoryScreen from '../StoryScreen/StoryScreen';
 
 const StoryContainer = () => {
     const { sectionName } = useParams();
-    // console.log('# sectionName:', sectionName);
-
     const storyData = useStoryContext();
-    // console.log('##!! storyData:', storyData);
 
     const [links, setLinks] = useState(null);
 
