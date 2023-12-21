@@ -26,20 +26,6 @@ const StoryIntro = () => {
         }
     }, []);
 
-    // useEffect(() => {
-    //     fetch(`/src/mockdata/${storymap[id]}.json`)
-    //         .then((res) => res.json())
-    //         .then((data) => {
-    //             setData(data);
-    //             console.log('# data:', data);
-    //             setLoading(false);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //             setLoading(false);
-    //         });
-    // }, []);
-
     return (
         <>
             <main id='story-intro'>

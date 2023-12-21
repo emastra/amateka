@@ -5,6 +5,7 @@ article#card-large {
 
     // padding-bottom-trick part1
     width: 100%;
+    height: 100%; // aggiunto qunado l'ho tolto da anchor-wrapper che non esiste piu
     // max-width: 624px; // se voglio limitare la width durante il responsive
     // overflow: hidden; // TODO: serve?
 
@@ -12,128 +13,123 @@ article#card-large {
         margin-bottom: 24px;
     }
 
-    .anchor-wrapper {
-        height: 100%;
-        width: 100%;
+    .card-image-wrapper {
+        // padding-bottom-trick part2
+        height: 0;
+        padding-bottom: 56.25%; // aspect ratio for the image
+        position: relative;
+        background-clip: padding-box;
+        background-color: #ffff; // give color to padding
+        border-radius: 12px 12px 0 0;
 
-        .card-image-wrapper {
-            // padding-bottom-trick part2
-            height: 0;
-            padding-bottom: 56.25%; // aspect ratio for the image
-            position: relative;
-            background-clip: padding-box;
-            background-color: #ffff; // give color to padding
+        &.reduced {
+            padding-bottom: 17%;
+        }
+
+        // same same? ma piu grnade di small
+        div.card-date {
+            font-family: var(--font-family-header);
+            font-size: var(--font-size-h-main);
+            color: var(--color-neutral-4);
+            font-weight: var(--font-weight-bold);
+            position: absolute;
+            top: 12px;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 6px 24px;
+            z-index: 1;
+        }
+
+        img.card-image {
             border-radius: 12px 12px 0 0;
+            // padding-bottom-trick part3
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
 
-            &.reduced {
-                padding-bottom: 17%;
-            }
+    .card-info-wrapper {
+        padding: 20px 20px 16px 20px;
 
-            // same same? ma piu grnade di small
-            div.card-date {
-                font-family: var(--font-family-header);
+        .card-title-wrapper {
+            margin-bottom: 12px;
+            font-size: var(--font-size-h-main); // per usare em qui sotto
+            line-height: var(--line-height-h);
+
+            max-height: 2.4em; // 1.2 * 2
+            width: 100%;
+            overflow-y: hidden;
+
+            h2 {
                 font-size: var(--font-size-h-main);
-                color: var(--color-neutral-4);
-                font-weight: var(--font-weight-bold);
-                position: absolute;
-                top: 12px;
-                background-color: rgba(255, 255, 255, 1);
-                padding: 6px 24px;
-                z-index: 1;
-            }
-
-            img.card-image {
-                border-radius: 12px 12px 0 0;
-                // padding-bottom-trick part3
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                position: absolute;
             }
         }
 
-        .card-info-wrapper {
-            padding: 20px 20px 16px 20px;
+        .card-subtitle-wrapper {
+            width: 100%;
+            // max-height: 2.8em; // 1.4 * 2
+            // overflow-y: hidden;
+            // se voglio hide the overflow, la linea sotto scompare. Dovrei aggiunegre un div fuori da .card-subtitle-wrapper
 
-            .card-title-wrapper {
-                margin-bottom: 12px;
-                font-size: var(--font-size-h-main); // per usare em qui sotto
-                line-height: var(--line-height-h);
+            .subtitle {
+                font-size: var(--font-size-p-main);
+                color: var(--color-neutral-2);
+                line-height: var(--line-height-p);
 
-                max-height: 2.4em; // 1.2 * 2
-                width: 100%;
-                overflow-y: hidden;
-
-                h2 {
-                    font-size: var(--font-size-h-main);
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 20%;
+                    height: 2px;
+                    background: var(--color-neutral-1);
+                    margin: 12px 0 24px 0;
                 }
             }
+        }
 
-            .card-subtitle-wrapper {
-                width: 100%;
-                // max-height: 2.8em; // 1.4 * 2
-                // overflow-y: hidden;
-                // se voglio hide the overflow, la linea sotto scompare. Dovrei aggiunegre un div fuori da .card-subtitle-wrapper
+        // same same?
+        .intro-text-wrapper {
+            margin: 16px 0 24px 0;
+            // p line-height is 1.4. 1.4 * 4 lines = 5.6em. (em si basa sulla font-size dell'el corrente).
+            max-height: 5.6em; // TODO: just height if i want fixed height.
+            width: 100%;
+            overflow-y: hidden;
 
-                .subtitle {
-                    font-size: var(--font-size-p-main);
-                    color: var(--color-neutral-2);
-                    line-height: var(--line-height-p);
-
-                    &:after {
-                        content: '';
-                        display: block;
-                        width: 20%;
-                        height: 2px;
-                        background: var(--color-neutral-1);
-                        margin: 12px 0 24px 0;
-                    }
-                }
+            &.extended {
+                max-height: 8.4em;
             }
 
-            // same same?
-            .intro-text-wrapper {
-                margin: 16px 0 24px 0;
-                // p line-height is 1.4. 1.4 * 4 lines = 5.6em. (em si basa sulla font-size dell'el corrente).
-                max-height: 5.6em; // TODO: just height if i want fixed height.
+            p.intro-text {
+                color: var(--color-neutral-3);
+                height: 100%;
                 width: 100%;
-                overflow-y: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
 
                 &.extended {
-                    max-height: 8.4em;
-                }
-
-                p.intro-text {
-                    color: var(--color-neutral-3);
-                    height: 100%;
-                    width: 100%;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 4;
-                    -webkit-box-orient: vertical;
-
-                    &.extended {
-                        -webkit-line-clamp: 6;
-                    }
+                    -webkit-line-clamp: 6;
                 }
             }
+        }
 
-            // same everywhere probably
-            .tags-wrapper {
-                flex-basis: auto;
-                width: 100%;
-                white-space: nowrap;
-                overflow: hidden;
+        // same everywhere probably
+        .tags-wrapper {
+            flex-basis: auto;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
 
-                .tag-box {
-                    display: inline-block;
-                    padding: 8px 10px;
-                    font-size: var(--font-size-p-sm);
-                    color: var(--color-neutral-3);
-                    border: 1px solid var(--color-neutral-1);
-                    border-radius: 16px;
-                    margin-right: 8px;
-                    line-height: 0.8;
-                }
+            .tag-box {
+                display: inline-block;
+                padding: 8px 10px;
+                font-size: var(--font-size-p-sm);
+                color: var(--color-neutral-3);
+                border: 1px solid var(--color-neutral-1);
+                border-radius: 16px;
+                margin-right: 8px;
+                line-height: 0.8;
             }
         }
     }

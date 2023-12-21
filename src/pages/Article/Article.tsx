@@ -1,36 +1,55 @@
 import './Article.scss';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
+
+const IMAGE_BASE_URL = '/src/assets/images/';
 
 import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
-
-import jsondata from '../../mockdata/contemporary_world_history.json';
 
 const Article = () => {
     const { articleId } = useParams();
     console.log('useparams: articleId:', articleId);
 
-    const concept = jsondata.content.concepts.filter((c) => c.id === articleId)[0];
-    console.log('concept:', concept);
+    const location = useLocation();
+    const articleData = location.state?.articleData;
+    console.log('articleData:', articleData);
+
+    const imageUrl = IMAGE_BASE_URL + (articleData.image || 'placeholder_image.jpg');
+
+    // const [loading, setLoading] = useState(true);
+    // const [data, setData] = useState<any>(null);
+
+    // useEffect(() => {
+    //     if (currentStory) {
+    //         setData(currentStory);
+    //         setLoading(false);
+    //     } else {
+    //         // do same call to firestore as in Home
+    //     }
+    // }, []);
+
+    const handleImageError = (e) => {
+        e.target.src = IMAGE_BASE_URL + 'placeholder_image.jpg';
+    };
 
     return (
         <>
             <main id='article'>
                 <div className='top-image-wrapper'>
-                    <img className='top-image' src={concept.image} alt='placeholder_image' />
+                    <img className='top-image' src={imageUrl} onError={handleImageError} alt='article_image' />
                 </div>
 
                 <div className='article-main-wrapper'>
                     <div className='article-header'>
                         <div className='card-title-wrapper'>
-                            <h2>{concept.title}</h2>
+                            <h2>{articleData.title}</h2>
                         </div>
                         <div className='card-subtitle-wrapper'>
-                            {concept.subtitle && <div className='subtitle'>{concept.subtitle}</div>}
+                            {articleData.subtitle && <div className='subtitle'>{articleData.subtitle}</div>}
                         </div>
                     </div>
 
                     <div className='article-body-wrapper'>
-                        {concept.content.structure.map((item) => {
+                        {articleData.content.structure.map((item) => {
                             return <ArticleUnit key={item.position || item.id} type={item.type} data={item.content} />;
                         })}
                     </div>

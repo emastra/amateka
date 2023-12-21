@@ -14,7 +14,7 @@ const ArticleUnit: React.FC<ArticleUnitProps> = ({ type, data }) => {
         return <Accordion items={[]} />;
     }
 
-    if (type === 'chapterTitle') {
+    if (type === 'mainTitle') {
         return <ChapterTitle data={data} />;
     }
 
@@ -26,7 +26,7 @@ const ArticleUnit: React.FC<ArticleUnitProps> = ({ type, data }) => {
         return <div>List is a working progress</div>;
     }
 
-    if (type === 'sectionTitle') {
+    if (type === 'secondaryTitle') {
         return <SectionTitle data={data} />;
     }
 
