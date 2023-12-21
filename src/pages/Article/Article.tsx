@@ -15,15 +15,16 @@ const Article = () => {
 
     const imageUrl = IMAGE_BASE_URL + (articleData.image || 'placeholder_image.jpg');
 
+    // TODO: perchè in caso la pagina venga caricata da un link articleData is not available
     // const [loading, setLoading] = useState(true);
     // const [data, setData] = useState<any>(null);
-
     // useEffect(() => {
     //     if (currentStory) {
     //         setData(currentStory);
     //         setLoading(false);
     //     } else {
-    //         // do same call to firestore as in Home
+    //         // do same call to firestore as in Home and StoryIntro!
+    //         console.error('To do: make a call to db if articleData is not available');
     //     }
     // }, []);
 

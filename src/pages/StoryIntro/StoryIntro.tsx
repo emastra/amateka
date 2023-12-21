@@ -22,7 +22,8 @@ const StoryIntro = () => {
             setData(currentStory);
             setLoading(false);
         } else {
-            // do same call to firestore as in Home
+            // TODO: do same call to firestore as in Home
+            console.error('To do: make a call to db if currentStory is not available');
         }
     }, []);
 
