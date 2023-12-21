@@ -1,15 +1,55 @@
 import TimelineCard from '../../components/TimelineCard/TimelineCard';
 
+interface IEvent {
+    id: string;
+    image: string;
+    date: string;
+    title: string;
+    tags: string[];
+    content?: any;
+    description?: any;
+}
+
+interface IYear {
+    id: string;
+    date: string;
+    image: string;
+    title: string;
+    intro: string;
+    tags: string[];
+}
+
+interface IDecade {
+    id: string;
+    date: string;
+    image: string;
+    title: string;
+    intro: string;
+    tags: string[];
+}
+
+interface IConcept {
+    id: string;
+    date: string;
+    image: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    tags: string[];
+    content: any;
+}
+
 const StoryScreen = ({ sectionName, sections }) => {
     if (!sections) return null;
     console.log('## sections', sections);
-
-    const currentSection = sections.filter((s) => s.id === sectionName)[0];
+    const current = sections.filter((s) => s.id === sectionName)[0];
 
     if (sectionName === 'events') {
+        const sectionData: IEvent[] = current.data;
+
         return (
             <>
-                {currentSection.data.map((ev) => (
+                {sectionData.map((ev) => (
                     <TimelineCard
                         variant='small'
                         key={ev.id}
@@ -21,9 +61,11 @@ const StoryScreen = ({ sectionName, sections }) => {
     }
 
     if (sectionName === 'years') {
+        const sectionData: IYear[] = current.data;
+
         return (
             <>
-                {currentSection.data.map((year) => (
+                {sectionData.map((year) => (
                     <TimelineCard
                         variant='medium'
                         key={year.id}
@@ -41,9 +83,11 @@ const StoryScreen = ({ sectionName, sections }) => {
     }
 
     if (sectionName === 'decades') {
+        const sectionData: IDecade[] = current.data;
+
         return (
             <>
-                {currentSection.data.map((decade) => (
+                {sectionData.map((decade) => (
                     <TimelineCard
                         variant='large'
                         key={decade.id}
@@ -61,9 +105,11 @@ const StoryScreen = ({ sectionName, sections }) => {
     }
 
     if (sectionName === 'concepts') {
+        const sectionData: IConcept[] = current.data;
+
         return (
             <>
-                {currentSection.data.map((concept) => {
+                {sectionData.map((concept) => {
                     return <TimelineCard variant='large' key={concept.id} data={concept} />;
                 })}
             </>

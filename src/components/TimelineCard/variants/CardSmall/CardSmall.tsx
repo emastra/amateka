@@ -3,29 +3,16 @@ import './CardSmall.scss';
 
 const IMAGE_BASE_URL = '/src/assets/images/';
 
-// interface CardSmallProps {
-//     date: string;
-//     image: string;
-//     title: string;
-//     tags: string[];
-// }
-// const CardSmall: React.FC<CardSmallProps> = ({ date, image, title, tags }) => {
-
 const CardSmall = ({ data: { date, image, title, tags } }) => {
+    // const imageUrl = image ? IMAGE_BASE_URL + image : IMAGE_BASE_URL + 'placeholder_image.jpg';
+    const imageUrl = IMAGE_BASE_URL + (image || 'placeholder_image.jpg');
+
     return (
         <article id='card-small'>
             <Link to={`/test/${'1'}/article/${'1'}`} className='anchor-wrapper'>
                 <div className='card-left-wrap'>
                     <div className='card-date'>{date}</div>
-                    {!!image ? (
-                        <img className='card-image' src={IMAGE_BASE_URL + image} alt='card_image' />
-                    ) : (
-                        <img
-                            className='card-image'
-                            src={IMAGE_BASE_URL + 'placeholder_image.jpg'}
-                            alt='placeholder_image'
-                        />
-                    )}
+                    <img className='card-image' src={imageUrl} alt='card_image' />
                 </div>
 
                 <div className='card-right-wrap'>
@@ -47,3 +34,11 @@ const CardSmall = ({ data: { date, image, title, tags } }) => {
 };
 
 export default CardSmall;
+
+// interface CardSmallProps {
+//     date: string;
+//     image: string;
+//     title: string;
+//     tags: string[];
+// }
+// const CardSmall: React.FC<CardSmallProps> = ({ date, image, title, tags }) => {
