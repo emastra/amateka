@@ -7,9 +7,6 @@ const CardMedium = ({ data: { date, image, title, description, tags } }) => {
     const imageUrl = IMAGE_BASE_URL + (image || 'placeholder_image.jpg');
 
     const handleImageError = (e) => {
-        // e.target.onError = null; // TODO: does not Prevent potential infinite loop.
-        // https://chat.openai.com/c/aeaeb1b6-35c9-469c-b11e-366ef947287e, https://stackoverflow.com/questions/58957578/how-to-prevent-infinite-loops-when-setting-an-image-source-via-onerror-in-react
-        // OR make sure placeholder_image.jpg is always present!
         e.target.src = IMAGE_BASE_URL + 'placeholder_image.jpg';
     };
 

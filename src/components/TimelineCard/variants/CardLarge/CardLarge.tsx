@@ -6,6 +6,10 @@ const IMAGE_BASE_URL = '/src/assets/images/';
 const CardLarge = ({ data }) => {
     const imageUrl = IMAGE_BASE_URL + (data.image || 'placeholder_image.jpg');
 
+    const handleImageError = (e) => {
+        e.target.src = IMAGE_BASE_URL + 'placeholder_image.jpg';
+    };
+
     return (
         <article id='card-large'>
             <Link to={`/story/${'1'}/article/${data.id}`} className='anchor-wrapper'>
@@ -13,7 +17,7 @@ const CardLarge = ({ data }) => {
                 {/* potrei mette lo stile reduced nell'altro comp se lo faccio */}
                 <div className={`card-image-wrapper ${!!data.image ? '' : 'reduced'}`}>
                     {data.date && <div className='card-date'>{data.date}</div>}
-                    <img className='card-image' src={imageUrl} alt='card_image' />
+                    <img className='card-image' src={imageUrl} onError={handleImageError} alt='card_image' />
                 </div>
 
                 <div className='card-info-wrapper'>
