@@ -18,6 +18,7 @@ import NotFound from '../pages/NotFound';
 import MDEditorPage from '../pages/MDEditorPage/MDEditorPage';
 import CustomizePage from '../pages/CustomizePage/Customize';
 import StoryContainer from '../pages/StoryContainer/StoryContainer';
+import CreatePage from '../pages/CreatePage/CreatePage';
 
 // import { ArticleMenusProvider } from '../context/ArticleMenusContext';
 import { StoryProvider } from '../context/StoryContext';
@@ -41,12 +42,6 @@ function App() {
                     <Route path='/story/:id/decades' element={<StoryDecades />}></Route>
                     <Route path='/story/:id/concepts' element={<StoryConcepts />}></Route>
                 </Route> */}
-
-                {/* <Route path='/story/:id/content' element={<StoryContainer />}>
-                        <Route path='/:sectionORscreen' element={<StoryPagesORscreens />}></Route>
-                    </Route> 
-                */}
-
                 <Route
                     element={
                         <StoryProvider>
@@ -61,8 +56,9 @@ function App() {
                     <Route path='/story/:id/article/:articleId' element={<Article />} />
                 </Route>
 
-                <Route path='/editor' element={<MDEditorPage />} />
+                <Route path='/create' element={<CreatePage />} />
 
+                {/* <Route path='/editor' element={<MDEditorPage />} /> */}
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>

@@ -65,7 +65,7 @@ const Home = () => {
                         return <StoryCard key={story.id} data={story}></StoryCard>;
                     })}
 
-                <Link className='create-btn' to={`/editor`}>
+                <Link className='create-btn' to={`/create`}>
                     <img className='plus-icon' src='/src/assets/svg/plus.svg' alt='plus' />
                     <span>Crea</span>
                 </Link>
