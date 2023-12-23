@@ -58,7 +58,7 @@ function App() {
 
                 <Route path='/create' element={<CreatePage />} />
 
-                {/* <Route path='/editor' element={<MDEditorPage />} /> */}
+                <Route path='/editor' element={<MDEditorPage />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>

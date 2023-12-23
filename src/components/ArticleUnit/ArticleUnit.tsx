@@ -34,6 +34,8 @@ const ArticleUnit: React.FC<ArticleUnitProps> = ({ type, data }) => {
         return <Text data={data} />;
     }
 
+    // other units: linkWikipedia, externalLink, internalLink. VECCHIO
+
     console.error('Provided type does not exist');
     return null;
 };
