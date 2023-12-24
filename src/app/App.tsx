@@ -23,6 +23,8 @@ import CreatePage from '../pages/CreatePage/CreatePage';
 // import { ArticleMenusProvider } from '../context/ArticleMenusContext';
 import { StoryProvider } from '../context/StoryContext';
 
+import MdxTestPage from '../pages/MdxTestPage/MdxTestPage';
+
 function App() {
     return (
         <div className='app-container'>
@@ -59,6 +61,8 @@ function App() {
                 <Route path='/create' element={<CreatePage />} />
 
                 <Route path='/editor' element={<MDEditorPage />} />
+                <Route path='/mdx-test-page' element={<MdxTestPage />} />
+
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
