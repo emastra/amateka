@@ -4,6 +4,7 @@ import { useParams, Link, useLocation } from 'react-router-dom';
 const IMAGE_BASE_URL = '/src/assets/images/';
 
 import ArticleUnit from '../../components/ArticleUnit/ArticleUnit';
+import MDXArticle from '../../mockdata/testarticle.mdx';
 
 const Article = () => {
     const { articleId } = useParams();
@@ -50,9 +51,10 @@ const Article = () => {
                     </div>
 
                     <div className='article-body-wrapper'>
-                        {articleData.content.structure.map((item) => {
+                        {/* {articleData.content.structure.map((item) => {
                             return <ArticleUnit key={item.position || item.id} type={item.type} data={item.content} />;
-                        })}
+                        })} */}
+                        <MDXArticle />
                     </div>
                 </div>
             </main>
